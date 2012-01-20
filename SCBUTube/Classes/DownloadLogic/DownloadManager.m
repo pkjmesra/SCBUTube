@@ -26,6 +26,7 @@
  7.	Go forward for webview.
  8.	Share video download link over email. 
  9.	Create WiFi hotspot, http live stream to other devices over browser.
+ 10.Handle memory for receiveddata in uidownloadbar for large size video. Append at >=5MB and refresh.
 //
  */
 - (DownloadManager *)init {
@@ -104,17 +105,26 @@
 		if (isIdle)
 		{
 			isIdle =NO;
-			DownloadInfo *newDownload =[self.queue objectAtIndex:0];
-			if (!newDownload.operationCompleted)
+			for (DownloadInfo *newDownload in self.queue)
 			{
 				if (newDownload.bar ==nil)
 				{
 					[newDownload setUp:NO];
 				}
-//				newDownload.delegate =self;
-				[newDownload beginDownload];
+				if (!newDownload.operationCompleted &&
+					!newDownload.bar.inProgress &&
+					!newDownload.bar.operationFailed)
+				{
+					//newDownload.delegate =self;
+					isIdle =NO;
+					[newDownload beginDownload];
+					break;
+				}
+				else
+					isIdle =YES;
 			}
-		}			
+			
+		}
 	}
 	else
 		isIdle =YES;
@@ -139,8 +149,9 @@
 	isIdle = NO; //reset the flag so no new download starts
 	for (DownloadInfo *dInfo in self.queue)
 	{
-		dInfo.delegate =self;
+//		dInfo.delegate =self;
 		[dInfo beginDownload];
+		break;
 	}
 
 }
@@ -167,6 +178,8 @@
 - (void)downloadInfo:(DownloadInfo *)info didFailWithError:(NSError *)error 
 {
 	[self.delegate downloadManagerInfo:info didFailWithError:error];
+	isIdle =YES;
+	[self start];
 }
 
 - (void)downloadUpdated:(DownloadInfo *)info 

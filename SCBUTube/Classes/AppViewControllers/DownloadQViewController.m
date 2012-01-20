@@ -14,6 +14,7 @@
 @implementation DownloadQViewController
 
 @synthesize contents = _DownloadsContents;
+@synthesize isReloading;
 
 #pragma mark -
 #pragma mark Initialization
@@ -26,16 +27,35 @@
 	
     [navItem setLeftBarButtonItem:[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(back)] autorelease]];
 	[navItem setRightBarButtonItem:self.editButtonItem];
+	cellsLoaded=0;
 }
 
 - (void)back {
 	[self dismissModalViewControllerAnimated:YES];
 }
 
+-(void)reloadRowsAtIndexPath:(NSInteger)row
+{
+	@try {
+		NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
+		[table beginUpdates];
+		[table reloadRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:UITableViewRowAnimationNone];
+		[table endUpdates];
+	}
+	@catch (NSException *exception) {
+		// Probably table reloaded
+	}
+	@finally {
+		//ignore
+	}
+
+}
 -(void)reloadAllData
 {
-	if (_DownloadsContents)
+	if (_DownloadsContents )//&& !isReloading)
 	{
+		cellsLoaded =0;
+		isReloading = YES;
 		[table reloadData];
 	}
 }
@@ -77,6 +97,7 @@
 		DownloadInfo *info = (DownloadInfo *)[self.contents objectAtIndex:[indexPath indexAtPosition:1]];
 		if (info && info.bar)
 		{
+			info.bar.tag =[indexPath indexAtPosition:1];
 			for (UIView *subView in cell.subviews) {
 				if ([subView isKindOfClass:[UIImageView class]])
 					[subView removeFromSuperview];
@@ -114,6 +135,11 @@
 			[pausePlay release];
 		}
 	}
+//	if (cellsLoaded++ ==[self.contents count])
+//	{
+//		cellsLoaded =0;
+//		isReloading =NO;
+//	}
     return cell;
 }
 

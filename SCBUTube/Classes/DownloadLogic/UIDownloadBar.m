@@ -65,6 +65,40 @@ possibleFilename;
 	}
 }
 
+-(void)saveCurrentDataState
+{
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSArray *components = [self.possibleFilename componentsSeparatedByCharactersInSet:[[NSCharacterSet alphanumericCharacterSet] invertedSet]];
+	self.possibleFilename = [components componentsJoinedByString:@" "];
+	
+	NSString *pausedFile = [NSString stringWithFormat:@"%@/PausedDownloads/%@.paused", [paths objectAtIndex:0],self.possibleFilename];
+	NSString *attribFile =[NSString stringWithFormat:@"%@/PausedDownloads/%@.attrib", [paths objectAtIndex:0],self.possibleFilename];
+	NSMutableData *fileData;
+	if([fileManager fileExistsAtPath:pausedFile isDirectory:NO])
+	{
+		fileData = [NSMutableData dataWithContentsOfFile:pausedFile];
+		[fileData appendData:self.receivedData];
+		[fileManager removeItemAtPath:pausedFile error:nil];
+	}
+	else
+	{
+		fileData = [NSMutableData dataWithData:self.receivedData];
+	}
+	[fileManager createFileAtPath:pausedFile contents:fileData attributes:nil];
+
+	NSString *attributes = [NSString stringWithFormat:@"Title=%@\nURL=%@\nExpectedBytes= %lld\nBytesReceived=%.2f\n",
+							[self.possibleFilename stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+							[[self.downloadUrl absoluteString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+							expectedBytes,
+							bytesReceived];
+	if([fileManager fileExistsAtPath:attribFile isDirectory:NO])
+	{
+		[fileManager removeItemAtPath:attribFile error:nil];
+	}
+	[fileManager createFileAtPath:attribFile contents:[attributes dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+
+}
 
 - (void) forceStop {
 	operationBreaked = YES;
@@ -74,8 +108,8 @@ possibleFilename;
 - (void) pauseDownload
 {
 	[self forceStop];
-	[self saveDownloadInfo:@"PausedDownloads" bytesReceived:bytesReceived createMainFile:YES];
-	
+	//[self saveDownloadInfo:@"PausedDownloads" bytesReceived:bytesReceived createMainFile:YES];
+	[self saveCurrentDataState];
 	if (self.delegate && [self.delegate respondsToSelector:@selector(downloadBarPaused:forFile:)])
 		[self.delegate downloadBarPaused:self forFile:self.possibleFilename];
 }
@@ -164,14 +198,18 @@ possibleFilename;
 			percentComplete = self.progress*100;
 		}
 			//NSLog(@" Data receiving... Percent complete: %f", percentComplete);
-		if (percentComplete !=100)
-		{
-			//[self saveDownloadInfo];
-		}
-		else
+		if (percentComplete ==100)
 		{
 			inProgress =NO;
-			[self deleteSavedState];
+		}
+		// Save state if memory consumption is more than 4MB or download is completed
+		if (([self.receivedData length]>=4194304) || (percentComplete ==100))
+		{
+			[self saveCurrentDataState];
+			[receivedData release];
+			receivedData =nil;
+			if (percentComplete !=100)
+				receivedData = [[NSMutableData alloc] initWithLength:0];
 		}
 		if (self.delegate && [self.delegate respondsToSelector:@selector(downloadBarUpdated:)])
 		[self.delegate downloadBarUpdated:self];
@@ -188,6 +226,7 @@ possibleFilename;
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
 	inProgress =NO;
+	[receivedData release];
 	[self saveDownloadInfo:@"Failed" bytesReceived:0 createMainFile:NO];
 	[self.delegate downloadBar:self didFailWithError:error];
 	operationFailed = YES;
@@ -264,9 +303,26 @@ possibleFilename;
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
 	inProgress =NO;
+	NSFileManager *fileManager =[NSFileManager defaultManager];
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	[self saveDownloadInfo:@"Succeeded" bytesReceived:0 createMainFile:NO];
-	[self.delegate downloadBar:self didFinishWithData:self.receivedData suggestedFilename:self.possibleFilename];
+	NSString *pausedFile = [NSString stringWithFormat:@"%@/PausedDownloads/%@.paused", [paths objectAtIndex:0],self.possibleFilename];
+	NSMutableData *fileData;
+	if([fileManager fileExistsAtPath:pausedFile isDirectory:NO])
+	{
+		fileData = [NSMutableData dataWithContentsOfFile:pausedFile];
+//		[fileData appendData:self.receivedData];
+		[fileManager removeItemAtPath:pausedFile error:nil];
+	}
+	else
+	{
+		fileData = [NSMutableData dataWithData:self.receivedData];
+	}
 	operationFinished = YES;
+	[self.delegate downloadBar:self didFinishWithData:fileData suggestedFilename:self.possibleFilename];
+	[self deleteSavedState];
+//	[receivedData release];
+
 	NSLog(@"Connection did finish loading...");
 	//[connection release];
 }
@@ -277,7 +333,7 @@ possibleFilename;
 
 - (void)dealloc {
 	[possibleFilename release];
-	[receivedData release];
+//	[receivedData release];
 	[DownloadRequest release];
 //	[DownloadConnection release];
 	[super dealloc];

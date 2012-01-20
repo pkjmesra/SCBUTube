@@ -96,7 +96,8 @@
 	[cell.textLabel setText:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]];
 	[cell.detailTextLabel setText:[NSString stringWithFormat:@"%d:%02d", min, sec]];
 	[cell.imageView setImage:[UIImage imageWithContentsOfFile:imagePath]];
-	
+	[cell.imageView setBounds:CGRectMake(0, 0, 120.0, 70.0)];
+	[cell.imageView sizeToFit];
     return cell;
 }
 
@@ -150,7 +151,7 @@
 #pragma mark Table view delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 69.3;
+    return 70;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

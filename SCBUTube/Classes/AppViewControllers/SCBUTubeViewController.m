@@ -6,7 +6,7 @@
 @implementation SCBUTubeViewController
 
 @synthesize queuedViewController;
-
+int looper;
 #pragma mark -
 #pragma mark View lifecycle
 
@@ -27,11 +27,43 @@
 	}
 }
 
+-(NSString *)loadLastViewState
+{
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *attribFile =[NSString stringWithFormat:@"%@/lastView.state", [paths objectAtIndex:0]];
+	NSData *fileData;
+	if([fileManager fileExistsAtPath:attribFile isDirectory:NO])
+	{
+		fileData = [NSData dataWithContentsOfFile:attribFile];
+	}
+	else
+	{
+		fileData = [[NSString stringWithString:@"http://m.youtube.com"] dataUsingEncoding:NSUTF8StringEncoding];
+	}
+	return [[[NSString alloc ] initWithData:fileData encoding:NSUTF8StringEncoding] autorelease];
+}
+
+-(void)saveLastViewState
+{
+	NSString *url=[webView stringByEvaluatingJavaScriptFromString:@"function getUrl(){return window.location.href;} getUrl();"];
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *attribFile =[NSString stringWithFormat:@"%@/lastView.state", [paths objectAtIndex:0]];
+	if([fileManager fileExistsAtPath:attribFile isDirectory:NO])
+	{
+		[fileManager removeItemAtPath:attribFile error:nil];
+	}
+	[fileManager createFileAtPath:attribFile 
+							 contents:[url dataUsingEncoding:NSUTF8StringEncoding] 
+						   attributes:nil];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	
 	if (!webView.request.URL) {
-		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.youtube.com"]]];
+		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self loadLastViewState]]]];
 	}
 }
 
@@ -41,7 +73,7 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-	[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.youtube.com"]]];
+	[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self loadLastViewState]]]];
 }
 
 -(DownloadInfo*)trySetUpDownload
@@ -208,7 +240,7 @@
 		self.queuedViewController = viewController;
 		[viewController release];
 	}
-	if (manager.queue && manager.queue.count)
+	if (manager.queue)
 	{
 		[self.queuedViewController setContents:manager.queue];
 	}
@@ -281,6 +313,7 @@
 	   self.queuedViewController.isViewLoaded && 
 	   self.queuedViewController.view.window)
 	{
+		self.queuedViewController.isReloading=!self.queuedViewController.isReloading;
 		[self.queuedViewController reloadAllData];
 	}
 }
@@ -294,6 +327,7 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
 	[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+	[self saveLastViewState];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
@@ -316,6 +350,7 @@
 
 - (void)downloadManagerDidFinish:(DownloadInfo *)info
 {
+	self.queuedViewController.isReloading =NO;
 	if(self.queuedViewController && 
 	   self.queuedViewController.isViewLoaded && 
 	   self.queuedViewController.view.window)
@@ -327,25 +362,39 @@
 
 - (void)downloadManagerInfo:(DownloadInfo *)info didFailWithError:(NSError *)error 
 {
+	self.queuedViewController.isReloading =NO;
 	[self performSelector:@selector(reloadQueuedController) withObject:nil afterDelay:0];
 	[self updateToolbar];
 }
 
 - (void)downloadManagerUpdated:(DownloadInfo *)info
 {
-	[self performSelector:@selector(reloadQueuedController) withObject:nil afterDelay:2];
+//	if (info && info.bar && info.bar.tag>=0)
+//	{
+////		NSIndexPath *indexPath = [NSIndexPath indexPathWithIndex:info.bar.tag];
+//		[self.queuedViewController reloadRowsAtIndexPath:info.bar.tag];
+//	}
+	if (!self.queuedViewController.isReloading || looper>=50)
+	{
+		[self performSelector:@selector(reloadQueuedController) withObject:nil afterDelay:3];
+	}
+	else
+		looper++;
 }
 - (void)downloadManagerPaused:(DownloadInfo *)info forFile:(NSString *)filename
 {
+	self.queuedViewController.isReloading =NO;
 	[self updateToolbar];
 }
 - (void)downloadManagerReStarted:(DownloadInfo *)info forFile:(NSString *)filename
 {
+	self.queuedViewController.isReloading =NO;
 	[self updateToolbar];
 }
 
 - (void)downloadManagerDropped:(DownloadInfo *)info forFile:(NSString *)filename
 {
+	self.queuedViewController.isReloading =NO;
 	[self updateToolbar];
 	if(self.queuedViewController && 
 	   self.queuedViewController.isViewLoaded && 

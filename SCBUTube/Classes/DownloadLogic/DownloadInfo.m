@@ -103,7 +103,7 @@
 	{
 		[bar forceStop];
 		// Read the contents of file into the receivedData
-		bar.receivedData = [self loadQueuedOrPausedItemContents];
+//		bar.receivedData = [self loadQueuedOrPausedItemContents];
 		bar.progress = ((bytesReceived/(float)expectedBytes)*100)/100;
 	}
 }
@@ -169,6 +169,7 @@
 }
 
 - (void)downloadBar:(UIDownloadBar *)downloadBar didFinishWithData:(NSData *)fileData suggestedFilename:(NSString *)filename {
+
 	if (filename != nil)
 	{
 		NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -189,7 +190,7 @@
 		CGImageRef preImage = [imageGenerator copyCGImageAtTime:midpoint actualTime:&actualTime error:NULL];
 		
 		if (preImage != NULL) {
-			CGRect rect = CGRectMake(0.0, 0.0, CGImageGetWidth(preImage) * 0.5, CGImageGetHeight(preImage) * 0.5);
+			CGRect rect = CGRectMake(0.0, 0.0,120.0,70.0 );//CGImageGetWidth(preImage) * 0.5, CGImageGetHeight(preImage) * 0.5);
 			
 			UIImage *image = [UIImage imageWithCGImage:preImage];
 			
