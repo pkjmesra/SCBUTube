@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/SVN/Covidien/!svn/ver/2005/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer
+END
+HTTPMessage.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPMessage.m
+END
+HTTPServer.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPServer.m
+END
+WebSocket.m
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/WebSocket.m
+END
+HTTPAuthenticationRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPAuthenticationRequest.m
+END
+HTTPResponse.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPResponse.h
+END
+HTTPConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPConnection.h
+END
+HTTPConnection.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPConnection.m
+END
+HTTPMessage.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPMessage.h
+END
+HTTPLogging.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPLogging.h
+END
+HTTPServer.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPServer.h
+END
+WebSocket.h
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/WebSocket.h
+END
+HTTPAuthenticationRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/SVN/Covidien/!svn/ver/1935/trunk/Source/Main/Working_timestamps/IndependentComponents/CocoaHTTPServer/CocoaHTTPServer/HTTPAuthenticationRequest.h
+END
