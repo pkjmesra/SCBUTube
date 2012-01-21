@@ -10,6 +10,7 @@
     IBOutlet UIBarButtonItem *downloadButton;
 	IBOutlet UIBarButtonItem *addIntoQueueButton;
 	IBOutlet UIBarButtonItem *goBackButton;
+	IBOutlet UIBarButtonItem *goFwdButton;
 	IBOutlet UIBarButtonItem *qProgressButton;
 	IBOutlet UIBarButtonItem *pauseAllButton;
 	IBOutlet UIToolbar *toolbar;
@@ -24,6 +25,7 @@
 - (IBAction)download;
 - (IBAction)QueueForDownload;
 - (IBAction)onGoPreviousPage;
+- (IBAction)onGoNextPage;
 - (IBAction)presentDownloads;
 - (IBAction)presentQueuedDownloads;
 - (IBAction)pauseDownloads;

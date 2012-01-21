@@ -27,3 +27,4 @@ Following things remain to be done:
 7.	Go forward for webview.  
 8.	Share video download link over email.   
 9.	Create WiFi hotspot, http live stream to other devices over browser.
+10.Option to user to re-download (if for some reason the last download was not done correctly) from the Suucessful/failed/paused/All states. Take user's choice what he/she wants to do (whether to start from the beginning or re-start download from last aged point).If user chooses to start from beginning, recalculate the file size and other headers.

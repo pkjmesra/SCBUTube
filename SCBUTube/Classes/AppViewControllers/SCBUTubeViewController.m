@@ -252,6 +252,11 @@ int looper;
 	[webView goBack];
 }
 
+- (IBAction)onGoNextPage
+{
+	[webView goForward];
+}
+
 -(void)pauseAll
 {
 	[manager pause];
