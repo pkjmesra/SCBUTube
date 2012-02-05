@@ -16,6 +16,8 @@ int looper;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillEnterForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive:) name:UIApplicationWillResignActiveNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillTerminate:) name:UIApplicationWillTerminateNotification object:nil];
     
     [webView setBackgroundColor:[UIColor clearColor]];
 	manager = [[DownloadManager alloc] init];
@@ -74,6 +76,23 @@ int looper;
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
 	[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self loadLastViewState]]]];
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application {
+    /*
+     Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+     Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+     */
+	[self pauseAll];
+	[self saveLastViewState];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    /*
+     Called when the application is about to terminate.
+     See also applicationDidEnterBackground:.
+     */
+	[self pauseAll];
 }
 
 -(DownloadInfo*)trySetUpDownload

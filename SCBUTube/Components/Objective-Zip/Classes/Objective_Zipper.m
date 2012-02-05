@@ -31,22 +31,16 @@
 //  POSSIBILITY OF SUCH DAMAGE.
 //
 
-#import "Objective_ZipViewController.h"
-#import "../Objective-Zip/ZipFile.h"
-#import "../Objective-Zip/ZipException.h"
-#import "../Objective-Zip/FileInZipInfo.h"
-#import "../Objective-Zip/ZipWriteStream.h"
-#import "../Objective-Zip/ZipReadStream.h"
+#import "Objective_Zipper.h"
+#import "ZipFile.h"
+#import "ZipException.h"
+#import "FileInZipInfo.h"
+#import "ZipWriteStream.h"
+#import "ZipReadStream.h"
+#import "DDLog.h"
+#import "DDFileLogger.h"
 
-
-@implementation Objective_ZipViewController
-
-
-- (void) loadView {
-	[super loadView];
-	
-	_textView.font= [UIFont fontWithName:@"Helvetica" size:11.0];
-}
+@implementation Objective_Zipper
 
 - (void) dealloc {
 	if (_testThread)
@@ -54,16 +48,81 @@
     [super dealloc];
 }
 
-- (void) didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (NSData *) zip:(NSString *)path {
+//	if (_testThread)
+//		[_testThread release];
+//	
+//	_testThread= [[NSThread alloc] initWithTarget:self selector:@selector(createZip:) object:path];
+//	[_testThread start];
+	return [self createZip:path];
 }
 
-- (IBAction) zipUnzip {
+- (void) unZip:(NSString *)path {
 	if (_testThread)
 		[_testThread release];
 	
 	_testThread= [[NSThread alloc] initWithTarget:self selector:@selector(test) object:nil];
 	[_testThread start];
+}
+
+-(NSData *)createZip:(NSString *)path
+{
+		NSAutoreleasePool *pool= [[NSAutoreleasePool alloc] init];
+		NSString *filePath= [path stringByAppendingPathComponent:@"ZippedFile.zip"];
+		@try 
+		{
+			NSLog(@"docFullPath :%@",path);
+			NSString* file;
+			NSDirectoryEnumerator* enumerator = [[NSFileManager defaultManager] enumeratorAtPath:path];
+			[self performSelectorOnMainThread:@selector(log:) withObject:@"Opening zip file for writing..." waitUntilDone:YES];
+			ZipFile *zipFile= [[ZipFile alloc] initWithFileName:filePath mode:ZipFileModeCreate];
+			
+			while (file = [enumerator nextObject])
+			{
+				if ([file hasSuffix:@".attrib"])
+				{
+					// open your file …
+					DDLogFileInfo *logFileInfo = [[DDLogFileInfo alloc ]initWithFilePath:[NSString stringWithFormat:@"%@/%@",path,file]];
+					
+					[self performSelectorOnMainThread:@selector(log:) withObject:@"Adding files..." waitUntilDone:YES];
+					
+					ZipWriteStream *stream1= [zipFile writeFileInZipWithName:logFileInfo.fileName fileDate:[logFileInfo creationDate] compressionLevel:ZipCompressionLevelBest];
+					
+					[self performSelectorOnMainThread:@selector(log:) withObject:@"Writing to first file's stream..." waitUntilDone:YES];
+					
+					[stream1 writeData:[NSData dataWithContentsOfFile:[NSString stringWithFormat:@"%@/%@",path,file]]];
+					
+					[self performSelectorOnMainThread:@selector(log:) withObject:@"Closing first file's stream..." waitUntilDone:YES];
+					
+					[stream1 finishedWriting];
+				}
+			
+			}
+			[self performSelectorOnMainThread:@selector(log:) withObject:@"Closing zip file..." waitUntilDone:YES];
+			
+			[zipFile close];
+			[zipFile release];
+			
+			return [NSData dataWithContentsOfFile:filePath];
+		}
+		@catch (ZipException *ze) {
+			[self performSelectorOnMainThread:@selector(log:) withObject:@"Caught a ZipException (see logs), terminating..." waitUntilDone:YES];
+			
+			NSLog(@"ZipException caught: %d - %@", ze.error, [ze reason]);
+			return nil;
+		} 
+		@catch (id e) 
+		{
+			[self performSelectorOnMainThread:@selector(log:) withObject:@"Caught a generic exception (see logs), terminating..." waitUntilDone:YES];
+			
+			NSLog(@"Exception caught: %@ - %@", [[e class] description], [e description]);
+			return nil;
+		}
+		@finally 
+		{
+			[[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
+		}
+		[pool drain];
 }
 
 - (void) test {
@@ -195,14 +254,6 @@
 
 - (void) log:(NSString *)text {
 	NSLog(@"%@", text);
-	
-	_textView.text= [_textView.text stringByAppendingString:text];
-	_textView.text= [_textView.text stringByAppendingString:@"\n"];
-	
-	NSRange range;
-	range.location= [_textView.text length] -6;
-	range.length= 5;
-	[_textView scrollRangeToVisible:range];
 }
 
 @end

@@ -12,6 +12,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Objective_Zipper.h"
+
 @implementation WebHTTPConnection
 
 @synthesize logFileManager;
@@ -154,14 +156,18 @@
 	[response appendString:@"<table cellspacing='2'>"];
 	
 	NSString* file;
+	NSMutableDictionary *subDirectories=[[NSMutableDictionary alloc] initWithCapacity:0];
 	NSDirectoryEnumerator* enumerator = [[NSFileManager defaultManager] enumeratorAtPath:docFullPath];
 	while (file = [enumerator nextObject])
 	{
 		// check if it's a directory
 		BOOL isDirectory = NO;
+		BOOL isSubDirectory=NO;
 		[[NSFileManager defaultManager] fileExistsAtPath: [NSString stringWithFormat:@"%@/%@",docFullPath,file]
 											 isDirectory:&isDirectory];
-		if (!isDirectory)
+		[[NSFileManager defaultManager] fileExistsAtPath: [NSString stringWithFormat:@"%@/%@",docFullPath,[[file pathComponents] objectAtIndex:0]]
+											 isDirectory:&isSubDirectory];
+		if (!isDirectory && !isSubDirectory)
 		{
 			// open your file …
 			DDLogFileInfo *logFileInfo = [[DDLogFileInfo alloc ]initWithFilePath:[NSString stringWithFormat:@"%@/%@",docFullPath,file]];
@@ -196,14 +202,19 @@
 			[response appendFormat:@"<tr><td>%@</td><td>%@</td><td align='right'>%@</td>", fileLink, fileDate, fileSize];
 			[logFileInfo release];
 		}
-		else
+		else if (isSubDirectory)
 		{
-			NSString *fileLink = [NSString stringWithFormat:@"<a href='http://%@%@/%@'>%@</a>", [request headerField:@"Host"],path, file,file];
-			
-			[response appendFormat:@"<tr><td>%@</td><td>&nbsp;</td><td align='right'>&nbsp;</td>", fileLink];
+			if (![subDirectories objectForKey:[[file pathComponents] objectAtIndex:0]])
+			{
+				NSString *zipLink = [NSString stringWithFormat:@"<a href='http://%@/?zipfile=%@/%@'>Download Zip</a>",[request headerField:@"Host"], path,[[file pathComponents] objectAtIndex:0]];
+				NSString *fileLink = [NSString stringWithFormat:@"<a href='http://%@%@/%@'>%@</a>", [request headerField:@"Host"],path, [[file pathComponents] objectAtIndex:0],[[file pathComponents] objectAtIndex:0]];
+				
+				[response appendFormat:@"<tr><td>%@</td><td>&nbsp;</td><td align='right'>%@</td>", fileLink,zipLink];
+				[subDirectories setObject:[[file pathComponents] objectAtIndex:0] forKey:[[file pathComponents] objectAtIndex:0]];
+			}
 		}
 	}
-	
+	[subDirectories release];
 	if (enumerator == nil)
 	{
 		return nil;
@@ -366,6 +377,16 @@
 								  nil];
 		[[NSNotificationCenter defaultCenter] postNotificationName:@"ddloglevel"
 															object:nil userInfo:userinfo];
+		return [[[HTTPDataResponse alloc] initWithData:data] autorelease];
+	}
+	else if ([path hasPrefix:@"/?zipfile"])
+	{
+		NSString *zipPath=[[[request url] relativeString] stringByReplacingOccurrencesOfString:@"/?zipfile=" withString:@""];
+		NSString *zipFullPath = [NSString stringWithFormat:@"%@%@/",[config.documentRoot stringByReplacingOccurrencesOfString:@"/Documents" withString:@""],zipPath];
+		NSLog(@"zipfile:%@",zipFullPath);
+		Objective_Zipper *zipper =[[Objective_Zipper alloc] init];
+		NSData *data =[zipper zip:zipFullPath];
+		[zipper release];
 		return [[[HTTPDataResponse alloc] initWithData:data] autorelease];
 	}
 	else

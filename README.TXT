@@ -12,19 +12,18 @@ Currently, it supports the following features:
 10.Restore the last view state of the youtube page whenever you start your application.
 11.View the downloaded list of videos as well as log files on http://<Device IP>:12345 on your desktop browser when your desktop and device are in the same/public network.
 12.Download videos from your device on your desktop.
-
+13.Create a downloadable zip on request from browser. 
+14.Go forward for webview.
 
 Following things remain to be done:
 
 //TODO:  
 1.	Create an adhoc network using gamekit over bluetooth 	
 	When a user connects to you, load a navigation controller with "Movies" 	Send a list of all MP4 files.Let the user select an MP4 and play MP4 on his device.  
-2.	Create a downloadable zip on request from browser.  See the not yet added Objective-Zip filer within components
 3.	Upload the zip file or the .attrib file to have export/import feature.  
 4.	Live stream of videos.  
 5.	App settings.  
-6.	YouTube sections like YouTube App.  
-7.	Go forward for webview.  
+6.	YouTube sections like YouTube App.    
 8.	Share video download link over email.   
 9.	Create WiFi hotspot, http live stream to other devices over browser.
-10.Option to user to re-download (if for some reason the last download was not done correctly) from the Suucessful/failed/paused/All states. Take user's choice what he/she wants to do (whether to start from the beginning or re-start download from last aged point).If user chooses to start from beginning, recalculate the file size and other headers.
+10.Option to user to re-download (if for some reason the last download was not done correctly) from the Sucessful/failed/paused/All states. Take user's choice what he/she wants to do (whether to start from the beginning or re-start download from last aged point).If user chooses to start from beginning, recalculate the file size and other headers.

@@ -27,6 +27,44 @@
 	}
 }
 
+-(NSData *)getImageForCell:(NSString *)fileTitle
+{
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	AVAsset *asset = [[AVURLAsset alloc] initWithURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@.mp4", [[paths objectAtIndex:0] stringByAppendingPathComponent:fileTitle]]] options:nil];
+	NSString *imagePath = [NSString stringWithFormat:@"%@.png", [[paths objectAtIndex:0] stringByAppendingPathComponent:fileTitle]];
+	
+	AVAssetImageGenerator *imageGenerator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+	
+	Float64 durationSeconds = CMTimeGetSeconds(asset.duration);
+	
+	CMTime midpoint = CMTimeMakeWithSeconds(durationSeconds / 2.0, 600);
+	CMTime actualTime;
+	
+	CGImageRef preImage = [imageGenerator copyCGImageAtTime:midpoint actualTime:&actualTime error:NULL];
+	NSData *data =nil;
+	if (preImage != NULL) {
+		CGRect rect = CGRectMake(0.0, 0.0,120.0,70.0 );//CGImageGetWidth(preImage) * 0.5, CGImageGetHeight(preImage) * 0.5);
+		
+		UIImage *image = [UIImage imageWithCGImage:preImage];
+		
+		UIGraphicsBeginImageContext(rect.size);
+		
+		[image drawInRect:rect];
+		
+		data = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+		
+		[fileManager createFileAtPath:imagePath contents:data attributes:nil];
+		
+		UIGraphicsEndImageContext();
+	}
+	
+	CGImageRelease(preImage);
+	[imageGenerator release];
+	[asset release];
+	return data;
+}
+
 #pragma mark -
 #pragma mark View lifecyle
 
@@ -94,10 +132,17 @@
 	[cell.textLabel setMinimumFontSize:14.0];
 	[cell.textLabel setAdjustsFontSizeToFitWidth:YES];
 	[cell.textLabel setText:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]];
-	[cell.detailTextLabel setText:[NSString stringWithFormat:@"%d:%02d", min, sec]];
-	[cell.imageView setImage:[UIImage imageWithContentsOfFile:imagePath]];
-	[cell.imageView setBounds:CGRectMake(0, 0, 120.0, 70.0)];
-	[cell.imageView sizeToFit];
+	[cell.detailTextLabel setText:[NSString stringWithFormat:@"%dm:%02ds", min, sec]];
+	if ([[NSFileManager defaultManager] fileExistsAtPath:imagePath])
+	{
+		[cell.imageView setImage:[UIImage imageWithContentsOfFile:imagePath]];
+	}
+	else
+	{
+		[cell.imageView setImage:[UIImage imageWithData:[self getImageForCell:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]]];
+	}
+//	[cell.imageView setBounds:CGRectMake(0, 0, 120.0, 70.0)];
+//	[cell.imageView sizeToFit];
     return cell;
 }
 

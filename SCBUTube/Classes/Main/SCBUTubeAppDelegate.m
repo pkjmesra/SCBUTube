@@ -2,6 +2,9 @@
 
 #import "SCBUTubeAppDelegate.h"
 #import "SCBUTubeViewController.h"
+#import "PJMasterViewController.h"
+
+#import "PJDetailViewController.h"
 
 #import "HTTPServer.h"
 #import "WebHTTPConnection.h"
@@ -15,7 +18,8 @@ int ddLogLevel;
 @implementation SCBUTubeAppDelegate
 
 @synthesize viewController, window;
-
+@synthesize navigationController = _navigationController;
+@synthesize splitViewController = _splitViewController;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -27,7 +31,27 @@ int ddLogLevel;
     // Override point for customization after application launch.
 	[self setupWebServer];
     // Add the view controller's view to the window and display.
-    [self.window addSubview:viewController.view];
+//    [self.window addSubview:viewController.view];
+//    [self.window makeKeyAndVisible];
+	self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    // Override point for customization after application launch.
+	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+	    PJMasterViewController *masterViewController = [[[PJMasterViewController alloc] initWithNibName:@"PJMasterViewController_iPhone" bundle:nil] autorelease];
+	    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+	    self.window.rootViewController = self.navigationController;
+	} else {
+	    PJMasterViewController *masterViewController = [[[PJMasterViewController alloc] initWithNibName:@"PJMasterViewController_iPad" bundle:nil] autorelease];
+	    UINavigationController *masterNavigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+	    
+	    PJDetailViewController *detailViewController = [[[PJDetailViewController alloc] initWithNibName:@"PJDetailViewController_iPad" bundle:nil] autorelease];
+	    UINavigationController *detailNavigationController = [[[UINavigationController alloc] initWithRootViewController:detailViewController] autorelease];
+		
+	    self.splitViewController = [[[UISplitViewController alloc] init] autorelease];
+	    self.splitViewController.delegate = detailViewController;
+	    self.splitViewController.viewControllers = [NSArray arrayWithObjects:masterNavigationController, detailNavigationController, nil];
+	    
+	    self.window.rootViewController = self.splitViewController;
+	}
     [self.window makeKeyAndVisible];
 	[UIApplication sharedApplication].idleTimerDisabled =YES;
     return YES;
@@ -39,8 +63,8 @@ int ddLogLevel;
      Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
      Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
      */
-	[viewController pauseAll];
-	[viewController saveLastViewState];
+//	[viewController pauseAll];
+//	[viewController saveLastViewState];
 }
 
 
@@ -77,7 +101,7 @@ int ddLogLevel;
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
-	[viewController pauseAll];
+//	[viewController pauseAll];
 }
 
 
@@ -94,6 +118,8 @@ int ddLogLevel;
 - (void)dealloc {
     [viewController release];
     [window release];
+	[_navigationController release];
+	[_splitViewController release];
     [super dealloc];
 }
 

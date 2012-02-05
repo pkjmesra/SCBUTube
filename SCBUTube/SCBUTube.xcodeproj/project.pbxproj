@@ -22,6 +22,12 @@
 		E32B216014BE84E8005EBF49 /* jquery-1.4.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = E32B215614BE84BF005EBF49 /* jquery-1.4.2.min.js */; };
 		E32B217814BE874A005EBF49 /* WebHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E32B217714BE874A005EBF49 /* WebHTTPConnection.m */; };
 		E32B21AF14BE8FB9005EBF49 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32B21AE14BE8FB9005EBF49 /* CFNetwork.framework */; };
+		E33D7A4F14DD48D50063B80E /* PJDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33D7A4C14DD48D50063B80E /* PJDetailViewController.m */; };
+		E33D7A5014DD48D50063B80E /* PJMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E33D7A4E14DD48D50063B80E /* PJMasterViewController.m */; };
+		E33D7A5514DD48E80063B80E /* PJDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33D7A5114DD48E80063B80E /* PJDetailViewController_iPad.xib */; };
+		E33D7A5614DD48E80063B80E /* PJDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33D7A5214DD48E80063B80E /* PJDetailViewController_iPhone.xib */; };
+		E33D7A5714DD48E80063B80E /* PJMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33D7A5314DD48E80063B80E /* PJMasterViewController_iPad.xib */; };
+		E33D7A5814DD48E80063B80E /* PJMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33D7A5414DD48E80063B80E /* PJMasterViewController_iPhone.xib */; };
 		E3847CB114C9964100E8B5A7 /* DownloadQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3847CAC14C9964100E8B5A7 /* DownloadQViewController.m */; };
 		E3847CB214C9964100E8B5A7 /* DownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3847CAE14C9964100E8B5A7 /* DownloadsViewController.m */; };
 		E3847CB314C9964100E8B5A7 /* SCBUTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3847CB014C9964100E8B5A7 /* SCBUTubeViewController.m */; };
@@ -53,9 +59,30 @@
 		E3847D0814C99CD800E8B5A7 /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = E3847D0714C99CD800E8B5A7 /* forward.png */; };
 		E3847D0E14C99CE900E8B5A7 /* DownloadQueue.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3847D0A14C99CE900E8B5A7 /* DownloadQueue.xib */; };
 		E3847D0F14C99CE900E8B5A7 /* Downloads.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3847D0B14C99CE900E8B5A7 /* Downloads.xib */; };
-		E3847D1014C99CE900E8B5A7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3847D0C14C99CE900E8B5A7 /* MainWindow.xib */; };
 		E3847D1114C99CE900E8B5A7 /* MyTubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3847D0D14C99CE900E8B5A7 /* MyTubeViewController.xib */; };
 		E3847D1314C99FB300E8B5A7 /* downloadqueue.png in Resources */ = {isa = PBXBuildFile; fileRef = E3847D1214C99FB300E8B5A7 /* downloadqueue.png */; };
+		E3E646EB14DC2FBE00C23718 /* Objective_Zipper.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E646AF14DC2FBE00C23718 /* Objective_Zipper.m */; };
+		E3E646EF14DC2FBE00C23718 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646B514DC2FBE00C23718 /* ioapi.c */; };
+		E3E646F014DC2FBE00C23718 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646B714DC2FBE00C23718 /* mztools.c */; };
+		E3E646F114DC2FBE00C23718 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646B914DC2FBE00C23718 /* unzip.c */; };
+		E3E646F214DC2FBE00C23718 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646BB14DC2FBE00C23718 /* zip.c */; };
+		E3E646F314DC2FBE00C23718 /* FileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E646BF14DC2FBE00C23718 /* FileInZipInfo.m */; };
+		E3E646F414DC2FBE00C23718 /* ZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E646C114DC2FBE00C23718 /* ZipException.m */; };
+		E3E646F514DC2FBE00C23718 /* ZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E646C314DC2FBE00C23718 /* ZipFile.m */; };
+		E3E646F614DC2FBE00C23718 /* ZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E646C514DC2FBE00C23718 /* ZipReadStream.m */; };
+		E3E646F714DC2FBE00C23718 /* ZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E646C714DC2FBE00C23718 /* ZipWriteStream.m */; };
+		E3E646FB14DC2FBE00C23718 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646D014DC2FBE00C23718 /* adler32.c */; };
+		E3E646FC14DC2FBE00C23718 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646D114DC2FBE00C23718 /* compress.c */; };
+		E3E646FD14DC2FBE00C23718 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646D214DC2FBE00C23718 /* crc32.c */; };
+		E3E646FE14DC2FBE00C23718 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646D414DC2FBE00C23718 /* deflate.c */; };
+		E3E646FF14DC2FBE00C23718 /* gzio.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646D614DC2FBE00C23718 /* gzio.c */; };
+		E3E6470014DC2FBE00C23718 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646D714DC2FBE00C23718 /* infback.c */; };
+		E3E6470114DC2FBE00C23718 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646D814DC2FBE00C23718 /* inffast.c */; };
+		E3E6470214DC2FBE00C23718 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646DB14DC2FBE00C23718 /* inflate.c */; };
+		E3E6470314DC2FBE00C23718 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646DD14DC2FBE00C23718 /* inftrees.c */; };
+		E3E6470414DC2FBE00C23718 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646DF14DC2FBE00C23718 /* trees.c */; };
+		E3E6470514DC2FBE00C23718 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646E114DC2FBE00C23718 /* uncompr.c */; };
+		E3E6470614DC2FBE00C23718 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = E3E646E414DC2FBE00C23718 /* zutil.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +127,14 @@
 		E32B217614BE874A005EBF49 /* WebHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebHTTPConnection.h; sourceTree = "<group>"; };
 		E32B217714BE874A005EBF49 /* WebHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebHTTPConnection.m; sourceTree = "<group>"; };
 		E32B21AE14BE8FB9005EBF49 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E33D7A4B14DD48D50063B80E /* PJDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJDetailViewController.h; sourceTree = "<group>"; };
+		E33D7A4C14DD48D50063B80E /* PJDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJDetailViewController.m; sourceTree = "<group>"; };
+		E33D7A4D14DD48D50063B80E /* PJMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJMasterViewController.h; sourceTree = "<group>"; };
+		E33D7A4E14DD48D50063B80E /* PJMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJMasterViewController.m; sourceTree = "<group>"; };
+		E33D7A5114DD48E80063B80E /* PJDetailViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PJDetailViewController_iPad.xib; sourceTree = "<group>"; };
+		E33D7A5214DD48E80063B80E /* PJDetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PJDetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		E33D7A5314DD48E80063B80E /* PJMasterViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PJMasterViewController_iPad.xib; sourceTree = "<group>"; };
+		E33D7A5414DD48E80063B80E /* PJMasterViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PJMasterViewController_iPhone.xib; sourceTree = "<group>"; };
 		E3847CAB14C9964100E8B5A7 /* DownloadQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadQViewController.h; sourceTree = "<group>"; };
 		E3847CAC14C9964100E8B5A7 /* DownloadQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadQViewController.m; sourceTree = "<group>"; };
 		E3847CAD14C9964100E8B5A7 /* DownloadsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadsViewController.h; sourceTree = "<group>"; };
@@ -141,9 +176,51 @@
 		E3847D0714C99CD800E8B5A7 /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
 		E3847D0A14C99CE900E8B5A7 /* DownloadQueue.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadQueue.xib; sourceTree = "<group>"; };
 		E3847D0B14C99CE900E8B5A7 /* Downloads.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Downloads.xib; sourceTree = "<group>"; };
-		E3847D0C14C99CE900E8B5A7 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		E3847D0D14C99CE900E8B5A7 /* MyTubeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTubeViewController.xib; sourceTree = "<group>"; };
 		E3847D1214C99FB300E8B5A7 /* downloadqueue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downloadqueue.png; sourceTree = "<group>"; };
+		E3E646AE14DC2FBE00C23718 /* Objective_Zipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objective_Zipper.h; sourceTree = "<group>"; };
+		E3E646AF14DC2FBE00C23718 /* Objective_Zipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objective_Zipper.m; sourceTree = "<group>"; };
+		E3E646B414DC2FBE00C23718 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		E3E646B514DC2FBE00C23718 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		E3E646B614DC2FBE00C23718 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		E3E646B714DC2FBE00C23718 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		E3E646B814DC2FBE00C23718 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		E3E646B914DC2FBE00C23718 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		E3E646BA14DC2FBE00C23718 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		E3E646BB14DC2FBE00C23718 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		E3E646BC14DC2FBE00C23718 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		E3E646BE14DC2FBE00C23718 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInZipInfo.h; sourceTree = "<group>"; };
+		E3E646BF14DC2FBE00C23718 /* FileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInZipInfo.m; sourceTree = "<group>"; };
+		E3E646C014DC2FBE00C23718 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipException.h; sourceTree = "<group>"; };
+		E3E646C114DC2FBE00C23718 /* ZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipException.m; sourceTree = "<group>"; };
+		E3E646C214DC2FBE00C23718 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFile.h; sourceTree = "<group>"; };
+		E3E646C314DC2FBE00C23718 /* ZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipFile.m; sourceTree = "<group>"; };
+		E3E646C414DC2FBE00C23718 /* ZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipReadStream.h; sourceTree = "<group>"; };
+		E3E646C514DC2FBE00C23718 /* ZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipReadStream.m; sourceTree = "<group>"; };
+		E3E646C614DC2FBE00C23718 /* ZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipWriteStream.h; sourceTree = "<group>"; };
+		E3E646C714DC2FBE00C23718 /* ZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipWriteStream.m; sourceTree = "<group>"; };
+		E3E646D014DC2FBE00C23718 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		E3E646D114DC2FBE00C23718 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		E3E646D214DC2FBE00C23718 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		E3E646D314DC2FBE00C23718 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		E3E646D414DC2FBE00C23718 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		E3E646D514DC2FBE00C23718 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		E3E646D614DC2FBE00C23718 /* gzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzio.c; sourceTree = "<group>"; };
+		E3E646D714DC2FBE00C23718 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		E3E646D814DC2FBE00C23718 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		E3E646D914DC2FBE00C23718 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		E3E646DA14DC2FBE00C23718 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		E3E646DB14DC2FBE00C23718 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		E3E646DC14DC2FBE00C23718 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		E3E646DD14DC2FBE00C23718 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		E3E646DE14DC2FBE00C23718 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		E3E646DF14DC2FBE00C23718 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		E3E646E014DC2FBE00C23718 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		E3E646E114DC2FBE00C23718 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		E3E646E214DC2FBE00C23718 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		E3E646E314DC2FBE00C23718 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		E3E646E414DC2FBE00C23718 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		E3E646E514DC2FBE00C23718 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +264,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E3E646AA14DC2FBE00C23718 /* Objective-Zip */,
 				E32B217514BE874A005EBF49 /* Connection */,
 				E32B214614BE84BF005EBF49 /* CommonLogTemplates */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -316,6 +394,10 @@
 		E3847CBE14C9965600E8B5A7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E33D7A4B14DD48D50063B80E /* PJDetailViewController.h */,
+				E33D7A4C14DD48D50063B80E /* PJDetailViewController.m */,
+				E33D7A4D14DD48D50063B80E /* PJMasterViewController.h */,
+				E33D7A4E14DD48D50063B80E /* PJMasterViewController.m */,
 				E3847CBF14C9965600E8B5A7 /* SCBUTubeAppDelegate.h */,
 				E3847CC014C9965600E8B5A7 /* SCBUTubeAppDelegate.m */,
 			);
@@ -394,12 +476,98 @@
 		E3847D0914C99CE900E8B5A7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E33D7A5114DD48E80063B80E /* PJDetailViewController_iPad.xib */,
+				E33D7A5214DD48E80063B80E /* PJDetailViewController_iPhone.xib */,
+				E33D7A5314DD48E80063B80E /* PJMasterViewController_iPad.xib */,
+				E33D7A5414DD48E80063B80E /* PJMasterViewController_iPhone.xib */,
 				E3847D0A14C99CE900E8B5A7 /* DownloadQueue.xib */,
 				E3847D0B14C99CE900E8B5A7 /* Downloads.xib */,
-				E3847D0C14C99CE900E8B5A7 /* MainWindow.xib */,
 				E3847D0D14C99CE900E8B5A7 /* MyTubeViewController.xib */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		E3E646AA14DC2FBE00C23718 /* Objective-Zip */ = {
+			isa = PBXGroup;
+			children = (
+				E3E646AB14DC2FBE00C23718 /* Classes */,
+				E3E646B314DC2FBE00C23718 /* MiniZip */,
+				E3E646BD14DC2FBE00C23718 /* Objective-Zip */,
+				E3E646CF14DC2FBE00C23718 /* ZLib */,
+			);
+			name = "Objective-Zip";
+			path = "Components/Objective-Zip";
+			sourceTree = "<group>";
+		};
+		E3E646AB14DC2FBE00C23718 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E3E646AE14DC2FBE00C23718 /* Objective_Zipper.h */,
+				E3E646AF14DC2FBE00C23718 /* Objective_Zipper.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E3E646B314DC2FBE00C23718 /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				E3E646B414DC2FBE00C23718 /* crypt.h */,
+				E3E646B514DC2FBE00C23718 /* ioapi.c */,
+				E3E646B614DC2FBE00C23718 /* ioapi.h */,
+				E3E646B714DC2FBE00C23718 /* mztools.c */,
+				E3E646B814DC2FBE00C23718 /* mztools.h */,
+				E3E646B914DC2FBE00C23718 /* unzip.c */,
+				E3E646BA14DC2FBE00C23718 /* unzip.h */,
+				E3E646BB14DC2FBE00C23718 /* zip.c */,
+				E3E646BC14DC2FBE00C23718 /* zip.h */,
+			);
+			path = MiniZip;
+			sourceTree = "<group>";
+		};
+		E3E646BD14DC2FBE00C23718 /* Objective-Zip */ = {
+			isa = PBXGroup;
+			children = (
+				E3E646BE14DC2FBE00C23718 /* FileInZipInfo.h */,
+				E3E646BF14DC2FBE00C23718 /* FileInZipInfo.m */,
+				E3E646C014DC2FBE00C23718 /* ZipException.h */,
+				E3E646C114DC2FBE00C23718 /* ZipException.m */,
+				E3E646C214DC2FBE00C23718 /* ZipFile.h */,
+				E3E646C314DC2FBE00C23718 /* ZipFile.m */,
+				E3E646C414DC2FBE00C23718 /* ZipReadStream.h */,
+				E3E646C514DC2FBE00C23718 /* ZipReadStream.m */,
+				E3E646C614DC2FBE00C23718 /* ZipWriteStream.h */,
+				E3E646C714DC2FBE00C23718 /* ZipWriteStream.m */,
+			);
+			path = "Objective-Zip";
+			sourceTree = "<group>";
+		};
+		E3E646CF14DC2FBE00C23718 /* ZLib */ = {
+			isa = PBXGroup;
+			children = (
+				E3E646D014DC2FBE00C23718 /* adler32.c */,
+				E3E646D114DC2FBE00C23718 /* compress.c */,
+				E3E646D214DC2FBE00C23718 /* crc32.c */,
+				E3E646D314DC2FBE00C23718 /* crc32.h */,
+				E3E646D414DC2FBE00C23718 /* deflate.c */,
+				E3E646D514DC2FBE00C23718 /* deflate.h */,
+				E3E646D614DC2FBE00C23718 /* gzio.c */,
+				E3E646D714DC2FBE00C23718 /* infback.c */,
+				E3E646D814DC2FBE00C23718 /* inffast.c */,
+				E3E646D914DC2FBE00C23718 /* inffast.h */,
+				E3E646DA14DC2FBE00C23718 /* inffixed.h */,
+				E3E646DB14DC2FBE00C23718 /* inflate.c */,
+				E3E646DC14DC2FBE00C23718 /* inflate.h */,
+				E3E646DD14DC2FBE00C23718 /* inftrees.c */,
+				E3E646DE14DC2FBE00C23718 /* inftrees.h */,
+				E3E646DF14DC2FBE00C23718 /* trees.c */,
+				E3E646E014DC2FBE00C23718 /* trees.h */,
+				E3E646E114DC2FBE00C23718 /* uncompr.c */,
+				E3E646E214DC2FBE00C23718 /* zconf.h */,
+				E3E646E314DC2FBE00C23718 /* zlib.h */,
+				E3E646E414DC2FBE00C23718 /* zutil.c */,
+				E3E646E514DC2FBE00C23718 /* zutil.h */,
+			);
+			path = ZLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,9 +665,12 @@
 				E3847D0814C99CD800E8B5A7 /* forward.png in Resources */,
 				E3847D0E14C99CE900E8B5A7 /* DownloadQueue.xib in Resources */,
 				E3847D0F14C99CE900E8B5A7 /* Downloads.xib in Resources */,
-				E3847D1014C99CE900E8B5A7 /* MainWindow.xib in Resources */,
 				E3847D1114C99CE900E8B5A7 /* MyTubeViewController.xib in Resources */,
 				E3847D1314C99FB300E8B5A7 /* downloadqueue.png in Resources */,
+				E33D7A5514DD48E80063B80E /* PJDetailViewController_iPad.xib in Resources */,
+				E33D7A5614DD48E80063B80E /* PJDetailViewController_iPhone.xib in Resources */,
+				E33D7A5714DD48E80063B80E /* PJMasterViewController_iPad.xib in Resources */,
+				E33D7A5814DD48E80063B80E /* PJMasterViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +693,30 @@
 				E3847CC114C9965600E8B5A7 /* SCBUTubeAppDelegate.m in Sources */,
 				E3847CC514C9966100E8B5A7 /* SlideToCancelViewController.m in Sources */,
 				E3847CF214C996B200E8B5A7 /* main.m in Sources */,
+				E3E646EB14DC2FBE00C23718 /* Objective_Zipper.m in Sources */,
+				E3E646EF14DC2FBE00C23718 /* ioapi.c in Sources */,
+				E3E646F014DC2FBE00C23718 /* mztools.c in Sources */,
+				E3E646F114DC2FBE00C23718 /* unzip.c in Sources */,
+				E3E646F214DC2FBE00C23718 /* zip.c in Sources */,
+				E3E646F314DC2FBE00C23718 /* FileInZipInfo.m in Sources */,
+				E3E646F414DC2FBE00C23718 /* ZipException.m in Sources */,
+				E3E646F514DC2FBE00C23718 /* ZipFile.m in Sources */,
+				E3E646F614DC2FBE00C23718 /* ZipReadStream.m in Sources */,
+				E3E646F714DC2FBE00C23718 /* ZipWriteStream.m in Sources */,
+				E3E646FB14DC2FBE00C23718 /* adler32.c in Sources */,
+				E3E646FC14DC2FBE00C23718 /* compress.c in Sources */,
+				E3E646FD14DC2FBE00C23718 /* crc32.c in Sources */,
+				E3E646FE14DC2FBE00C23718 /* deflate.c in Sources */,
+				E3E646FF14DC2FBE00C23718 /* gzio.c in Sources */,
+				E3E6470014DC2FBE00C23718 /* infback.c in Sources */,
+				E3E6470114DC2FBE00C23718 /* inffast.c in Sources */,
+				E3E6470214DC2FBE00C23718 /* inflate.c in Sources */,
+				E3E6470314DC2FBE00C23718 /* inftrees.c in Sources */,
+				E3E6470414DC2FBE00C23718 /* trees.c in Sources */,
+				E3E6470514DC2FBE00C23718 /* uncompr.c in Sources */,
+				E3E6470614DC2FBE00C23718 /* zutil.c in Sources */,
+				E33D7A4F14DD48D50063B80E /* PJDetailViewController.m in Sources */,
+				E33D7A5014DD48D50063B80E /* PJMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

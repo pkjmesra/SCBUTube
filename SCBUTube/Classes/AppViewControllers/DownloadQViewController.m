@@ -143,6 +143,44 @@
     return cell;
 }
 
+-(NSData *)getImageForCell:(NSString *)fileTitle
+{
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	AVAsset *asset = [[AVURLAsset alloc] initWithURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@.paused", [[paths objectAtIndex:0] stringByAppendingPathComponent:fileTitle]]] options:nil];
+	NSString *imagePath = [NSString stringWithFormat:@"%@.png", [[paths objectAtIndex:0] stringByAppendingPathComponent:fileTitle]];
+	
+	AVAssetImageGenerator *imageGenerator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+	
+	Float64 durationSeconds = CMTimeGetSeconds(asset.duration);
+	
+	CMTime midpoint = CMTimeMakeWithSeconds(durationSeconds / 2.0, 600);
+	CMTime actualTime;
+	
+	CGImageRef preImage = [imageGenerator copyCGImageAtTime:midpoint actualTime:&actualTime error:NULL];
+	NSData *data =nil;
+	if (preImage != NULL) {
+		CGRect rect = CGRectMake(0.0, 0.0,120.0,70.0 );//CGImageGetWidth(preImage) * 0.5, CGImageGetHeight(preImage) * 0.5);
+		
+		UIImage *image = [UIImage imageWithCGImage:preImage];
+		
+		UIGraphicsBeginImageContext(rect.size);
+		
+		[image drawInRect:rect];
+		
+		data = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+		
+		[fileManager createFileAtPath:imagePath contents:data attributes:nil];
+		
+		UIGraphicsEndImageContext();
+	}
+	
+	CGImageRelease(preImage);
+	[imageGenerator release];
+	[asset release];
+	return data;
+}
+
 -(NSString *) niceSize:(long long)sizeInBytes
 {
 	NSNumberFormatter *nf = [[[NSNumberFormatter alloc] init] autorelease];

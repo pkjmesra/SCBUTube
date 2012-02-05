@@ -33,14 +33,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Objective_ZipViewController : UIViewController {
-	IBOutlet UITextView *_textView;
+@interface Objective_Zipper : NSObject {
 
 @private
 	NSThread *_testThread;
 }
 
-- (IBAction) zipUnzip;
+- (NSData *) zip:(NSString *)path;
+- (void) unZip:(NSString *)path;
 
 - (void) test;
 - (void) log:(NSString *)text;
