@@ -20,15 +20,17 @@ Following things remain to be done:
 //TODO:  
 1.	Create an adhoc network using gamekit over bluetooth -Done	
 	When a user connects to you, load a navigation controller with "Movies".
-	Send a list of all MP4 files.Let the user select an MP4 and play MP4 on his device.  
+	Send a list of all MP4 files.Let the user select an MP4 and play MP4 
+	on his device.  
 3.	Upload the zip file or the .attrib file to have export/import feature.  
 4.	Live stream of videos.  
 5.	App settings.  
 6.	YouTube sections like YouTube App.    
 8.	Share video download link over email.   
 9.	Create WiFi hotspot, http live stream to other devices over browser.
-10.	Option to user to re-download (if for some reason the last download was not done 
-	correctly) from the Successful/failed/paused/All states. Take user's choice what 
-	he/she wants to do (whether to start from the beginning or re-start download from 
-	last aged point).If user chooses to start from beginning, recalculate the file 	
-	size and other headers.
+10.	Option to user to re-download (if for some reason the last download 
+	was not done correctly) from the Successful/failed/paused/All 
+	states. Take user's choice what he/she wants to do (whether to 
+	start from the beginning or re-start download from last aged 
+	point).If user chooses to start from beginning, recalculate 
+	the file size and other headers.
