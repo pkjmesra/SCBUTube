@@ -1,0 +1,363 @@
+TCocoaLumberjack
+v7
+r0
+t350124574.878743
+cCheck dependencies
+cProcessPCH /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch.gch CocoaLumberjack-Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDAbstractDatabaseLogger.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDASLLogger.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDFileLogger.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDLog.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDTTYLogger.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLibtool /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/libCocoaLumberjack.a normal i386
+cCpHeader build/Debug-iphonesimulator/usr/local/include/DDAbstractDatabaseLogger.h Lumberjack/DDAbstractDatabaseLogger.h
+cCpHeader build/Debug-iphonesimulator/usr/local/include/DDASLLogger.h Lumberjack/DDASLLogger.h
+cCpHeader build/Debug-iphonesimulator/usr/local/include/DDFileLogger.h Lumberjack/DDFileLogger.h
+cCpHeader build/Debug-iphonesimulator/usr/local/include/DDLog.h Lumberjack/DDLog.h
+cCpHeader build/Debug-iphonesimulator/usr/local/include/DDTTYLogger.h Lumberjack/DDTTYLogger.h
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/CocoaLumberjack-Prefix.pch
+c000000004EF14FF100000000000000AB
+t1324437489
+s171
+i<Foundation/Foundation.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.h
+c000000004E7087BC0000000000000491
+t1315997628
+s1169
+i<Foundation/Foundation.h>
+i<asl.h>
+i"DDLog.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.m
+c000000004E7087BC000000000000076D
+t1315997628
+s1901
+i"DDASLLogger.h"
+i<libkern/OSAtomic.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.h
+c000000004E7087BC0000000000000E74
+t1315997628
+s3700
+i<Foundation/Foundation.h>
+i"DDLog.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.m
+c000000004E7087BC00000000000034E2
+t1315997628
+s13538
+i"DDAbstractDatabaseLogger.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.h
+c000000004F01AB3F0000000000002894
+t1325509439
+s10388
+i<Foundation/Foundation.h>
+i"DDLog.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.m
+c000000004F01AB3F0000000000009BA1
+t1325509439
+s39841
+i"DDFileLogger.h"
+i<unistd.h>
+i<sys/attr.h>
+i<sys/xattr.h>
+i<libkern/OSAtomic.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.h
+c000000004F02A9A40000000000005539
+t1325574564
+s21817
+i<Foundation/Foundation.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.m
+c000000004E7087BC0000000000009F9E
+t1315997628
+s40862
+i"DDLog.h"
+i<pthread.h>
+i<objc/runtime.h>
+i<mach/mach_host.h>
+i<mach/host_info.h>
+i<libkern/OSAtomic.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.h
+c000000004E7087BC000000000000056B
+t1315997628
+s1387
+i<Foundation/Foundation.h>
+i"DDLog.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.m
+c000000004E7087BC0000000000000F28
+t1315997628
+s3880
+i"DDTTYLogger.h"
+i<unistd.h>
+i<sys/uio.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/CocoaLumberjack.LinkFileList
+c000000004F2E429A00000000000003A5
+t1328431770
+s933
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDASLLogger.o
+t1328431773
+s13500
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDAbstractDatabaseLogger.o
+t1328431773
+s60096
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDFileLogger.o
+t1328431773
+s96032
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDLog.o
+t1328431774
+s73984
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDTTYLogger.o
+t1328431774
+s19716
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/libCocoaLumberjack.a
+t1328431774
+s268416
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include/DDASLLogger.h
+t1328431774
+s1169
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include/DDAbstractDatabaseLogger.h
+t1328431774
+s3700
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include/DDFileLogger.h
+t1328431774
+s10388
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include/DDLog.h
+t1328431774
+s21817
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include/DDTTYLogger.h
+t1328431774
+s1387
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/asl.h
+c000000004CB3E486000000000000359D
+t1286857862
+s13725
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/libkern/OSAtomic.h
+c000000004CB3E4860000000000002519
+t1286857862
+s9497
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/mach/host_info.h
+c000000004CBFACAC0000000000001E6B
+t1287629996
+s7787
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/mach/mach_host.h
+c000000004A73D4540000000000004F74
+t1249104980
+s20340
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/objc/runtime.h
+c000000004CB9357000000000000053F9
+t1287206256
+s21497
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/pthread.h
+c000000004CB3E48600000000000038F0
+t1286857862
+s14576
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sys/attr.h
+c000000004CBFACAA0000000000004308
+t1287629994
+s17160
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sys/uio.h
+c000000004CBFACAC0000000000001126
+t1287629996
+s4390
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sys/xattr.h
+c000000004CBFACAD0000000000000BCB
+t1287629997
+s3019
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/unistd.h
+c000000004CB3E486000000000000563E
+t1286857862
+s22078
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/libz.dylib
+c000000004CC109C300000000000123B0
+t1287719363
+s74672
+
+N/var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch.gch
+t1328431773
+s10538608
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies350124570#350124570#0(0"0(0#1#0"17252297472#0"0#
+
+CCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDASLLogger.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s350124573.122944
+e350124573.480564
+r1
+xCompileC
+xbuild/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDASLLogger.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.m350124573#350124573#0(0"0(0#0#103"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.m4459544208#2532"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.m -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDASLLogger.o0#
+
+CCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDAbstractDatabaseLogger.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s350124573.121625
+e350124573.618304
+r1
+xCompileC
+xbuild/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDAbstractDatabaseLogger.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@124"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.m350124573#350124573#0(0"0(0#0#116"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.m4459544208#2558"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.m -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDAbstractDatabaseLogger.o0#
+
+CCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDFileLogger.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s350124573.480664
+e350124573.960607
+r1
+xCompileC
+xbuild/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDFileLogger.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@112"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.m350124573#350124573#0(0"0(0#0#104"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.m4459544208#2534"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.m -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDFileLogger.o0#
+
+CCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDLog.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s350124573.618408
+e350124574.538769
+r1
+xCompileC
+xbuild/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDLog.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@105"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.m350124573#350124574#0(0"0(0#0#97"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.m4459544208#2520"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.m -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDLog.o0#
+
+CCompileC build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDTTYLogger.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s350124573.960702
+e350124574.085153
+r1
+xCompileC
+xbuild/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDTTYLogger.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@111"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.m350124573#350124574#0(0"0(0#0#103"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.m4459544208#2532"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.m -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/DDTTYLogger.o0#
+
+CCpHeader build/Debug-iphonesimulator/usr/local/include/DDASLLogger.h Lumberjack/DDASLLogger.h
+s350124574.798447
+e350124574.877897
+r1
+xCpHeader
+xbuild/Debug-iphonesimulator/usr/local/include/DDASLLogger.h
+xLumberjack/DDASLLogger.h
+lSLF07#2@29"Copy Lumberjack/DDASLLogger.h350124574#350124574#0(0"0(0#0#103"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.h4459544208#596"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDASLLogger.h /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include0#
+
+CCpHeader build/Debug-iphonesimulator/usr/local/include/DDAbstractDatabaseLogger.h Lumberjack/DDAbstractDatabaseLogger.h
+s350124574.797365
+e350124574.878694
+r1
+xCpHeader
+xbuild/Debug-iphonesimulator/usr/local/include/DDAbstractDatabaseLogger.h
+xLumberjack/DDAbstractDatabaseLogger.h
+lSLF07#2@42"Copy Lumberjack/DDAbstractDatabaseLogger.h350124574#350124574#0(0"0(0#0#116"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.h4459544208#609"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDAbstractDatabaseLogger.h /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include0#
+
+CCpHeader build/Debug-iphonesimulator/usr/local/include/DDFileLogger.h Lumberjack/DDFileLogger.h
+s350124574.799140
+e350124574.876185
+r1
+xCpHeader
+xbuild/Debug-iphonesimulator/usr/local/include/DDFileLogger.h
+xLumberjack/DDFileLogger.h
+lSLF07#2@30"Copy Lumberjack/DDFileLogger.h350124574#350124574#0(0"0(0#0#104"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.h4459544208#597"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDFileLogger.h /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include0#
+
+CCpHeader build/Debug-iphonesimulator/usr/local/include/DDLog.h Lumberjack/DDLog.h
+s350124574.799828
+e350124574.877140
+r1
+xCpHeader
+xbuild/Debug-iphonesimulator/usr/local/include/DDLog.h
+xLumberjack/DDLog.h
+lSLF07#2@23"Copy Lumberjack/DDLog.h350124574#350124574#0(0"0(0#0#97"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.h4459544208#590"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDLog.h /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include0#
+
+CCpHeader build/Debug-iphonesimulator/usr/local/include/DDTTYLogger.h Lumberjack/DDTTYLogger.h
+s350124574.800510
+e350124574.877742
+r1
+xCpHeader
+xbuild/Debug-iphonesimulator/usr/local/include/DDTTYLogger.h
+xLumberjack/DDTTYLogger.h
+lSLF07#2@29"Copy Lumberjack/DDTTYLogger.h350124574#350124574#0(0"0(0#0#103"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.h4459544208#596"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/Lumberjack/DDTTYLogger.h /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/usr/local/include0#
+
+CLibtool /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/libCocoaLumberjack.a normal i386
+s350124574.538882
+e350124574.797221
+r1
+xLibtool
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/libCocoaLumberjack.a
+xnormal
+xi386
+o/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+o/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: file: /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/libz.dylib is a dynamic library, not added to the static library
+lSLF07#2@68"Libtool build/Debug-iphonesimulator/libCocoaLumberjack.a normal i386350124574#350124574#0(360"/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: file: /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/libz.dylib is a dynamic library, not added to the static library0(0#0#0"4459544208#1015"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator -filelist /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/Objects-normal/i386/CocoaLumberjack.LinkFileList -ObjC /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/libz.dylib -framework Foundation -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/libCocoaLumberjack.a0#
+
+CProcessPCH /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch.gch CocoaLumberjack-Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s350124570.892061
+e350124573.121455
+r1
+xProcessPCH
+x/var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch.gch
+xCocoaLumberjack-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@37"Precompile CocoaLumberjack-Prefix.pch350124570#350124573#0(0"0(0#0#105"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/CocoaLumberjack-Prefix.pch17251421952#2351"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wmissing-prototypes -Wreturn-type -Wunused-variable -DDEBUG=1 -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/CocoaLumberjack-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/build/CocoaLumberjack.build/Debug-iphonesimulator/CocoaLumberjack.build/DerivedSources -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaLumberjack/CocoaLumberjack-Prefix.pch -o /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaLumberjack-Prefix-cnldioubkhoqazeklxrqxqwdeenm/CocoaLumberjack-Prefix.pch.gch0#
+

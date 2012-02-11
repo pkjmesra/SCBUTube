@@ -28,6 +28,35 @@
 		E33D7A5614DD48E80063B80E /* PJDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33D7A5214DD48E80063B80E /* PJDetailViewController_iPhone.xib */; };
 		E33D7A5714DD48E80063B80E /* PJMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33D7A5314DD48E80063B80E /* PJMasterViewController_iPad.xib */; };
 		E33D7A5814DD48E80063B80E /* PJMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33D7A5414DD48E80063B80E /* PJMasterViewController_iPhone.xib */; };
+		E37A1BAE14DE53F1004D24EA /* PJMasterYTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BAD14DE53F1004D24EA /* PJMasterYTViewController.m */; };
+		E37A1BF214DE663F004D24EA /* ARAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BB314DE663F004D24EA /* ARAnnotations.m */; };
+		E37A1BF314DE663F004D24EA /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BB514DE663F004D24EA /* ARCoordinate.m */; };
+		E37A1BF414DE663F004D24EA /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BB714DE663F004D24EA /* ARGeoCoordinate.m */; };
+		E37A1BF514DE663F004D24EA /* ARGeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BB914DE663F004D24EA /* ARGeoViewController.m */; };
+		E37A1BF614DE663F004D24EA /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BBB14DE663F004D24EA /* ARViewController.m */; };
+		E37A1BF714DE663F004D24EA /* LAAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BBD14DE663F004D24EA /* LAAnnotation.m */; };
+		E37A1BF814DE663F004D24EA /* LACircle.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BBF14DE663F004D24EA /* LACircle.m */; };
+		E37A1BF914DE663F004D24EA /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BC314DE663F004D24EA /* Camera.m */; };
+		E37A1BFA14DE663F004D24EA /* PictureInPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BC614DE663F004D24EA /* PictureInPictureViewController.m */; };
+		E37A1BFB14DE663F004D24EA /* CollaborationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BC914DE663F004D24EA /* CollaborationView.m */; };
+		E37A1BFC14DE663F004D24EA /* AppLogFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BCC14DE663F004D24EA /* AppLogFileResponse.m */; };
+		E37A1BFD14DE663F004D24EA /* MyCustomHTTPResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BCE14DE663F004D24EA /* MyCustomHTTPResponseHandler.m */; };
+		E37A1BFE14DE663F004D24EA /* MyCustomHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BD014DE663F004D24EA /* MyCustomHTTPServer.m */; };
+		E37A1BFF14DE663F004D24EA /* PeerLobbyController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BD414DE663F004D24EA /* PeerLobbyController.m */; };
+		E37A1C0014DE663F004D24EA /* UIWindowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BD814DE663F004D24EA /* UIWindowAdditions.m */; };
+		E37A1C0114DE663F004D24EA /* LoggerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BDB14DE663F004D24EA /* LoggerAppDelegate.m */; };
+		E37A1C0214DE663F004D24EA /* LoggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BDE14DE663F004D24EA /* LoggerViewController.m */; };
+		E37A1C0314DE663F004D24EA /* videoFrameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BE114DE663F004D24EA /* videoFrameManager.m */; };
+		E37A1C0514DE663F004D24EA /* PeerVoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BE614DE663F004D24EA /* PeerVoiceController.m */; };
+		E37A1C0614DE663F004D24EA /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E37A1BE814DE663F004D24EA /* SessionManager.m */; };
+		E37A1C0C14DE663F004D24EA /* PeerLobbyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E37A1BF014DE663F004D24EA /* PeerLobbyController.xib */; };
+		E37A1C0D14DE663F004D24EA /* PeerVoiceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E37A1BF114DE663F004D24EA /* PeerVoiceController.xib */; };
+		E37A1C1114DE66A8004D24EA /* PictureInPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E37A1C0F14DE66A8004D24EA /* PictureInPictureViewController.xib */; };
+		E37A1C1314DE66EE004D24EA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37A1C1214DE66ED004D24EA /* CoreLocation.framework */; };
+		E37A1C1514DE672D004D24EA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37A1C1414DE672D004D24EA /* AudioToolbox.framework */; };
+		E37A1C1714DE6736004D24EA /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37A1C1614DE6735004D24EA /* GameKit.framework */; };
+		E37A1C1914DE675C004D24EA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37A1C1814DE675C004D24EA /* CoreVideo.framework */; };
+		E37A1C1B14DE67BE004D24EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37A1C1A14DE67BE004D24EA /* QuartzCore.framework */; };
 		E3847CB114C9964100E8B5A7 /* DownloadQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3847CAC14C9964100E8B5A7 /* DownloadQViewController.m */; };
 		E3847CB214C9964100E8B5A7 /* DownloadsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3847CAE14C9964100E8B5A7 /* DownloadsViewController.m */; };
 		E3847CB314C9964100E8B5A7 /* SCBUTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3847CB014C9964100E8B5A7 /* SCBUTubeViewController.m */; };
@@ -135,6 +164,58 @@
 		E33D7A5214DD48E80063B80E /* PJDetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PJDetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		E33D7A5314DD48E80063B80E /* PJMasterViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PJMasterViewController_iPad.xib; sourceTree = "<group>"; };
 		E33D7A5414DD48E80063B80E /* PJMasterViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PJMasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		E37A1BAC14DE53F1004D24EA /* PJMasterYTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJMasterYTViewController.h; sourceTree = "<group>"; };
+		E37A1BAD14DE53F1004D24EA /* PJMasterYTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJMasterYTViewController.m; sourceTree = "<group>"; };
+		E37A1BB214DE663F004D24EA /* ARAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAnnotations.h; sourceTree = "<group>"; };
+		E37A1BB314DE663F004D24EA /* ARAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARAnnotations.m; sourceTree = "<group>"; };
+		E37A1BB414DE663F004D24EA /* ARCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCoordinate.h; sourceTree = "<group>"; };
+		E37A1BB514DE663F004D24EA /* ARCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCoordinate.m; sourceTree = "<group>"; };
+		E37A1BB614DE663F004D24EA /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoCoordinate.h; sourceTree = "<group>"; };
+		E37A1BB714DE663F004D24EA /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoCoordinate.m; sourceTree = "<group>"; };
+		E37A1BB814DE663F004D24EA /* ARGeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoViewController.h; sourceTree = "<group>"; };
+		E37A1BB914DE663F004D24EA /* ARGeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoViewController.m; sourceTree = "<group>"; };
+		E37A1BBA14DE663F004D24EA /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		E37A1BBB14DE663F004D24EA /* ARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
+		E37A1BBC14DE663F004D24EA /* LAAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAAnnotation.h; sourceTree = "<group>"; };
+		E37A1BBD14DE663F004D24EA /* LAAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAAnnotation.m; sourceTree = "<group>"; };
+		E37A1BBE14DE663F004D24EA /* LACircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LACircle.h; sourceTree = "<group>"; };
+		E37A1BBF14DE663F004D24EA /* LACircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LACircle.m; sourceTree = "<group>"; };
+		E37A1BC214DE663F004D24EA /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		E37A1BC314DE663F004D24EA /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		E37A1BC514DE663F004D24EA /* PictureInPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureInPictureViewController.h; sourceTree = "<group>"; };
+		E37A1BC614DE663F004D24EA /* PictureInPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureInPictureViewController.m; sourceTree = "<group>"; };
+		E37A1BC814DE663F004D24EA /* CollaborationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollaborationView.h; sourceTree = "<group>"; };
+		E37A1BC914DE663F004D24EA /* CollaborationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollaborationView.m; sourceTree = "<group>"; };
+		E37A1BCB14DE663F004D24EA /* AppLogFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLogFileResponse.h; sourceTree = "<group>"; };
+		E37A1BCC14DE663F004D24EA /* AppLogFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppLogFileResponse.m; sourceTree = "<group>"; };
+		E37A1BCD14DE663F004D24EA /* MyCustomHTTPResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomHTTPResponseHandler.h; sourceTree = "<group>"; };
+		E37A1BCE14DE663F004D24EA /* MyCustomHTTPResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomHTTPResponseHandler.m; sourceTree = "<group>"; };
+		E37A1BCF14DE663F004D24EA /* MyCustomHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomHTTPServer.h; sourceTree = "<group>"; };
+		E37A1BD014DE663F004D24EA /* MyCustomHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomHTTPServer.m; sourceTree = "<group>"; };
+		E37A1BD114DE663F004D24EA /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		E37A1BD314DE663F004D24EA /* PeerLobbyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerLobbyController.h; sourceTree = "<group>"; };
+		E37A1BD414DE663F004D24EA /* PeerLobbyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerLobbyController.m; sourceTree = "<group>"; };
+		E37A1BD714DE663F004D24EA /* UIWindowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWindowAdditions.h; sourceTree = "<group>"; };
+		E37A1BD814DE663F004D24EA /* UIWindowAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWindowAdditions.m; sourceTree = "<group>"; };
+		E37A1BDA14DE663F004D24EA /* LoggerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerAppDelegate.h; sourceTree = "<group>"; };
+		E37A1BDB14DE663F004D24EA /* LoggerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerAppDelegate.m; sourceTree = "<group>"; };
+		E37A1BDC14DE663F004D24EA /* LoggerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerProtocol.h; sourceTree = "<group>"; };
+		E37A1BDD14DE663F004D24EA /* LoggerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerViewController.h; sourceTree = "<group>"; };
+		E37A1BDE14DE663F004D24EA /* LoggerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerViewController.m; sourceTree = "<group>"; };
+		E37A1BE014DE663F004D24EA /* videoFrameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoFrameManager.h; sourceTree = "<group>"; };
+		E37A1BE114DE663F004D24EA /* videoFrameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoFrameManager.m; sourceTree = "<group>"; };
+		E37A1BE514DE663F004D24EA /* PeerVoiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerVoiceController.h; sourceTree = "<group>"; };
+		E37A1BE614DE663F004D24EA /* PeerVoiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerVoiceController.m; sourceTree = "<group>"; };
+		E37A1BE714DE663F004D24EA /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
+		E37A1BE814DE663F004D24EA /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
+		E37A1BF014DE663F004D24EA /* PeerLobbyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeerLobbyController.xib; sourceTree = "<group>"; };
+		E37A1BF114DE663F004D24EA /* PeerVoiceController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeerVoiceController.xib; sourceTree = "<group>"; };
+		E37A1C0F14DE66A8004D24EA /* PictureInPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureInPictureViewController.xib; sourceTree = "<group>"; };
+		E37A1C1214DE66ED004D24EA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E37A1C1414DE672D004D24EA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E37A1C1614DE6735004D24EA /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		E37A1C1814DE675C004D24EA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E37A1C1A14DE67BE004D24EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E3847CAB14C9964100E8B5A7 /* DownloadQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadQViewController.h; sourceTree = "<group>"; };
 		E3847CAC14C9964100E8B5A7 /* DownloadQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadQViewController.m; sourceTree = "<group>"; };
 		E3847CAD14C9964100E8B5A7 /* DownloadsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadsViewController.h; sourceTree = "<group>"; };
@@ -228,9 +309,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37A1C1B14DE67BE004D24EA /* QuartzCore.framework in Frameworks */,
+				84EA8BC712D604AE0033C894 /* AVFoundation.framework in Frameworks */,
+				E37A1C1914DE675C004D24EA /* CoreVideo.framework in Frameworks */,
+				E37A1C1714DE6736004D24EA /* GameKit.framework in Frameworks */,
+				E37A1C1514DE672D004D24EA /* AudioToolbox.framework in Frameworks */,
+				E37A1C1314DE66EE004D24EA /* CoreLocation.framework in Frameworks */,
 				E32B21AF14BE8FB9005EBF49 /* CFNetwork.framework in Frameworks */,
 				E32B212314BE82EE005EBF49 /* libCocoaHTTPServer.a in Frameworks */,
-				84EA8BC712D604AE0033C894 /* AVFoundation.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				84EA8BCD12D604B40033C894 /* CoreMedia.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -264,6 +350,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E37A1BAF14DE663F004D24EA /* PeerFun */,
 				E3E646AA14DC2FBE00C23718 /* Objective-Zip */,
 				E32B217514BE874A005EBF49 /* Connection */,
 				E32B214614BE84BF005EBF49 /* CommonLogTemplates */,
@@ -365,9 +452,176 @@
 			path = Components/Connection;
 			sourceTree = "<group>";
 		};
+		E37A1BAF14DE663F004D24EA /* PeerFun */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BB014DE663F004D24EA /* Classes */,
+				E37A1BEE14DE663F004D24EA /* Resources */,
+			);
+			name = PeerFun;
+			path = Components/PeerFun;
+			sourceTree = "<group>";
+		};
+		E37A1BB014DE663F004D24EA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BB114DE663F004D24EA /* ARVideo */,
+				E37A1BC014DE663F004D24EA /* Collaboration */,
+				E37A1BCA14DE663F004D24EA /* httpServer */,
+				E37A1BD214DE663F004D24EA /* Lobby */,
+				E37A1BD514DE663F004D24EA /* Logger */,
+				E37A1BDF14DE663F004D24EA /* VideoManagement */,
+				E37A1BE214DE663F004D24EA /* Voice */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E37A1BB114DE663F004D24EA /* ARVideo */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BB214DE663F004D24EA /* ARAnnotations.h */,
+				E37A1BB314DE663F004D24EA /* ARAnnotations.m */,
+				E37A1BB414DE663F004D24EA /* ARCoordinate.h */,
+				E37A1BB514DE663F004D24EA /* ARCoordinate.m */,
+				E37A1BB614DE663F004D24EA /* ARGeoCoordinate.h */,
+				E37A1BB714DE663F004D24EA /* ARGeoCoordinate.m */,
+				E37A1BB814DE663F004D24EA /* ARGeoViewController.h */,
+				E37A1BB914DE663F004D24EA /* ARGeoViewController.m */,
+				E37A1BBA14DE663F004D24EA /* ARViewController.h */,
+				E37A1BBB14DE663F004D24EA /* ARViewController.m */,
+				E37A1BBC14DE663F004D24EA /* LAAnnotation.h */,
+				E37A1BBD14DE663F004D24EA /* LAAnnotation.m */,
+				E37A1BBE14DE663F004D24EA /* LACircle.h */,
+				E37A1BBF14DE663F004D24EA /* LACircle.m */,
+			);
+			path = ARVideo;
+			sourceTree = "<group>";
+		};
+		E37A1BC014DE663F004D24EA /* Collaboration */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BC114DE663F004D24EA /* Camera */,
+				E37A1BC414DE663F004D24EA /* PicInPic */,
+				E37A1BC714DE663F004D24EA /* View */,
+			);
+			path = Collaboration;
+			sourceTree = "<group>";
+		};
+		E37A1BC114DE663F004D24EA /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BC214DE663F004D24EA /* Camera.h */,
+				E37A1BC314DE663F004D24EA /* Camera.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E37A1BC414DE663F004D24EA /* PicInPic */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BC514DE663F004D24EA /* PictureInPictureViewController.h */,
+				E37A1BC614DE663F004D24EA /* PictureInPictureViewController.m */,
+			);
+			path = PicInPic;
+			sourceTree = "<group>";
+		};
+		E37A1BC714DE663F004D24EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BC814DE663F004D24EA /* CollaborationView.h */,
+				E37A1BC914DE663F004D24EA /* CollaborationView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E37A1BCA14DE663F004D24EA /* httpServer */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BCB14DE663F004D24EA /* AppLogFileResponse.h */,
+				E37A1BCC14DE663F004D24EA /* AppLogFileResponse.m */,
+				E37A1BCD14DE663F004D24EA /* MyCustomHTTPResponseHandler.h */,
+				E37A1BCE14DE663F004D24EA /* MyCustomHTTPResponseHandler.m */,
+				E37A1BCF14DE663F004D24EA /* MyCustomHTTPServer.h */,
+				E37A1BD014DE663F004D24EA /* MyCustomHTTPServer.m */,
+				E37A1BD114DE663F004D24EA /* SynthesizeSingleton.h */,
+			);
+			path = httpServer;
+			sourceTree = "<group>";
+		};
+		E37A1BD214DE663F004D24EA /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BD314DE663F004D24EA /* PeerLobbyController.h */,
+				E37A1BD414DE663F004D24EA /* PeerLobbyController.m */,
+			);
+			path = Lobby;
+			sourceTree = "<group>";
+		};
+		E37A1BD514DE663F004D24EA /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BD614DE663F004D24EA /* Extensions */,
+				E37A1BD914DE663F004D24EA /* Main */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		E37A1BD614DE663F004D24EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BD714DE663F004D24EA /* UIWindowAdditions.h */,
+				E37A1BD814DE663F004D24EA /* UIWindowAdditions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E37A1BD914DE663F004D24EA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BDA14DE663F004D24EA /* LoggerAppDelegate.h */,
+				E37A1BDB14DE663F004D24EA /* LoggerAppDelegate.m */,
+				E37A1BDC14DE663F004D24EA /* LoggerProtocol.h */,
+				E37A1BDD14DE663F004D24EA /* LoggerViewController.h */,
+				E37A1BDE14DE663F004D24EA /* LoggerViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E37A1BDF14DE663F004D24EA /* VideoManagement */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BE014DE663F004D24EA /* videoFrameManager.h */,
+				E37A1BE114DE663F004D24EA /* videoFrameManager.m */,
+			);
+			path = VideoManagement;
+			sourceTree = "<group>";
+		};
+		E37A1BE214DE663F004D24EA /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1BE514DE663F004D24EA /* PeerVoiceController.h */,
+				E37A1BE614DE663F004D24EA /* PeerVoiceController.m */,
+				E37A1BE714DE663F004D24EA /* SessionManager.h */,
+				E37A1BE814DE663F004D24EA /* SessionManager.m */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		E37A1BEE14DE663F004D24EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E37A1C0F14DE66A8004D24EA /* PictureInPictureViewController.xib */,
+				E37A1BF014DE663F004D24EA /* PeerLobbyController.xib */,
+				E37A1BF114DE663F004D24EA /* PeerVoiceController.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E3847CAA14C9964100E8B5A7 /* AppViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E37A1BAC14DE53F1004D24EA /* PJMasterYTViewController.h */,
+				E37A1BAD14DE53F1004D24EA /* PJMasterYTViewController.m */,
 				E3847CAB14C9964100E8B5A7 /* DownloadQViewController.h */,
 				E3847CAC14C9964100E8B5A7 /* DownloadQViewController.m */,
 				E3847CAD14C9964100E8B5A7 /* DownloadsViewController.h */,
@@ -462,12 +716,17 @@
 		E3847CF414C996EB00E8B5A7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E32B21AE14BE8FB9005EBF49 /* CFNetwork.framework */,
+				E37A1C1414DE672D004D24EA /* AudioToolbox.framework */,
 				84EA8BC612D604AE0033C894 /* AVFoundation.framework */,
+				E32B21AE14BE8FB9005EBF49 /* CFNetwork.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				E37A1C1214DE66ED004D24EA /* CoreLocation.framework */,
 				84EA8BCC12D604B40033C894 /* CoreMedia.framework */,
+				E37A1C1814DE675C004D24EA /* CoreVideo.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				E37A1C1614DE6735004D24EA /* GameKit.framework */,
 				84EA8BD012D604BD0033C894 /* MediaPlayer.framework */,
+				E37A1C1A14DE67BE004D24EA /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 			);
 			name = Core;
@@ -671,6 +930,9 @@
 				E33D7A5614DD48E80063B80E /* PJDetailViewController_iPhone.xib in Resources */,
 				E33D7A5714DD48E80063B80E /* PJMasterViewController_iPad.xib in Resources */,
 				E33D7A5814DD48E80063B80E /* PJMasterViewController_iPhone.xib in Resources */,
+				E37A1C0C14DE663F004D24EA /* PeerLobbyController.xib in Resources */,
+				E37A1C0D14DE663F004D24EA /* PeerVoiceController.xib in Resources */,
+				E37A1C1114DE66A8004D24EA /* PictureInPictureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +979,27 @@
 				E3E6470614DC2FBE00C23718 /* zutil.c in Sources */,
 				E33D7A4F14DD48D50063B80E /* PJDetailViewController.m in Sources */,
 				E33D7A5014DD48D50063B80E /* PJMasterViewController.m in Sources */,
+				E37A1BAE14DE53F1004D24EA /* PJMasterYTViewController.m in Sources */,
+				E37A1BF214DE663F004D24EA /* ARAnnotations.m in Sources */,
+				E37A1BF314DE663F004D24EA /* ARCoordinate.m in Sources */,
+				E37A1BF414DE663F004D24EA /* ARGeoCoordinate.m in Sources */,
+				E37A1BF514DE663F004D24EA /* ARGeoViewController.m in Sources */,
+				E37A1BF614DE663F004D24EA /* ARViewController.m in Sources */,
+				E37A1BF714DE663F004D24EA /* LAAnnotation.m in Sources */,
+				E37A1BF814DE663F004D24EA /* LACircle.m in Sources */,
+				E37A1BF914DE663F004D24EA /* Camera.m in Sources */,
+				E37A1BFA14DE663F004D24EA /* PictureInPictureViewController.m in Sources */,
+				E37A1BFB14DE663F004D24EA /* CollaborationView.m in Sources */,
+				E37A1BFC14DE663F004D24EA /* AppLogFileResponse.m in Sources */,
+				E37A1BFD14DE663F004D24EA /* MyCustomHTTPResponseHandler.m in Sources */,
+				E37A1BFE14DE663F004D24EA /* MyCustomHTTPServer.m in Sources */,
+				E37A1BFF14DE663F004D24EA /* PeerLobbyController.m in Sources */,
+				E37A1C0014DE663F004D24EA /* UIWindowAdditions.m in Sources */,
+				E37A1C0114DE663F004D24EA /* LoggerAppDelegate.m in Sources */,
+				E37A1C0214DE663F004D24EA /* LoggerViewController.m in Sources */,
+				E37A1C0314DE663F004D24EA /* videoFrameManager.m in Sources */,
+				E37A1C0514DE663F004D24EA /* PeerVoiceController.m in Sources */,
+				E37A1C0614DE663F004D24EA /* SessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

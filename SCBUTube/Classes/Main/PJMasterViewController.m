@@ -2,7 +2,7 @@
 
 #import "PJMasterViewController.h"
 #import "SCBUTubeViewController.h"
-#import "PJDetailViewController.h"
+#import "PJMasterYTViewController.h"
 
 @implementation PJMasterViewController
 
@@ -40,15 +40,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	_serviceList =[[NSMutableArray alloc] initWithCapacity:0];
+	
 	// Do any additional setup after loading the view, typically from a nib.
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
 	    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
 	}
-	[_serviceList addObject:@"YouTube"];
-	[_serviceList addObject:@"Google Docs"];
-	[_serviceList addObject:@"FaceBook"];
-	[_serviceList addObject:@"Twitter"];
+	if (_serviceList ==nil)
+	{
+		_serviceList =[[NSMutableArray alloc] initWithCapacity:0];
+	}
+	if ([_serviceList count] <=0)
+	{
+		[_serviceList addObject:@"YouTube"];
+		[_serviceList addObject:@"Google Docs"];
+		[_serviceList addObject:@"FaceBook"];
+		[_serviceList addObject:@"Twitter"];
+	}
 }
 
 - (void)viewDidUnload
@@ -161,10 +168,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    if (!self.detailViewController) {
-	        self.detailViewController = [[[SCBUTubeViewController alloc] initWithNibName:@"MyTubeViewController" bundle:nil] autorelease];//[[[PJDetailViewController alloc] initWithNibName:@"PJDetailViewController_iPhone" bundle:nil] autorelease];
-	    }
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) 
+	{
+	    if (!self.detailViewController) 
+		{
+			self.detailViewController = [[[PJMasterYTViewController alloc] initWithNibName:@"PJMasterViewController_iPhone" bundle:nil] autorelease];//[[[PJDetailViewController alloc] initWithNibName:@"PJDetailViewController_iPhone" bundle:nil] autorelease];
+		}
+		self.detailViewController.serviceList =[[NSMutableArray alloc] initWithCapacity:0];
+		self.detailViewController.title = NSLocalizedString(@"YouTube", @"YouTube");
+		[self.detailViewController.serviceList addObject:@"Watch/Download YouTube"];
+		[self.detailViewController.serviceList addObject:@"What Peers are watching"];
+		[self.detailViewController.serviceList addObject:@"Video call with Peer"];
+	    
         [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
 }

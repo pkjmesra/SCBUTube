@@ -1,0 +1,2451 @@
+TSCBUTube
+v7
+r0
+t350124582.952473
+cCheck dependencies
+cProcessInfoPlistFile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Info.plist /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/SCBUTube-Info.plist
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/index.html Components/CommonLogTemplates/Web/index.html
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/socket.html Components/CommonLogTemplates/Web/socket.html
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/styles.css Components/CommonLogTemplates/Web/styles.css
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/jquery-1.4.2.min.js Components/CommonLogTemplates/Web/jquery-1.4.2.min.js
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/Default-Portrait.png Resources/Default-Portrait.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/Default.png Resources/Default.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/Default@2x.png Resources/Default@2x.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/goback.png Resources/goback.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/Icon-72.png Resources/Icon-72.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/Icon.png Resources/Icon.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/Icon@2x.png Resources/Icon@2x.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/iTunesArtwork.png Resources/iTunesArtwork.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/noun_project_403_1.png Resources/noun_project_403_1.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/noun_project_403_1@2x.png Resources/noun_project_403_1@2x.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/noun_project_533.png Resources/noun_project_533.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/noun_project_533@2x.png Resources/noun_project_533@2x.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/pause.png Resources/pause.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/Q.png Resources/Q.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/QProgress.png Resources/QProgress.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/ReStart.png Resources/ReStart.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/sliderThumb.png Resources/sliderThumb.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/sliderTrack.png Resources/sliderTrack.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/toolbar-queue.png Resources/toolbar-queue.png
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/forward.png Resources/forward.png
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/DownloadQueue.xib
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/Downloads.xib
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/MyTubeViewController.xib
+cCpResource build/Debug-iphonesimulator/SCBUTube.app/downloadqueue.png Resources/downloadqueue.png
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPad.xib
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPhone.xib
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPad.xib
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPhone.xib
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerLobbyController.xib
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib
+cCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PictureInPictureViewController.xib
+cProcessPCH /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-dostxamxftcwdqcclmownnitjkaz/SCBUTube_Prefix.pch.gch SCBUTube_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch.gch SCBUTube_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ioapi.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/ioapi.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/mztools.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/mztools.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/unzip.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zip.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/zip.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/adler32.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/adler32.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/compress.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/compress.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/crc32.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/crc32.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/deflate.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/deflate.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/gzio.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/gzio.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/infback.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/infback.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inffast.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inffast.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inflate.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inflate.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inftrees.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inftrees.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/trees.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/trees.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/uncompr.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/uncompr.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zutil.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zutil.c normal i386 c com.apple.compilers.gcc.4_2
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/DownloadQViewController.h
+c000000004F19DE9F00000000000001CF
+t1327095455
+s463
+i<AVFoundation/AVFoundation.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/DownloadQViewController.m
+c000000004F2CFF670000000000002522
+t1328349031
+s9506
+i"DownloadQViewController.h"
+i<MediaPlayer/MediaPlayer.h>
+i"DownloadInfo.h"
+i"UIDownloadBar.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/DownloadsViewController.h
+c000000004F0BCB870000000000000173
+t1326173063
+s371
+i<AVFoundation/AVFoundation.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/DownloadsViewController.m
+c000000004F2CFBF4000000000000242E
+t1328348148
+s9262
+i"DownloadsViewController.h"
+i<MediaPlayer/MediaPlayer.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/PJMasterYTViewController.h
+c000000004F2E324500000000000000FD
+t1328427589
+s253
+i<UIKit/UIKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/PJMasterYTViewController.m
+c000000004F2E3C710000000000001636
+t1328430193
+s5686
+i"PJMasterYTViewController.h"
+i"SCBUTubeViewController.h"
+i"PJDetailViewController.h"
+i"../../Components/PeerFun/Classes/Lobby/PeerLobbyController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/SCBUTubeViewController.h
+c000000004F19F0AF000000000000040B
+t1327100079
+s1035
+i"DownloadInfo.h"
+i"DownloadManager.h"
+i"SlideToCancelViewController.h"
+i"DownloadQViewController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/SCBUTubeViewController.m
+c000000004F2D0A990000000000003E7E
+t1328351897
+s15998
+i"DownloadQViewController.h"
+i"DownloadsViewController.h"
+i"SCBUTubeViewController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/DownloadLogic/DownloadInfo.h
+c000000004F19635700000000000005EF
+t1327063895
+s1519
+i<Foundation/Foundation.h>
+i"UIDownloadBar.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/DownloadLogic/DownloadInfo.m
+c000000004F19D7590000000000001E54
+t1327093593
+s7764
+i"DownloadInfo.h"
+i<AVFoundation/AVAsset.h>
+i<AVFoundation/AVAssetImageGenerator.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/DownloadLogic/DownloadManager.h
+c000000004F19635D0000000000000494
+t1327063901
+s1172
+i<Foundation/Foundation.h>
+i"DownloadInfo.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/DownloadLogic/DownloadManager.m
+c000000004F19AB6C00000000000015D8
+t1327082348
+s5592
+i"DownloadManager.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/DownloadLogic/UIDownloadBar.h
+c000000004F2D11830000000000000915
+t1328353667
+s2325
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/DownloadLogic/UIDownloadBar.m
+c000000004F19B8A10000000000002FC2
+t1327085729
+s12226
+i"UIDownloadBar.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Main/PJDetailViewController.h
+c000000004F2D17DA00000000000000ED
+t1328355290
+s237
+i<UIKit/UIKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Main/PJDetailViewController.m
+c000000004F2D17E00000000000000D1C
+t1328355296
+s3356
+i"PJDetailViewController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Main/PJMasterViewController.h
+c000000004F2E1F250000000000000105
+t1328422693
+s261
+i<UIKit/UIKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Main/PJMasterViewController.m
+c000000004F2E22CA0000000000001705
+t1328423626
+s5893
+i"PJMasterViewController.h"
+i"SCBUTubeViewController.h"
+i"PJMasterYTViewController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Main/SCBUTubeAppDelegate.h
+c000000004F2D14B100000000000001FE
+t1328354481
+s510
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Main/SCBUTubeAppDelegate.m
+c000000004F2D11F40000000000002196
+t1328353780
+s8598
+i"SCBUTubeAppDelegate.h"
+i"SCBUTubeViewController.h"
+i"PJMasterViewController.h"
+i"PJDetailViewController.h"
+i"HTTPServer.h"
+i"WebHTTPConnection.h"
+i"DDLog.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Notification/SlideToCancelViewController.h
+c000000004F0FF5D00000000000000970
+t1326446032
+s2416
+i<UIKit/UIKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Notification/SlideToCancelViewController.m
+c000000004F171DD90000000000003307
+t1326915033
+s13063
+i<QuartzCore/QuartzCore.h>
+i"SlideToCancelViewController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CocoaHTTPServer/build/Debug-iphonesimulator/libCocoaHTTPServer.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomContextFilter/EndUserContextFilter.h
+c000000004F018B5600000000000000BE
+t1325501270
+s190
+i<Foundation/Foundation.h>
+i"DDLog.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomContextFilter/EndUserContextFilter.m
+c000000004F01A92D00000000000004D1
+t1325508909
+s1233
+i"EndUserContextFilter.h"
+i"EndUserLogging.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomContextFilter/EndUserLogging.h
+c000000004F0181C80000000000000550
+t1325498824
+s1360
+i"DDLog.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomFormatters/CustomLogFormatter.h
+c000000004EFD322B0000000000000076
+t1325216299
+s118
+i<Foundation/Foundation.h>
+i"DDLog.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomFormatters/CustomLogFormatter.m
+c000000004EFD322E000000000000011F
+t1325216302
+s287
+i"CustomLogFormatter.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomLogLevel/GlobalLogging.h
+c000000004F01AB48000000000000002A
+t1325509448
+s42
+i"DDLog.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/index.html
+c000000004F0E7B580000000000000191
+t1326349144
+s401
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/jquery-1.4.2.min.js
+c000000004EF14FF200000000000119EE
+t1324437490
+s72174
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/socket.html
+c000000004F0E7A480000000000000B07
+t1326348872
+s2823
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/styles.css
+c000000004EF14FF200000000000001A3
+t1324437490
+s419
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Connection/WebHTTPConnection.h
+c000000004F0E50300000000000000154
+t1326338096
+s340
+i<Foundation/Foundation.h>
+i"HTTPConnection.h"
+i"DDFileLogger.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Connection/WebHTTPConnection.m
+c000000004F2CB3010000000000003A72
+t1328329473
+s14962
+i"WebHTTPConnection.h"
+i"HTTPLogging.h"
+i"HTTPMessage.h"
+i"HTTPDataResponse.h"
+i"HTTPFileResponse.h"
+i"HTTPDynamicFileResponse.h"
+i"GCDAsyncSocket.h"
+i"DDASLLogger.h"
+i"DDTTYLogger.h"
+i"WebSocket.h"
+i<UIKit/UIKit.h>
+i"Objective_Zipper.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Classes/Objective_Zipper.h
+c000000004F2CA74E000000000000078F
+t1328326478
+s1935
+i<UIKit/UIKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Classes/Objective_Zipper.m
+c000000004F2CB1E80000000000002878
+t1328329192
+s10360
+i"Objective_Zipper.h"
+i"ZipFile.h"
+i"ZipException.h"
+i"FileInZipInfo.h"
+i"ZipWriteStream.h"
+i"ZipReadStream.h"
+i"DDLog.h"
+i"DDFileLogger.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/crypt.h
+c0000000042D3C7E00000000000001268
+t1121175520
+s4712
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/ioapi.c
+c0000000042D3C7E00000000000000E6E
+t1121175520
+s3694
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i"zlib.h"
+i"ioapi.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/ioapi.h
+c0000000042D3C7E000000000000009E7
+t1121175520
+s2535
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/mztools.c
+c0000000042D3C7E00000000000001F31
+t1121175520
+s7985
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i"zlib.h"
+i"unzip.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c
+c0000000042D3C7E0000000000000C08C
+t1121175520
+s49292
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i"zlib.h"
+i"unzip.h"
+i<stddef.h>
+i<string.h>
+i<stdlib.h>
+i<errno.h>
+i"crypt.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.h
+c0000000042D3C7E000000000000032A8
+t1121175520
+s12968
+i"zlib.h"
+i"ioapi.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/zip.c
+c0000000042D3C7E000000000000091E9
+t1121175520
+s37353
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<time.h>
+i"zlib.h"
+i"zip.h"
+i<stddef.h>
+i<string.h>
+i<stdlib.h>
+i<errno.h>
+i"crypt.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/zip.h
+c0000000042D3C7E0000000000000228F
+t1121175520
+s8847
+i"zlib.h"
+i"ioapi.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/FileInZipInfo.h
+c000000004CBAE04800000000000009C0
+t1287315528
+s2496
+i<Foundation/Foundation.h>
+i"ZipFile.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/FileInZipInfo.m
+c000000004CBAE02E000000000000096A
+t1287315502
+s2410
+i"FileInZipInfo.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipException.h
+c000000004CBAE03E00000000000007BC
+t1287315518
+s1980
+i<Foundation/Foundation.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipException.m
+c000000004CBAE03A0000000000000858
+t1287315514
+s2136
+i"ZipException.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipFile.h
+c000000004CBAE0420000000000000C43
+t1287315522
+s3139
+i<Foundation/Foundation.h>
+i"zip.h"
+i"unzip.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipFile.m
+c000000004CBAE5D80000000000003E23
+t1287316952
+s15907
+i"ZipFile.h"
+i"ZipException.h"
+i"ZipReadStream.h"
+i"ZipWriteStream.h"
+i"FIleInZipInfo.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipReadStream.h
+c000000004CBAE02A00000000000007F9
+t1287315498
+s2041
+i<Foundation/Foundation.h>
+i"unzip.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipReadStream.m
+c000000004CBAE0540000000000000A5B
+t1287315540
+s2651
+i"ZipReadStream.h"
+i"ZipException.h"
+i"unzip.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipWriteStream.h
+c000000004CBAE03400000000000007E0
+t1287315508
+s2016
+i<Foundation/Foundation.h>
+i"zip.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipWriteStream.m
+c000000004CBAE0320000000000000A29
+t1287315506
+s2601
+i"ZipWriteStream.h"
+i"ZipException.h"
+i"zip.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/adler32.c
+c0000000041C8076000000000000011CF
+t1103628128
+s4559
+i"zlib.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/compress.c
+c000000003F08C7EC00000000000009B9
+t1057540076
+s2489
+i"zlib.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/crc32.c
+c0000000042AC8C500000000000003389
+t1118604368
+s13193
+i<stdio.h>
+i"zutil.h"
+i<limits.h>
+i"crc32.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/crc32.h
+c000000003E1815B60000000000007768
+t1041765814
+s30568
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/deflate.c
+c0000000042DAD44C000000000000FAA3
+t1121637452
+s64163
+i"deflate.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/deflate.h
+c000000004299A6A20000000000002F52
+t1117365922
+s12114
+i"zutil.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/gzio.c
+c0000000042D297EC000000000000797F
+t1121097708
+s31103
+i<stdio.h>
+i"zutil.h"
+i<stdarg.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/infback.c
+c00000000429B5B300000000000005694
+t1117477680
+s22164
+i"zutil.h"
+i"inftrees.h"
+i"inflate.h"
+i"inffast.h"
+i"inffixed.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inffast.c
+c00000000419556D20000000000003118
+t1100306130
+s12568
+i"zutil.h"
+i"inftrees.h"
+i"inflate.h"
+i"inffast.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inffast.h
+c000000003E12DC140000000000000197
+t1041423380
+s407
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inffixed.h
+c000000003DE1172200000000000018C7
+t1038161698
+s6343
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inflate.c
+c0000000042AF11CC000000000000BF51
+t1118769612
+s48977
+i"zutil.h"
+i"inftrees.h"
+i"inflate.h"
+i"inffast.h"
+i"inffixed.h"
+i<stdio.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inflate.h
+c000000004195507C000000000000171C
+t1100304508
+s5916
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inftrees.c
+c0000000042DAD44200000000000035BC
+t1121637442
+s13756
+i"zutil.h"
+i"inftrees.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inftrees.h
+c0000000042D1D7760000000000000945
+t1121048438
+s2373
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/trees.c
+c0000000042AC955A000000000000ABFB
+t1118606682
+s44027
+i"deflate.h"
+i<ctype.h>
+i"trees.h"
+i<stdio.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/trees.h
+c0000000034F26C6800000000000020FC
+t888302696
+s8444
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/uncompr.c
+c000000003F08C7B00000000000000827
+t1057540016
+s2087
+i"zlib.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zconf.h
+c000000004297D31C0000000000002548
+t1117246236
+s9544
+i<windows.h>
+i<sys/types.h>
+i<unistd.h>
+i<unixio.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zlib.h
+c0000000042DAD422000000000001028C
+t1121637410
+s66188
+i"zconf.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zutil.c
+c0000000042AC96160000000000001BE0
+t1118606870
+s7136
+i"zutil.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zutil.h
+c0000000042D298DC0000000000001ACB
+t1121097948
+s6859
+i"zlib.h"
+i<stddef.h>
+i<string.h>
+i<stdlib.h>
+i<errno.h>
+i<alloc.h>
+i<malloc.h>
+i<malloc.h>
+i<unix.h>
+i<stdio.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARAnnotations.h
+c000000004E684F4C00000000000008D4
+t1315458892
+s2260
+i<UIKit/UIKit.h>
+i"ARGeoViewController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARAnnotations.m
+c000000004E684F4C0000000000001C19
+t1315458892
+s7193
+i"ARAnnotations.h"
+i"ARGeoCoordinate.h"
+i"LACircle.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARCoordinate.h
+c000000004E684F4C0000000000000F7E
+t1315458892
+s3966
+i<Foundation/Foundation.h>
+i<MapKit/MapKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARCoordinate.m
+c000000004E684F4C0000000000000EEB
+t1315458892
+s3819
+i"ARCoordinate.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARGeoCoordinate.h
+c000000004E684F4C0000000000000AD0
+t1315458892
+s2768
+i<Foundation/Foundation.h>
+i"ARCoordinate.h"
+i<CoreLocation/CoreLocation.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARGeoCoordinate.m
+c000000004E684F4C0000000000000F43
+t1315458892
+s3907
+i"ARGeoCoordinate.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARGeoViewController.h
+c000000004E684F4C00000000000007A2
+t1315458892
+s1954
+i<Foundation/Foundation.h>
+i"ARViewController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARGeoViewController.m
+c000000004E684F4C000000000000094E
+t1315458892
+s2382
+i"ARGeoViewController.h"
+i"ARGeoCoordinate.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARViewController.h
+c000000004E684F4C00000000000017CD
+t1315458892
+s6093
+i<UIKit/UIKit.h>
+i<CoreLocation/CoreLocation.h>
+i"ARCoordinate.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARViewController.m
+c000000004E684F4C0000000000005322
+t1315458892
+s21282
+i"ARViewController.h"
+i<QuartzCore/QuartzCore.h>
+i"ARGeoCoordinate.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/LAAnnotation.h
+c000000004E684F4C00000000000006C5
+t1315458892
+s1733
+i<UIKit/UIKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/LAAnnotation.m
+c000000004E684F4C00000000000009FC
+t1315458892
+s2556
+i"LAAnnotation.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/LACircle.h
+c000000004E684F4C0000000000000709
+t1315458892
+s1801
+i<Foundation/Foundation.h>
+i"LAAnnotation.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/LACircle.m
+c000000004E684F4C0000000000000AD5
+t1315458892
+s2773
+i"LACircle.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Collaboration/Camera/Camera.h
+c000000004E684F4C0000000000000BEA
+t1315458892
+s3050
+i<Foundation/Foundation.h>
+i<AVFoundation/AVFoundation.h>
+i<CoreVideo/CoreVideo.h>
+i<CoreMedia/CoreMedia.h>
+i<CoreGraphics/CoreGraphics.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Collaboration/Camera/Camera.m
+c000000004E68594A0000000000001F03
+t1315461450
+s7939
+i"Camera.h"
+i"AssetsLibrary/ALAssetsLibrary.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Collaboration/PicInPic/PictureInPictureViewController.h
+c000000004E684F4C0000000000000ED1
+t1315458892
+s3793
+i<UIKit/UIKit.h>
+i"Camera.h"
+i"SessionManager.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Collaboration/PicInPic/PictureInPictureViewController.m
+c000000004E684F4C000000000000193E
+t1315458892
+s6462
+i"PictureInPictureViewController.h"
+i"videoFrameManager.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Collaboration/View/CollaborationView.h
+c000000004E684F4C000000000000079F
+t1315458892
+s1951
+i<UIKit/UIKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Collaboration/View/CollaborationView.m
+c000000004E684F4C0000000000000B4C
+t1315458892
+s2892
+i"CollaborationView.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Lobby/PeerLobbyController.h
+c000000004E684F4C0000000000000A86
+t1315458892
+s2694
+i<UIKit/UIKit.h>
+i"SessionManager.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Lobby/PeerLobbyController.m
+c000000004E684F4C000000000000190D
+t1315458892
+s6413
+i"PeerLobbyController.h"
+i"PeerVoiceController.h"
+i<GameKit/GameKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Extensions/UIWindowAdditions.h
+c000000004E684F4C0000000000000756
+t1315458892
+s1878
+i<Foundation/Foundation.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Extensions/UIWindowAdditions.m
+c000000004E684F4C0000000000000874
+t1315458892
+s2164
+i"UIWindowAdditions.h"
+i"LoggerAppDelegate.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Main/LoggerAppDelegate.h
+c000000004E684F4C0000000000000804
+t1315458892
+s2052
+i<UIKit/UIKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Main/LoggerAppDelegate.m
+c000000004E684F4C00000000000019F0
+t1315458892
+s6640
+i"LoggerAppDelegate.h"
+i"LoggerViewController.h"
+i"MyCustomHTTPServer.h"
+i"AppLogFileResponse.h"
+i<foundation/foundation.h>
+i<mach-o/nlist.h>
+i<string.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Main/LoggerProtocol.h
+c000000004E684F4C000000000000077D
+t1315458892
+s1917
+i<Foundation/Foundation.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Main/LoggerViewController.h
+c000000004E684F4C0000000000000720
+t1315458892
+s1824
+i<UIKit/UIKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Main/LoggerViewController.m
+c000000004E684F4C00000000000008B7
+t1315458892
+s2231
+i"LoggerViewController.h"
+i"MyCustomHTTPServer.h"
+i"AppLogFileResponse.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/VideoManagement/videoFrameManager.h
+c000000004E684F4C0000000000000A47
+t1315458892
+s2631
+i<Foundation/Foundation.h>
+i"SessionManager.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/VideoManagement/videoFrameManager.m
+c000000004E684F4C0000000000000DF7
+t1315458892
+s3575
+i"videoFrameManager.h"
+i"PeerVoiceController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Voice/PeerVoiceController.h
+c000000004E684F4C0000000000001022
+t1315458892
+s4130
+i<UIKit/UIKit.h>
+i"SessionManager.h"
+i"CollaborationView.h"
+i"PictureInPictureViewController.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Voice/PeerVoiceController.m
+c000000004E684F4C0000000000004703
+t1315458892
+s18179
+i"PeerVoiceController.h"
+i"ARAnnotations.h"
+i<GameKit/GKVoiceChatService.h>
+i<UIKit/UIImage.h>
+i"videoFrameManager.h"
+i<ifaddrs.h>
+i<arpa/inet.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Voice/SessionManager.h
+c000000004E684F4C0000000000001137
+t1315458892
+s4407
+i<UIKit/UIKit.h>
+i<GameKit/GameKit.h>
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Voice/SessionManager.m
+c000000004E684F4C00000000000042A5
+t1315458892
+s17061
+i<AudioToolbox/AudioToolbox.h>
+i"SessionManager.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/AppLogFileResponse.h
+c000000004E684F4C000000000000077B
+t1315458892
+s1915
+i"MyCustomHTTPResponseHandler.h"
+i"LoggerProtocol.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/AppLogFileResponse.m
+c000000004E684F4C000000000000133B
+t1315458892
+s4923
+i"AppLogFileResponse.h"
+i"MyCustomHTTPServer.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/MyCustomHTTPResponseHandler.h
+c000000004E684F4C00000000000015E8
+t1315458892
+s5608
+i<UIKit/UIKit.h>
+i<CFNetwork/CFNetwork.h>
+i<Cocoa/Cocoa.h>
+i"LoggerProtocol.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/MyCustomHTTPResponseHandler.m
+c000000004E684F4C0000000000002F7C
+t1315458892
+s12156
+i"MyCustomHTTPResponseHandler.h"
+i"MyCustomHTTPServer.h"
+i"AppLogFileResponse.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/MyCustomHTTPServer.h
+c000000004E684F4C0000000000000C5D
+t1315458892
+s3165
+i<UIKit/UIKit.h>
+i<Cocoa/Cocoa.h>
+i"LoggerProtocol.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/MyCustomHTTPServer.m
+c000000004E684F4C00000000000027D1
+t1315458892
+s10193
+i"MyCustomHTTPServer.h"
+i"SynthesizeSingleton.h"
+i<sys/socket.h>
+i<netinet/in.h>
+i<CFNetwork/CFNetwork.h>
+i"MyCustomHTTPResponseHandler.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/SynthesizeSingleton.h
+c000000004E684F4C00000000000008ED
+t1315458892
+s2285
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerLobbyController.xib
+c000000004E684F4C0000000000001E00
+t1315458892
+s7680
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib
+c000000004E684F4C000000000000289F
+t1315458892
+s10399
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PictureInPictureViewController.xib
+c000000004E684F4C0000000000003EF1
+t1315458892
+s16113
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Other Sources/main.m
+c000000004F2D15580000000000000132
+t1328354648
+s306
+i<UIKit/UIKit.h>
+i"SCBUTubeAppDelegate.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Default-Portrait.png
+c000000004F0BC9C300000000000103C6
+t1326172611
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Default.png
+c000000004F0BC9C300000000000103C6
+t1326172611
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Default@2x.png
+c000000004F0BC9C300000000000103C6
+t1326172611
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Icon-72.png
+c000000004F0BC9C300000000000103C6
+t1326172611
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Icon.png
+c000000004F0BC9C300000000000103C6
+t1326172611
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Icon@2x.png
+c000000004F0BC9C300000000000103C6
+t1326172611
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Q.png
+c000000004F0F10F200000000000000D5
+t1326387442
+s213
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/QProgress.png
+c000000004F0F67830000000000000AD1
+t1326409603
+s2769
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/ReStart.png
+c000000004F172692000000000000048A
+t1326917266
+s1162
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/SCBUTube-Info.plist
+c000000004F2D12D000000000000003F2
+t1328354000
+s1010
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/downloadqueue.png
+c000000004F19681E0000000000000555
+t1327065118
+s1365
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/forward.png
+c000000004F1965380000000000000636
+t1327064376
+s1590
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/goback.png
+c000000004F0F4E470000000000000485
+t1326403143
+s1157
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/iTunesArtwork.png
+c000000004F0BC9C300000000000103C6
+t1326172611
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_403_1.png
+c000000004EAB91BC0000000000000C56
+t1319866812
+s3158
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_403_1@2x.png
+c000000004EAB91BC0000000000000DC7
+t1319866812
+s3527
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_533.png
+c000000004EAB91BC0000000000000BFC
+t1319866812
+s3068
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_533@2x.png
+c000000004EAB91BC0000000000000CED
+t1319866812
+s3309
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/pause.png
+c000000004F0FF1CE0000000000000B30
+t1326445006
+s2864
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/sliderThumb.png
+c000000004AAE90CA0000000000000EDA
+t1252954314
+s3802
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/sliderTrack.png
+c000000004AAFE9660000000000001457
+t1253042534
+s5207
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/toolbar-queue.png
+c000000004F0F10350000000000000557
+t1326387253
+s1367
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/SCBUTube_Prefix.pch
+c000000004F19616700000000000000D4
+t1327063399
+s212
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"GlobalLogging.h"
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/DownloadQueue.xib
+c000000004F0F595B0000000000002787
+t1326405979
+s10119
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/Downloads.xib
+c000000004EAB91BC000000000000272A
+t1319866812
+s10026
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/MyTubeViewController.xib
+c000000004F19F11D000000000005D1F0
+t1327100189
+s381424
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPad.xib
+c000000004F2D0DB90000000000001FD0
+t1328352697
+s8144
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPhone.xib
+c000000004F2D0DB90000000000001EC4
+t1328352697
+s7876
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPad.xib
+c000000004F2D0DB90000000000001C33
+t1328352697
+s7219
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPhone.xib
+c000000004F2D0DB9000000000000180C
+t1328352697
+s6156
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app.dSYM
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Default-Portrait.png
+t1328431777
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Default.png
+t1328431777
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Default@2x.png
+t1328431777
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/DownloadQueue.nib
+t1328431778
+s1333
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Downloads.nib
+t1328431778
+s1333
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Icon-72.png
+t1328431777
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Icon.png
+t1328431777
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Icon@2x.png
+t1328431777
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Info.plist
+t1328431777
+s703
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/MyTubeViewController.nib
+t1328431780
+s2537
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PJDetailViewController_iPad.nib
+t1328431779
+s1330
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PJDetailViewController_iPhone.nib
+t1328431779
+s1299
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PJMasterViewController_iPad.nib
+t1328431780
+s1000
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PJMasterViewController_iPhone.nib
+t1328431780
+s1000
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PeerLobbyController.nib
+t1328431780
+s936
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PeerVoiceController.nib
+t1328431781
+s1442
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PictureInPictureViewController.nib
+t1328431781
+s1932
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PkgInfo
+t1328431777
+s8
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Q.png
+t1328431777
+s213
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/QProgress.png
+t1328431777
+s2769
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/ReStart.png
+t1328431777
+s1162
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/SCBUTube
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/downloadqueue.png
+t1328431778
+s1365
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/forward.png
+t1328431777
+s1590
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/goback.png
+t1328431777
+s1157
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/iTunesArtwork.png
+t1328431777
+s66502
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/index.html
+t1328431777
+s401
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/jquery-1.4.2.min.js
+t1328431777
+s72174
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/noun_project_403_1.png
+t1328431777
+s3158
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/noun_project_403_1@2x.png
+t1328431777
+s3527
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/noun_project_533.png
+t1328431777
+s3068
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/noun_project_533@2x.png
+t1328431777
+s3309
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/pause.png
+t1328431777
+s2864
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/sliderThumb.png
+t1328431777
+s3802
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/sliderTrack.png
+t1328431777
+s5207
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/socket.html
+t1328431777
+s2823
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/styles.css
+t1328431777
+s419
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/toolbar-queue.png
+t1328431777
+s1367
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARAnnotations.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARCoordinate.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARGeoCoordinate.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARGeoViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/AppLogFileResponse.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/Camera.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/CollaborationView.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/CustomLogFormatter.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/DownloadInfo.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/DownloadManager.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/DownloadQViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/DownloadsViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/EndUserContextFilter.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/FileInZipInfo.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/LAAnnotation.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/LACircle.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/LoggerAppDelegate.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/LoggerViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/MyCustomHTTPResponseHandler.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/MyCustomHTTPServer.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/Objective_Zipper.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PJDetailViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PJMasterViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PJMasterYTViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PeerLobbyController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PeerVoiceController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PictureInPictureViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/SCBUTube.LinkFileList
+c000000004F2E42A100000000000020B0
+t1328431777
+s8368
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/SCBUTubeAppDelegate.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/SCBUTubeViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/SessionManager.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/SlideToCancelViewController.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/UIDownloadBar.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/UIWindowAdditions.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/WebHTTPConnection.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ZipException.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ZipFile.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ZipReadStream.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ZipWriteStream.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/adler32.o
+t1328431782
+s3952
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/compress.o
+t1328431782
+s4212
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/crc32.o
+t1328431782
+s16880
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/deflate.o
+t1328431782
+s33008
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/gzio.o
+t1328431782
+s25188
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/infback.o
+t1328431782
+s15984
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inffast.o
+t1328431782
+s6688
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inflate.o
+t1328431782
+s26436
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inftrees.o
+t1328431782
+s5376
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ioapi.o
+t1328431782
+s7960
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/mztools.o
+t1328431782
+s9328
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/trees.o
+t1328431782
+s32540
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/uncompr.o
+t1328431782
+s3532
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/unzip.o
+t1328431782
+s31456
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/videoFrameManager.o
+t2
+s0
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zip.o
+t1328431782
+s28856
+
+N/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zutil.o
+t1328431782
+s4092
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004CC1288A00000000000F34A0
+t1287727242
+s996512
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVAsset.h
+c000000004CC128840000000000002D1C
+t1287727236
+s11548
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVAssetImageGenerator.h
+c000000004CC128840000000000001C9A
+t1287727236
+s7322
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004CC128840000000000000733
+t1287727236
+s1843
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AssetsLibrary.framework/Headers/ALAssetsLibrary.h
+c000000004CC6583B0000000000002221
+t1288067131
+s8737
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004CC1224600000000001EA9C0
+t1287725638
+s2009536
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004CC1222F0000000000000A23
+t1287725615
+s2595
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004CC1224400000000001C3D40
+t1287725636
+s1850688
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetwork.h
+c000000004CC1221800000000000004CF
+t1287725592
+s1231
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h
+c000000004CC121DB00000000000004FE
+t1287725531
+s1278
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004CC127E80000000000074190
+t1287727080
+s475536
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h
+c000000004CC127DD00000000000001D0
+t1287727069
+s464
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000004CC127FC0000000000063DD0
+t1287727100
+s409040
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.h
+c000000004CC127F400000000000001F4
+t1287727092
+s500
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004CC122DE0000000000018050
+t1287725790
+s98384
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CoreVideo.h
+c000000004CC122CE00000000000004DB
+t1287725774
+s1243
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/GameKit.framework/GameKit
+c000000004CC65698000000000017E520
+t1288066712
+s1565984
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/GameKit.framework/Headers/GKVoiceChatService.h
+c000000004CC656850000000000001BA1
+t1288066693
+s7073
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/GameKit.framework/Headers/GameKit.h
+c000000004CC656840000000000000348
+t1288066692
+s840
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h
+c000000004CC1294D00000000000002FE
+t1287727437
+s766
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MediaPlayer.h
+c000000004CC656490000000000000294
+t1288066633
+s660
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c000000004CC6569800000000001AAD60
+t1288066712
+s1748320
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004CC1233C00000000000000C4
+t1287725884
+s196
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004CC12431000000000015CDB0
+t1287726129
+s1428912
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImage.h
+c000000004CC1281F0000000000000E89
+t1287727135
+s3721
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/arpa/inet.h
+c000000004CB3E46D0000000000001533
+t1286857837
+s5427
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/ctype.h
+c000000004CB3E4860000000000002C18
+t1286857862
+s11288
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/errno.h
+c000000004CB3E48600000000000003EB
+t1286857862
+s1003
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/ifaddrs.h
+c000000004CB3E4770000000000000782
+t1286857847
+s1922
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/mach-o/nlist.h
+c000000004A4D4DFA00000000000033C0
+t1246580218
+s13248
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/netinet/in.h
+c000000004CBFACA90000000000005462
+t1287629993
+s21602
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/stdio.h
+c000000004CB3E48600000000000040AC
+t1286857862
+s16556
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/stdlib.h
+c000000004CB3E4860000000000002DF5
+t1286857862
+s11765
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/string.h
+c000000004CB3E4860000000000001731
+t1286857862
+s5937
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sys/socket.h
+c000000004CBFACAC0000000000005A69
+t1287629996
+s23145
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/sys/types.h
+c000000004CBFACAC0000000000002905
+t1287629996
+s10501
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/time.h
+c000000004CB3E486000000000000178E
+t1286857862
+s6030
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/unistd.h
+c000000004CB3E486000000000000563E
+t1286857862
+s22078
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h
+c000000004A1198340000000000000C7E
+t1242667060
+s3198
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004A11983400000000000010DD
+t1242667060
+s4317
+
+N/XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004A1198340000000000003197
+t1242667060
+s12695
+
+N/var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch.gch
+t1328431781
+s2138480
+
+N/var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-dostxamxftcwdqcclmownnitjkaz/SCBUTube_Prefix.pch.gch
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies350124577#350124577#0(0"0(0#1#0"4459543984#0"0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARAnnotations.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARAnnotations.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARCoordinate.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARCoordinate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARGeoCoordinate.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARGeoCoordinate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARGeoViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARGeoViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ARViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/ARViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/AppLogFileResponse.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/AppLogFileResponse.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/Camera.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Collaboration/Camera/Camera.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/CollaborationView.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Collaboration/View/CollaborationView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/CustomLogFormatter.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomFormatters/CustomLogFormatter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/DownloadInfo.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/DownloadLogic/DownloadInfo.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/DownloadManager.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/DownloadLogic/DownloadManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/DownloadQViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/DownloadQViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/DownloadsViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/DownloadsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/EndUserContextFilter.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomContextFilter/EndUserContextFilter.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/FileInZipInfo.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/FileInZipInfo.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/LAAnnotation.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/LAAnnotation.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/LACircle.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/ARVideo/LACircle.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/LoggerAppDelegate.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Main/LoggerAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/LoggerViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Main/LoggerViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/MyCustomHTTPResponseHandler.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/MyCustomHTTPResponseHandler.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/MyCustomHTTPServer.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/httpServer/MyCustomHTTPServer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/Objective_Zipper.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Classes/Objective_Zipper.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PJDetailViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Main/PJDetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PJMasterViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Main/PJMasterViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PJMasterYTViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/PJMasterYTViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PeerLobbyController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Lobby/PeerLobbyController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PeerVoiceController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Voice/PeerVoiceController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/PictureInPictureViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Collaboration/PicInPic/PictureInPictureViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/SCBUTubeAppDelegate.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Main/SCBUTubeAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/SCBUTubeViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/AppViewControllers/SCBUTubeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/SessionManager.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Voice/SessionManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/SlideToCancelViewController.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/Notification/SlideToCancelViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/UIDownloadBar.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Classes/DownloadLogic/UIDownloadBar.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/UIWindowAdditions.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/Logger/Extensions/UIWindowAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/WebHTTPConnection.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Connection/WebHTTPConnection.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ZipException.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipException.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ZipFile.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipFile.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ZipReadStream.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipReadStream.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ZipWriteStream.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/Objective-Zip/ZipWriteStream.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/adler32.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/adler32.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.375335
+e350124582.424769
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/adler32.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/adler32.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/adler32.c350124582#350124582#0(0"0(0#0#91"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/adler32.c4459544208#2177"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/adler32.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/adler32.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/compress.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/compress.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.376347
+e350124582.423581
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/compress.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/compress.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/compress.c350124582#350124582#0(0"0(0#0#92"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/compress.c4459544208#2179"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/compress.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/compress.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/crc32.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/crc32.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.423712
+e350124582.496939
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/crc32.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/crc32.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/crc32.c350124582#350124582#0(0"0(0#0#89"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/crc32.c4459544208#2173"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/crc32.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/crc32.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/deflate.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/deflate.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.424867
+e350124582.604294
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/deflate.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/deflate.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/deflate.c350124582#350124582#0(0"0(0#0#91"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/deflate.c4459544208#2177"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/deflate.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/deflate.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/gzio.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/gzio.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.497066
+e350124582.602622
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/gzio.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/gzio.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/gzio.c350124582#350124582#0(0"0(0#0#88"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/gzio.c4459544208#2171"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/gzio.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/gzio.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/infback.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/infback.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.602752
+e350124582.694297
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/infback.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/infback.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/infback.c350124582#350124582#0(0"0(0#0#91"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/infback.c4459544208#2177"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/infback.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/infback.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inffast.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inffast.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.604406
+e350124582.667558
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inffast.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inffast.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inffast.c350124582#350124582#0(0"0(0#0#91"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inffast.c4459544208#2177"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inffast.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inffast.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inflate.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inflate.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.667682
+e350124582.829192
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inflate.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inflate.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inflate.c350124582#350124582#0(0"0(0#0#91"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inflate.c4459544208#2177"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inflate.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inflate.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inftrees.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inftrees.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.699575
+e350124582.766443
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inftrees.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inftrees.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inftrees.c350124582#350124582#0(0"0(0#0#92"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inftrees.c4459544208#2179"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/inftrees.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/inftrees.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ioapi.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/ioapi.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.098430
+e350124582.225288
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ioapi.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/ioapi.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/ioapi.c350124582#350124582#0(0"0(0#0#92"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/ioapi.c4459544208#2176"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/ioapi.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/ioapi.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/main.o "/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Other Sources/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/mztools.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/mztools.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.099642
+e350124582.232598
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/mztools.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/mztools.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@102"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/mztools.c350124582#350124582#0(0"0(0#0#94"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/mztools.c4459544208#2180"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/mztools.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/mztools.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/trees.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/trees.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.766572
+e350124582.952330
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/trees.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/trees.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/trees.c350124582#350124582#0(0"0(0#0#89"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/trees.c4459544208#2173"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/trees.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/trees.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/uncompr.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/uncompr.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.829322
+e350124582.866304
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/uncompr.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/uncompr.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/uncompr.c350124582#350124582#0(0"0(0#0#91"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/uncompr.c4459544208#2177"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/uncompr.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/uncompr.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/unzip.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.225414
+e350124582.375059
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/unzip.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c: In function 'unzGetGlobalComment':
+o/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c:1537: warning: unused variable 'err'
+lSLF07#2@100"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c350124582#350124582#0(259"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c: In function 'unzGetGlobalComment':/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c:1537: warning: unused variable 'err'1(22@21"Unused variable 'err'350124582#129#130#0(6@92"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c142868320#1537#0#1537#0#19"unused variable '*'0(0#0#92"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c4459544208#2176"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/unzip.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/unzip.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/videoFrameManager.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Classes/VideoManagement/videoFrameManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zip.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/zip.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.232717
+e350124582.375226
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zip.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/zip.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/zip.c350124582#350124582#0(0"0(0#0#90"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/zip.c4459544208#2172"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/MiniZip/zip.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zip.o0#
+
+CCompileC build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zutil.o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zutil.c normal i386 c com.apple.compilers.gcc.4_2
+s350124582.866458
+e350124582.917181
+r1
+xCompileC
+xbuild/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zutil.o
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zutil.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zutil.c350124582#350124582#0(0"0(0#0#89"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zutil.c4459544208#2173"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -include /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/Objective-Zip/ZLib/zutil.c -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/Objects-normal/i386/zutil.o0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerLobbyController.xib
+s350124580.323659
+e350124580.843895
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerLobbyController.xib
+lSLF07#2@63"CompileXIB Components/PeerFun/Resources/PeerLobbyController.xib350124580#350124580#0(0"0(0#0#104"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerLobbyController.xib4459544208#641"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PeerLobbyController.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerLobbyController.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib
+s350124580.646391
+e350124581.331597
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib:-1: warning: The 'stateLabel' outlet of 'File's Owner' is connected to 'Label (Connecting...)' but 'stateLabel' is no longer defined on RocketController.
+o/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib:-1: warning: The 'callTimerLabel' outlet of 'File's Owner' is connected to 'Label (0:00:00)' but 'callTimerLabel' is no longer defined on RocketController.
+o/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on RocketController.
+lSLF07#2@63"CompileXIB Components/PeerFun/Resources/PeerVoiceController.xib350124580#350124581#0(791"/* com.apple.ibtool.document.warnings *//Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib:-1: warning: The 'stateLabel' outlet of 'File's Owner' is connected to 'Label (Connecting...)' but 'stateLabel' is no longer defined on RocketController./Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib:-1: warning: The 'callTimerLabel' outlet of 'File's Owner' is connected to 'Label (0:00:00)' but 'callTimerLabel' is no longer defined on RocketController./Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib:-1: warning: The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on RocketController.3(22@140"The 'stateLabel' outlet of 'File's Owner' is connected to 'Label (Connecting...)' but 'stateLabel' is no longer defined on RocketController.350124581#18446744073709551615#0#0(6@104"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib337151692#18446744073709551615#0#18446744073709551615#0#0"0(22@142"The 'callTimerLabel' outlet of 'File's Owner' is connected to 'Label (0:00:00)' but 'callTimerLabel' is no longer defined on RocketController.350124581#18446744073709551615#0#0(6@104"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib337151692#18446744073709551615#0#18446744073709551615#0#0"0(22@111"The 'view' outlet of 'File's Owner' is connected to 'View' but 'view' is no longer defined on RocketController.350124581#18446744073709551615#0#0(6@104"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib337151692#18446744073709551615#0#18446744073709551615#0#0"0(0#0#104"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib4459544208#641"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PeerVoiceController.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PeerVoiceController.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PictureInPictureViewController.xib
+s350124580.843979
+e350124581.380491
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PictureInPictureViewController.xib
+lSLF07#2@74"CompileXIB Components/PeerFun/Resources/PictureInPictureViewController.xib350124580#350124581#0(0"0(0#0#115"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PictureInPictureViewController.xib4459544208#663"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PictureInPictureViewController.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/PeerFun/Resources/PictureInPictureViewController.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/DownloadQueue.xib
+s350124577.813800
+e350124578.410721
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/DownloadQueue.xib
+lSLF07#2@31"CompileXIB UI/DownloadQueue.xib350124577#350124578#0(0"0(0#0#72"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/DownloadQueue.xib4459544208#603"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/DownloadQueue.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/DownloadQueue.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/Downloads.xib
+s350124577.925334
+e350124578.423655
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/Downloads.xib
+lSLF07#2@27"CompileXIB UI/Downloads.xib350124577#350124578#0(0"0(0#0#68"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/Downloads.xib4459544208#595"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Downloads.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/Downloads.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/MyTubeViewController.xib
+s350124578.410844
+e350124580.323552
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/MyTubeViewController.xib
+o2012-02-05 14:19:38.643 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  
+o2012-02-05 14:19:38.646 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  
+o2012-02-05 14:19:38.646 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  
+o2012-02-05 14:19:38.647 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  
+o2012-02-05 14:19:38.647 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  
+o2012-02-05 14:19:38.647 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  
+o2012-02-05 14:19:38.648 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  
+lSLF07#2@38"CompileXIB UI/MyTubeViewController.xib350124578#350124580#0(1288"2012-02-05 14:19:38.643 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  2012-02-05 14:19:38.646 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  2012-02-05 14:19:38.646 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  2012-02-05 14:19:38.647 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  2012-02-05 14:19:38.647 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  2012-02-05 14:19:38.647 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  2012-02-05 14:19:38.648 ibtool[3903:a0b] -[__NSCFSet unionSet:]: This app appears to be calling this method with a non-set parameter.  Please wait while the system corrects this....  0(0#0#79"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/MyTubeViewController.xib4459544208#617"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/MyTubeViewController.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/MyTubeViewController.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPad.xib
+s350124578.425065
+e350124579.134847
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPad.xib
+lSLF07#2@45"CompileXIB UI/PJDetailViewController_iPad.xib350124578#350124579#0(0"0(0#0#86"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPad.xib4459544208#631"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PJDetailViewController_iPad.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPad.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPhone.xib
+s350124579.134936
+e350124579.629675
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPhone.xib
+lSLF07#2@47"CompileXIB UI/PJDetailViewController_iPhone.xib350124579#350124579#0(0"0(0#0#88"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPhone.xib4459544208#635"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PJDetailViewController_iPhone.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJDetailViewController_iPhone.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPad.xib
+s350124579.629790
+e350124580.122637
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPad.xib
+lSLF07#2@45"CompileXIB UI/PJMasterViewController_iPad.xib350124579#350124580#0(0"0(0#0#86"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPad.xib4459544208#631"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PJMasterViewController_iPad.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPad.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPhone.xib
+s350124580.122730
+e350124580.646204
+r1
+xCompileXIB
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPhone.xib
+lSLF07#2@47"CompileXIB UI/PJMasterViewController_iPhone.xib350124580#350124580#0(0"0(0#0#88"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPhone.xib4459544208#635"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PJMasterViewController_iPhone.nib /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/UI/PJMasterViewController_iPhone.xib --sdk /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/Default-Portrait.png Resources/Default-Portrait.png
+s350124577.516010
+e350124577.791108
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/Default-Portrait.png
+xResources/Default-Portrait.png
+lSLF07#2@35"Copy Resources/Default-Portrait.png350124577#350124577#0(0"0(0#0#82"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Default-Portrait.png4459544208#516"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Default-Portrait.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/Default.png Resources/Default.png
+s350124577.518332
+e350124577.791214
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/Default.png
+xResources/Default.png
+lSLF07#2@26"Copy Resources/Default.png350124577#350124577#0(0"0(0#0#73"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Default.png4459544208#507"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Default.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/Default@2x.png Resources/Default@2x.png
+s350124577.520136
+e350124577.791318
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/Default@2x.png
+xResources/Default@2x.png
+lSLF07#2@29"Copy Resources/Default@2x.png350124577#350124577#0(0"0(0#0#76"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Default@2x.png4459544208#510"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Default@2x.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/Icon-72.png Resources/Icon-72.png
+s350124577.526456
+e350124577.785931
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/Icon-72.png
+xResources/Icon-72.png
+lSLF07#2@26"Copy Resources/Icon-72.png350124577#350124577#0(0"0(0#0#73"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Icon-72.png4459544208#507"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Icon-72.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/Icon.png Resources/Icon.png
+s350124577.532392
+e350124577.788232
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/Icon.png
+xResources/Icon.png
+lSLF07#2@23"Copy Resources/Icon.png350124577#350124577#0(0"0(0#0#70"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Icon.png4459544208#504"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Icon.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/Icon@2x.png Resources/Icon@2x.png
+s350124577.560800
+e350124577.790874
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/Icon@2x.png
+xResources/Icon@2x.png
+lSLF07#2@26"Copy Resources/Icon@2x.png350124577#350124577#0(0"0(0#0#73"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Icon@2x.png4459544208#507"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Icon@2x.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/Q.png Resources/Q.png
+s350124577.783491
+e350124577.851953
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/Q.png
+xResources/Q.png
+lSLF07#2@20"Copy Resources/Q.png350124577#350124577#0(0"0(0#0#67"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Q.png4459544208#501"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/Q.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/QProgress.png Resources/QProgress.png
+s350124577.786031
+e350124577.874601
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/QProgress.png
+xResources/QProgress.png
+lSLF07#2@28"Copy Resources/QProgress.png350124577#350124577#0(0"0(0#0#75"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/QProgress.png4459544208#509"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/QProgress.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/ReStart.png Resources/ReStart.png
+s350124577.788819
+e350124577.859768
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/ReStart.png
+xResources/ReStart.png
+lSLF07#2@26"Copy Resources/ReStart.png350124577#350124577#0(0"0(0#0#73"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/ReStart.png4459544208#507"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/ReStart.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/downloadqueue.png Resources/downloadqueue.png
+s350124578.423744
+e350124578.461906
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/downloadqueue.png
+xResources/downloadqueue.png
+lSLF07#2@32"Copy Resources/downloadqueue.png350124578#350124578#0(0"0(0#0#79"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/downloadqueue.png4459544208#513"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/downloadqueue.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/forward.png Resources/forward.png
+s350124577.806557
+e350124577.888032
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/forward.png
+xResources/forward.png
+lSLF07#2@26"Copy Resources/forward.png350124577#350124577#0(0"0(0#0#73"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/forward.png4459544208#507"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/forward.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/goback.png Resources/goback.png
+s350124577.524563
+e350124577.623686
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/goback.png
+xResources/goback.png
+lSLF07#2@25"Copy Resources/goback.png350124577#350124577#0(0"0(0#0#72"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/goback.png4459544208#506"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/goback.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/iTunesArtwork.png Resources/iTunesArtwork.png
+s350124577.576642
+e350124577.816440
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/iTunesArtwork.png
+xResources/iTunesArtwork.png
+lSLF07#2@32"Copy Resources/iTunesArtwork.png350124577#350124577#0(0"0(0#0#79"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/iTunesArtwork.png4459544208#513"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/iTunesArtwork.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/index.html Components/CommonLogTemplates/Web/index.html
+s350124577.504812
+e350124577.560721
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/index.html
+xComponents/CommonLogTemplates/Web/index.html
+lSLF07#2@49"Copy Components/CommonLogTemplates/Web/index.html350124577#350124577#0(0"0(0#0#96"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/index.html4459544208#530"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/index.html /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/jquery-1.4.2.min.js Components/CommonLogTemplates/Web/jquery-1.4.2.min.js
+s350124577.512921
+e350124577.791000
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/jquery-1.4.2.min.js
+xComponents/CommonLogTemplates/Web/jquery-1.4.2.min.js
+lSLF07#2@58"Copy Components/CommonLogTemplates/Web/jquery-1.4.2.min.js350124577#350124577#0(0"0(0#0#105"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/jquery-1.4.2.min.js4459544208#539"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/jquery-1.4.2.min.js /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/noun_project_403_1.png Resources/noun_project_403_1.png
+s350124577.623803
+e350124577.750495
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/noun_project_403_1.png
+xResources/noun_project_403_1.png
+lSLF07#2@37"Copy Resources/noun_project_403_1.png350124577#350124577#0(0"0(0#0#84"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_403_1.png4459544208#518"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_403_1.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/noun_project_403_1@2x.png Resources/noun_project_403_1@2x.png
+s350124577.626568
+e350124577.751376
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/noun_project_403_1@2x.png
+xResources/noun_project_403_1@2x.png
+lSLF07#2@40"Copy Resources/noun_project_403_1@2x.png350124577#350124577#0(0"0(0#0#87"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_403_1@2x.png4459544208#521"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_403_1@2x.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/noun_project_533.png Resources/noun_project_533.png
+s350124577.750582
+e350124577.782600
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/noun_project_533.png
+xResources/noun_project_533.png
+lSLF07#2@35"Copy Resources/noun_project_533.png350124577#350124577#0(0"0(0#0#82"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_533.png4459544208#516"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_533.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/noun_project_533@2x.png Resources/noun_project_533@2x.png
+s350124577.751439
+e350124577.782270
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/noun_project_533@2x.png
+xResources/noun_project_533@2x.png
+lSLF07#2@38"Copy Resources/noun_project_533@2x.png350124577#350124577#0(0"0(0#0#85"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_533@2x.png4459544208#519"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/noun_project_533@2x.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/pause.png Resources/pause.png
+s350124577.782690
+e350124577.834019
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/pause.png
+xResources/pause.png
+lSLF07#2@24"Copy Resources/pause.png350124577#350124577#0(0"0(0#0#71"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/pause.png4459544208#505"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/pause.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/sliderThumb.png Resources/sliderThumb.png
+s350124577.791383
+e350124577.925065
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/sliderThumb.png
+xResources/sliderThumb.png
+lSLF07#2@30"Copy Resources/sliderThumb.png350124577#350124577#0(0"0(0#0#77"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/sliderThumb.png4459544208#511"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/sliderThumb.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/sliderTrack.png Resources/sliderTrack.png
+s350124577.798411
+e350124577.925241
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/sliderTrack.png
+xResources/sliderTrack.png
+lSLF07#2@30"Copy Resources/sliderTrack.png350124577#350124577#0(0"0(0#0#77"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/sliderTrack.png4459544208#511"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/sliderTrack.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/socket.html Components/CommonLogTemplates/Web/socket.html
+s350124577.508063
+e350124577.626470
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/socket.html
+xComponents/CommonLogTemplates/Web/socket.html
+lSLF07#2@50"Copy Components/CommonLogTemplates/Web/socket.html350124577#350124577#0(0"0(0#0#97"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/socket.html4459544208#531"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/socket.html /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/styles.css Components/CommonLogTemplates/Web/styles.css
+s350124577.509854
+e350124577.576562
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/styles.css
+xComponents/CommonLogTemplates/Web/styles.css
+lSLF07#2@49"Copy Components/CommonLogTemplates/Web/styles.css350124577#350124577#0(0"0(0#0#96"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/styles.css4459544208#530"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/Web/styles.css /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CCpResource build/Debug-iphonesimulator/SCBUTube.app/toolbar-queue.png Resources/toolbar-queue.png
+s350124577.804368
+e350124577.901470
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/SCBUTube.app/toolbar-queue.png
+xResources/toolbar-queue.png
+lSLF07#2@32"Copy Resources/toolbar-queue.png350124577#350124577#0(0"0(0#0#79"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/toolbar-queue.png4459544208#513"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/toolbar-queue.png /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app0#
+
+CGenerateDSYMFile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app.dSYM /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/SCBUTube
+r0
+
+CLd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/SCBUTube normal i386
+r0
+
+CProcessInfoPlistFile /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Info.plist /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/SCBUTube-Info.plist
+s350124577.489721
+e350124577.504720
+r1
+xProcessInfoPlistFile
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Info.plist
+x/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/SCBUTube-Info.plist
+lSLF07#2@89"Process /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/SCBUTube-Info.plist350124577#350124577#0(0"0(0#0#81"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/SCBUTube-Info.plist4459544320#575"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Resources/SCBUTube-Info.plist -genpkginfo /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app/Info.plist0#
+
+CProcessPCH /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch.gch SCBUTube_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+s350124581.381628
+e350124581.629427
+r1
+xProcessPCH
+x/var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch.gch
+xSCBUTube_Prefix.pch
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile SCBUTube_Prefix.pch350124581#350124581#0(0"0(0#0#71"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/SCBUTube_Prefix.pch4459544208#2019"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/SCBUTube_Prefix.pch -o /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-bhljgnsxkmeqfreqbjhsrcaptsyl/SCBUTube_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-dostxamxftcwdqcclmownnitjkaz/SCBUTube_Prefix.pch.gch SCBUTube_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s350124581.380607
+e350124582.098293
+r0
+xProcessPCH
+x/var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-dostxamxftcwdqcclmownnitjkaz/SCBUTube_Prefix.pch.gch
+xSCBUTube_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/SCBUTube_Prefix.pch:8:
+o/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomLogLevel/GlobalLogging.h:1:18: error: DDLog.h: No such file or directory
+lSLF07#2@30"Precompile SCBUTube_Prefix.pch350124581#350124582#0(258"In file included from /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/SCBUTube_Prefix.pch:8:/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomLogLevel/GlobalLogging.h:1:18: error: DDLog.h: No such file or directory1(4@34"DDLog.h: No such file or directory350124581#97#161#2(7@93"In file included from /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/SCBUTube_Prefix.pch350124581#18446744073709551615#0#0(6@71"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/SCBUTube_Prefix.pch348756199#8#0#8#0#0"0(13@150"DDLog.h: No such file or directory in /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomLogLevel/GlobalLogging.h350124581#18446744073709551615#0#0(6@112"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomLogLevel/GlobalLogging.h347202248#1#0#1#0#0"0(6@112"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/Components/CommonLogTemplates/CustomLogLevel/GlobalLogging.h347202248#1#0#1#0#28"*: No such file or directory0(0#0#71"/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/SCBUTube_Prefix.pch4459544208#2073"    cd /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube    setenv LANG en_US.US-ASCII    setenv PATH "/XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/XCode/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /XCode/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /XCode/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-generated-files.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-own-target-headers.hmap -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-all-target-headers.hmap -iquote /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/SCBUTube-project-headers.hmap -F/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/usr/local/include -I/tmp/SCBUTube.dst/usr/local/include -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources/i386 -I/Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/SCBUTube.build/Debug-iphonesimulator/SCBUTube.build/DerivedSources -c /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/SCBUTube_Prefix.pch -o /var/folders/tt/d9r0f75x3l56ms2hrh3c6cb40000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/SCBUTube_Prefix-dostxamxftcwdqcclmownnitjkaz/SCBUTube_Prefix.pch.gch1#
+
+CTouch /Users/PraveenJha/Desktop/YouTube/SCBUTube/SCBUTube/build/Debug-iphonesimulator/SCBUTube.app
+r0
+
