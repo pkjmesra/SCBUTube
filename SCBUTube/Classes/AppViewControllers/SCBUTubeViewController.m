@@ -142,7 +142,7 @@ int looper;
                 
                 [alertView show];
                 [alertView release];
-                
+                [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"m.youtube.com"]]];
 				[downloadButton setEnabled:YES];
 			}
 		}

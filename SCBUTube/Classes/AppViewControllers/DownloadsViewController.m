@@ -7,7 +7,8 @@
 
 @synthesize contents = _DownloadsContents;
 @synthesize path = _DownloadsPath;
-
+@synthesize backPaths =_backPaths;
+@synthesize table;
 #pragma mark -
 #pragma mark Initialization
 
@@ -20,9 +21,24 @@
 		NSMutableArray *filesMutableArray = [NSMutableArray array];
 		
 		for (NSString *item in files) {
-			[filesMutableArray addObject:[item stringByDeletingPathExtension]];
+			[filesMutableArray addObject:item];
 		}
 		
+		NSArray *dirs = [[fileManager contentsOfDirectoryAtPath:path error:NULL] pathsMatchingExtensions:[NSArray arrayWithObject:@"containers"]];
+
+		for (NSString *item in dirs) {
+			[filesMutableArray addObject:item];
+		}
+		
+//		if ([fileManager fileExistsAtPath:[self.path stringByAppendingPathComponent:@"Archives"]])
+//		{
+//			[filesMutableArray addObject:@"Archives"];
+//		}
+		if ([self.path hasSuffix:@"containers"])
+		{
+			// Add a back button functionality
+			[filesMutableArray addObject:@"Back.Back"];
+		}
 		[self setContents:filesMutableArray];
 	}
 }
@@ -70,7 +86,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
+	_backPaths = [[NSMutableArray alloc] initWithCapacity:0];
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	
 	[self setPath:[paths objectAtIndex:0]];
@@ -114,45 +130,86 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
+//	cell.accessoryType = UITableViewCellAccessoryNone;
+	
+	NSString *selectionName =[self.contents objectAtIndex:[indexPath indexAtPosition:1]];
+	BOOL isArchive = [selectionName hasSuffix:@"containers"];
+	BOOL isBack = [selectionName hasSuffix:@"Back.Back"];
 	
     // Configure the cell...
-	
-	NSString *moviePath = [NSString stringWithFormat:@"%@.mp4", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]];
-	
-	AVAsset *asset = [[AVURLAsset alloc] initWithURL:[NSURL fileURLWithPath:moviePath] options:nil];
-	
-	NSString *imagePath = [NSString stringWithFormat:@"%@.png", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]];
-	
-	int durationSec = (int)CMTimeGetSeconds(asset.duration);
-	int min = durationSec / 60;
-	int sec = durationSec % 60;
-	
-	[asset release];
-	
-	[cell.textLabel setMinimumFontSize:14.0];
-	[cell.textLabel setAdjustsFontSizeToFitWidth:YES];
-	[cell.textLabel setText:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]];
-	[cell.detailTextLabel setText:[NSString stringWithFormat:@"%dm:%02ds", min, sec]];
-	if ([[NSFileManager defaultManager] fileExistsAtPath:imagePath])
+	if(!isArchive && !isBack)
 	{
-		[cell.imageView setImage:[UIImage imageWithContentsOfFile:imagePath]];
+		NSString *moviePath = [NSString stringWithFormat:@"%@", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]];
+		
+		AVAsset *asset = [[AVURLAsset alloc] initWithURL:[NSURL fileURLWithPath:moviePath] options:nil];
+		
+		NSString *imagePath = [NSString stringWithFormat:@"%@.png", 
+							   [[self.path stringByAppendingPathComponent:
+											[self.contents objectAtIndex:[indexPath indexAtPosition:1]]
+								  ] stringByDeletingPathExtension]];
+		
+		if (![[NSFileManager defaultManager] fileExistsAtPath:imagePath])
+		{
+			// Try finding it in the root dir
+			NSString *newimagePath = [NSString stringWithFormat:@"%@.png", 
+									  [[[self.path stringByReplacingOccurrencesOfString:[self.path lastPathComponent] withString:@""] stringByAppendingPathComponent:
+						   [self.contents objectAtIndex:[indexPath indexAtPosition:1]]
+						   ] stringByDeletingPathExtension]];
+			if ([[NSFileManager defaultManager] fileExistsAtPath:newimagePath])
+			{
+				[[NSFileManager defaultManager] moveItemAtPath:newimagePath toPath:imagePath error:nil];
+			}
+		}
+		int durationSec = (int)CMTimeGetSeconds(asset.duration);
+		int min = durationSec / 60;
+		int sec = durationSec % 60;
+		
+		[asset release];
+		[cell.detailTextLabel setText:[NSString stringWithFormat:@"%dm:%02ds", min, sec]];
+		if ([[NSFileManager defaultManager] fileExistsAtPath:imagePath])
+		{
+			[cell.imageView setImage:[UIImage imageWithContentsOfFile:imagePath]];
+		}
+		else
+		{
+			[cell.imageView setImage:[UIImage imageWithData:[self getImageForCell:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]]];
+		}
 	}
 	else
 	{
-		[cell.imageView setImage:[UIImage imageWithData:[self getImageForCell:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]]];
+		[cell.imageView setImage:nil];
+		[cell.detailTextLabel setText:nil];
 	}
+
+	[cell.textLabel setMinimumFontSize:14.0];
+	[cell.textLabel setAdjustsFontSizeToFitWidth:YES];
+	[cell.textLabel setText:[[self.contents objectAtIndex:[indexPath indexAtPosition:1]] stringByDeletingPathExtension]];
+	UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(60, 20,200, [self tableView:tableView heightForRowAtIndexPath:indexPath])];
+	textField.delegate =self;
+	textField.adjustsFontSizeToFitWidth = YES;
+	textField.textColor = [UIColor blackColor];
+	textField.tag = [indexPath indexAtPosition:1];
+	textField.placeholder = @"Rename this File or Folder";
+	textField.keyboardType = UIKeyboardTypeNamePhonePad;
+	textField.returnKeyType = UIReturnKeyDone;
+	textField.text = cell.textLabel.text;
+	cell.editingAccessoryView = [textField autorelease];
+	
+	
 //	[cell.imageView setBounds:CGRectMake(0, 0, 120.0, 70.0)];
 //	[cell.imageView sizeToFit];
     return cell;
 }
 
-/*
+
  // Override to support conditional editing of the table view.
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
  // Return NO if you do not want the specified item to be editable.
- return YES;
+	 NSString *selectionName =[self.contents objectAtIndex:[indexPath indexAtPosition:1]];
+	 BOOL isBack = [selectionName hasSuffix:@"Back.Back"];
+	 return !isBack;
  }
- */
+ 
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -160,10 +217,10 @@
         // Delete the row from the data source.
 		NSFileManager *fileManager = [NSFileManager defaultManager];
 		
-		NSString *moviePath = [NSString stringWithFormat:@"%@.mp4", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]];
+		NSString *moviePath = [NSString stringWithFormat:@"%@", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]];
 		[fileManager removeItemAtPath:moviePath error:NULL];
 		
-		NSString *imagePath = [NSString stringWithFormat:@"%@.png", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]];
+		NSString *imagePath = [NSString stringWithFormat:@"%@", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]];
 		[fileManager removeItemAtPath:imagePath error:NULL];
 		
 		[self setContents:nil];
@@ -178,11 +235,73 @@
 	 */
 }
 
-/*
+
  // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath 
+{
+	// Move the row from the data source to archive folder
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+	
+//	NSString *archiveDir =[self.path stringByAppendingPathComponent:@"Archives"];
+	NSString *fileType =[self.contents objectAtIndex:[toIndexPath indexAtPosition:1]];
+	NSString *archiveDir = fileType;
+	if ([fileType hasSuffix:@".mp4"])
+	{
+		archiveDir =[NSString stringWithFormat:@"%@.containers",[self.path stringByAppendingPathComponent:[fileType stringByDeletingPathExtension]]];
+		if (![fileManager fileExistsAtPath:archiveDir])
+		{
+			[fileManager createDirectoryAtPath:archiveDir withIntermediateDirectories:YES attributes:nil error:nil];
+		}
+		NSString *movietoPath = [NSString stringWithFormat:@"%@", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[toIndexPath indexAtPosition:1]]]];
+		NSString *movieArchivetoPath =[NSString stringWithFormat:@"%@", [archiveDir stringByAppendingPathComponent:[self.contents objectAtIndex:[toIndexPath indexAtPosition:1]]]];
+		
+		[fileManager moveItemAtPath:movietoPath toPath:movieArchivetoPath error:NULL];
+		
+		NSString *imageArchivetoPath =[NSString stringWithFormat:@"%@.png", 
+									   [archiveDir stringByAppendingPathComponent:
+												[[self.contents objectAtIndex:[toIndexPath indexAtPosition:1]] stringByDeletingPathExtension]]];
+		NSString *imagetoPath = [NSString stringWithFormat:@"%@.png", 
+								 [self.path stringByAppendingPathComponent:
+									[[self.contents objectAtIndex:[toIndexPath indexAtPosition:1]] 
+										stringByDeletingPathExtension]]];
+		[fileManager moveItemAtPath:imagetoPath toPath:imageArchivetoPath error:NULL];
+	}
+	else if([fileType hasSuffix:@".containers"])
+	{
+		archiveDir =[self.path stringByAppendingPathComponent:fileType];
+	}
+	else if ([fileType hasSuffix:@"Back.Back"])
+	{
+		// User is trying to move back an item to the parent directory ?
+		archiveDir = [self.path stringByReplacingOccurrencesOfString:[self.path lastPathComponent] withString:@""];
+		if (![fileManager fileExistsAtPath:archiveDir])
+		{
+			// Get to the root directory
+			NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+			
+			archiveDir = [paths objectAtIndex:0];
+		}
+	}
+
+	NSString *moviePath = [NSString stringWithFormat:@"%@", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[fromIndexPath indexAtPosition:1]]]];
+	NSString *movieArchivePath =[NSString stringWithFormat:@"%@", [archiveDir stringByAppendingPathComponent:[self.contents objectAtIndex:[fromIndexPath indexAtPosition:1]]]];
+	
+	NSLog(@"moviePath :%@",moviePath);
+	NSLog(@"movieArchivePath :%@",movieArchivePath);
+	[fileManager moveItemAtPath:moviePath toPath:movieArchivePath error:NULL];
+	
+	NSString *imageArchivePath =[NSString stringWithFormat:@"%@.png", [archiveDir stringByAppendingPathComponent:[[self.contents objectAtIndex:[fromIndexPath indexAtPosition:1]] stringByDeletingPathExtension]]];
+	NSString *imagePath = [NSString stringWithFormat:@"%@.png", [self.path stringByAppendingPathComponent:[[self.contents objectAtIndex:[fromIndexPath indexAtPosition:1]] stringByDeletingPathExtension]]];
+	[fileManager moveItemAtPath:imagePath toPath:imageArchivePath error:NULL];
+	
+	[self.backPaths addObject:self.path];
+	self.path =archiveDir;
+	[self setContents:nil];
+	[self loadContents];
+	[tableView reloadData];
+	//[table deleteRowsAtIndexPaths:[NSArray arrayWithObject:fromIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+ 
 
 /*
  // Override to support conditional rearranging of the table view.
@@ -196,13 +315,42 @@
 #pragma mark Table view delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	NSString *selectionName =[self.contents objectAtIndex:[indexPath indexAtPosition:1]];
+	BOOL isArchive = [selectionName hasSuffix:@"containers"];
+	BOOL isBack = [selectionName hasSuffix:@"Back.Back"];
+	if (isArchive || isBack)
+		return 40;
+	
     return 70;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [table deselectRowAtIndexPath:indexPath animated:YES];
-	
-	NSString *contentURL = [NSString stringWithFormat:@"%@.mp4", [self.path stringByAppendingPathComponent:[self.contents objectAtIndex:[indexPath indexAtPosition:1]]]];
+    
+	UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+	if (cell.editing)
+    {
+        [cell setEditing:YES animated:YES];
+        return;
+    }
+	NSString *selectionName =[self.contents objectAtIndex:[indexPath indexAtPosition:1]];
+	if ([selectionName hasSuffix:@".containers"])
+	{
+		[self.backPaths addObject:self.path];
+		self.path =[self.path stringByAppendingPathComponent:selectionName];
+		[self loadContents];
+		[tableView reloadData];
+		return;
+	}
+	else if ([selectionName hasSuffix:@".Back"])
+	{
+		self.path = [self.backPaths lastObject];
+		[self.backPaths removeObject:self.path];
+		[self loadContents];
+		[tableView reloadData];
+		return;
+	}
+	[table deselectRowAtIndexPath:indexPath animated:YES];
+	NSString *contentURL = [NSString stringWithFormat:@"%@", [self.path stringByAppendingPathComponent:selectionName]];
 	
 	MPMoviePlayerViewController *moviePlayerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL fileURLWithPath:contentURL]];
 	if (moviePlayerViewController) {
@@ -254,4 +402,52 @@
     [super dealloc];
 }
 
+#pragma UITextField delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:textField.tag inSection:0];
+	UITableViewCell *cell = [self tableView:self.table cellForRowAtIndexPath:indexPath];
+	[cell.textLabel setText:textField.text];
+	
+	NSString *selectionName =[self.contents objectAtIndex:[indexPath indexAtPosition:1]];
+	
+	NSFileManager * fileManager = [NSFileManager defaultManager];
+	NSString *oldFile;
+	NSString *newFile;
+
+	if ([selectionName hasSuffix:@".containers"])
+	{
+		oldFile =[NSString stringWithFormat:@"%@.containers",[self.path stringByAppendingPathComponent:[selectionName stringByDeletingPathExtension]]];
+		newFile =[NSString stringWithFormat:@"%@.containers",[self.path stringByAppendingPathComponent:textField.text]];
+		NSLog(@"oldFile:%@",oldFile);
+		NSLog(@"newFile:%@",newFile);
+		if (![fileManager fileExistsAtPath:newFile])
+		{
+			[fileManager moveItemAtPath:oldFile toPath:newFile error:NULL];
+		}
+	}
+	else if ([selectionName hasSuffix:@".mp4"])
+	{
+		oldFile =[NSString stringWithFormat:@"%@.mp4",[self.path stringByAppendingPathComponent:[selectionName stringByDeletingPathExtension]]];
+		newFile =[NSString stringWithFormat:@"%@.mp4",[self.path stringByAppendingPathComponent:textField.text]];
+		if (![fileManager fileExistsAtPath:newFile])
+		{
+			[fileManager moveItemAtPath:oldFile toPath:newFile error:NULL];
+		}
+		
+		oldFile =[NSString stringWithFormat:@"%@.png",[self.path stringByAppendingPathComponent:[selectionName stringByDeletingPathExtension]]];
+		newFile =[NSString stringWithFormat:@"%@.png",[self.path stringByAppendingPathComponent:textField.text]];
+		if (![fileManager fileExistsAtPath:newFile])
+		{
+			[fileManager moveItemAtPath:oldFile toPath:newFile error:NULL];
+		}
+	}
+	
+	[textField resignFirstResponder];
+	
+	[self setContents:nil];
+	[self loadContents];
+	[self.table reloadData];
+	return YES;
+}
 @end
