@@ -133,7 +133,7 @@
 
 - (NSData *)generateDocumentsDirectoryData:(NSString *)path
 {	
-	NSString *docFullPath = [NSString stringWithFormat:@"%@%@/",[config.documentRoot stringByReplacingOccurrencesOfString:@"/Documents" withString:@""],path];
+	NSString *docFullPath = [NSString stringWithFormat:@"%@%@/",[config.documentRoot stringByReplacingOccurrencesOfString:@"/Documents" withString:@""],[path stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	NSLog(@"docFullPath :%@",docFullPath);
 	NSDateFormatter *df = [[[NSDateFormatter alloc] init] autorelease];
 	[df setFormatterBehavior:NSDateFormatterBehavior10_4];

@@ -97,7 +97,7 @@ possibleFilename;
 		[fileManager removeItemAtPath:attribFile error:nil];
 	}
 	[fileManager createFileAtPath:attribFile contents:[attributes dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
-
+	fileData =nil;
 }
 
 - (void) forceStop {
