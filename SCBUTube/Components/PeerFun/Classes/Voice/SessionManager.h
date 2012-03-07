@@ -68,8 +68,10 @@ typedef enum {
 	id lobbyDelegate;
 	id gameDelegate;
     ConnectionState sessionState;
+	BOOL browseMode;
 }
 
+@property BOOL browseMode;
 //! Gets or sets the current peer id of the connected peer
 @property (nonatomic, readonly) NSString *currentConfPeerID;
 //! Gets or sets the peer list

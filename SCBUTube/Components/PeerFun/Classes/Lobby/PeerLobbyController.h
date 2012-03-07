@@ -38,7 +38,11 @@
 	NSArray	*peerList;
     UIAlertView *alertView;
 	SessionManager *manager;
+	BOOL browseMode;
 }
+
+//! A session manager object to send and receive messages to and from peers
+@property (nonatomic,assign) BOOL browseMode;
 
 //! A session manager object to send and receive messages to and from peers
 @property (nonatomic, readonly) SessionManager *manager; 

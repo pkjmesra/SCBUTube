@@ -41,6 +41,7 @@
 @synthesize peerList;
 @synthesize lobbyDelegate;
 @synthesize gameDelegate;
+@synthesize browseMode;
 
 #pragma mark -
 #pragma mark NSObject Methods
@@ -88,8 +89,12 @@
 //! Creates a GKSession and advertises availability to Peers
 - (void) setupSession
 {
+	UIDevice *device =[UIDevice currentDevice];
 	// GKSession will default to using the device name as the display name
-	myGKSession = [[GKSession alloc] initWithSessionID:sessionID displayName:nil sessionMode:GKSessionModePeer];
+	NSString *name =[NSString stringWithFormat:@"%@-%@-%@-%@",[device name],[device model],[device systemName],[device systemVersion]];
+	if (browseMode)
+		name = [NSString stringWithFormat:@"%@%@",name,@"~Browser~"];
+	myGKSession = [[GKSession alloc] initWithSessionID:sessionID displayName:name sessionMode:GKSessionModePeer];
 	myGKSession.delegate = self; 
 	[myGKSession setDataReceiveHandler:self withContext:nil]; 
 	myGKSession.available = YES;

@@ -9,6 +9,7 @@
 @synthesize path = _DownloadsPath;
 @synthesize backPaths =_backPaths;
 @synthesize table;
+
 #pragma mark -
 #pragma mark Initialization
 
@@ -94,6 +95,16 @@
 	
     [navItem setLeftBarButtonItem:[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(back)] autorelease]];
 	[navItem setRightBarButtonItem:self.editButtonItem];
+	// Additional Code
+    [[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(keyboardWasShown:)
+												 name:UIKeyboardDidShowNotification
+											   object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(keyboardWasHidden:)
+												 name:UIKeyboardDidHideNotification
+											   object:nil];
+	 
 }
 
 - (void)back {
@@ -160,6 +171,38 @@
 				[[NSFileManager defaultManager] moveItemAtPath:newimagePath toPath:imagePath error:nil];
 			}
 		}
+		if (![[NSFileManager defaultManager] fileExistsAtPath:imagePath])
+		{
+			// If it still does not exist ? Try creating from asset
+			AVAssetImageGenerator *imageGenerator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+			
+			Float64 durationSeconds = CMTimeGetSeconds(asset.duration);
+			
+			CMTime midpoint = CMTimeMakeWithSeconds(durationSeconds / 20.0, 600);
+			CMTime actualTime;
+			
+			CGImageRef preImage = [imageGenerator copyCGImageAtTime:midpoint actualTime:&actualTime error:NULL];
+			
+			if (preImage != NULL) {
+				CGRect rect = CGRectMake(0.0, 0.0,120.0,70.0 );//CGImageGetWidth(preImage) * 0.5, CGImageGetHeight(preImage) * 0.5);
+				
+				UIImage *image = [UIImage imageWithCGImage:preImage];
+				
+				UIGraphicsBeginImageContext(rect.size);
+				
+				[image drawInRect:rect];
+				
+				NSData *data = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
+				
+				[[NSFileManager defaultManager] createFileAtPath:imagePath contents:data attributes:nil];
+				
+				UIGraphicsEndImageContext();
+			}
+			
+			CGImageRelease(preImage);
+			[imageGenerator release];
+		}
+		
 		int durationSec = (int)CMTimeGetSeconds(asset.duration);
 		int min = durationSec / 60;
 		int sec = durationSec % 60;
@@ -450,4 +493,60 @@
 	[self.table reloadData];
 	return YES;
 }
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    activeField = textField;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    activeField = nil;
+    // Additional Code
+}
+
+- (void)keyboardWasShown:(NSNotification *)aNotification {
+	 if ( keyboardShown )
+		 return;
+	if ([activeField tag]  <2) return; // Do not hide the already showing top 2 text fields by moving the view up
+
+	 {
+		 NSDictionary *info = [aNotification userInfo];
+		 NSValue *aValue = [info objectForKey:UIKeyboardBoundsUserInfoKey];
+		 CGSize keyboardSize = [aValue CGRectValue].size;
+		 
+		 NSTimeInterval animationDuration =[[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+		 CGRect frame = self.view.frame;
+		 frame.origin.y -= keyboardSize.height;
+		 frame.size.height += keyboardSize.height;
+		 [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
+		 [UIView setAnimationDuration:animationDuration];
+		 self.view.frame = frame;
+		 [UIView commitAnimations];
+		 
+		 viewMoved = YES;
+	 }
+	 
+	 keyboardShown = YES;
+ }
+ 
+- (void)keyboardWasHidden:(NSNotification *)aNotification {
+	 if ( viewMoved ) {
+		 NSDictionary *info = [aNotification userInfo];
+		 NSValue *aValue = [info objectForKey:UIKeyboardBoundsUserInfoKey];
+		 CGSize keyboardSize = [aValue CGRectValue].size;
+		 
+		 NSTimeInterval animationDuration = [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+		 CGRect frame = self.view.frame;
+		 frame.origin.y += keyboardSize.height;
+		 frame.size.height -= keyboardSize.height;
+		 [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
+		 [UIView setAnimationDuration:animationDuration];
+		 self.view.frame = frame;
+		 [UIView commitAnimations];
+		 
+		 viewMoved = NO;
+	 }
+	 
+	 keyboardShown = NO;
+ }
+	 
 @end

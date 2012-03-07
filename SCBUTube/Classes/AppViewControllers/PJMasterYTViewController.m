@@ -168,9 +168,11 @@
 				[self.navigationController pushViewController:self.detailViewController animated:YES];
 				break;
 				
-			case 1:
+			case 1: //Video call with Peers
+			case 2: //Watch what peers are watching
 				_detailViewController2 = [[PeerLobbyController alloc] initWithNibName:@"PeerLobbyController" bundle:nil];
-				_detailViewController2.title = NSLocalizedString(@"Watch/Download", @"Watch/Download");
+				_detailViewController2.title = row==1?NSLocalizedString(@"Peer Call", @"Peer Call"):NSLocalizedString(@"Peer Videos", @"Peer Videos");
+				((PeerLobbyController *)_detailViewController2).browseMode= row==2;
 				[self.navigationController pushViewController:_detailViewController2 animated:YES];
 				[_detailViewController2 release];
 				break;

@@ -9,6 +9,9 @@
 	NSArray *_DownloadsContents;
 	NSString *_DownloadsPath;
 	NSMutableArray *_backPaths;
+	UITextField *activeField; 
+	BOOL keyboardShown; 
+	BOOL viewMoved;
 }
 
 @property (retain, readwrite) IBOutlet UITableView *table;

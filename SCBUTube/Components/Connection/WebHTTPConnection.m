@@ -8,16 +8,19 @@
 #import "DDASLLogger.h"
 #import "DDTTYLogger.h"
 #import "WebSocket.h"
+#import "DDNumber.h"
 //#import "WebSocketLogger.h"
 
 #import <UIKit/UIKit.h>
 
 #import "Objective_Zipper.h"
+#define BARRED_FILE_EXTENSIONS @"|.css|.js|.png|.html|.state|.DS_Store|"
 
 @implementation WebHTTPConnection
 
 @synthesize logFileManager;
 @synthesize fileLogger;
+@synthesize possibleFilename;
 
 -(id <DDLogFileManager>) getLoggerManager
 {
@@ -169,45 +172,49 @@
 											 isDirectory:&isSubDirectory];
 		if (!isDirectory && !isSubDirectory)
 		{
-			// open your file …
-			DDLogFileInfo *logFileInfo = [[DDLogFileInfo alloc ]initWithFilePath:[NSString stringWithFormat:@"%@/%@",docFullPath,file]];
-//			NSString *fileName = logFileInfo.fileName;
-			NSString *fileDate = [df stringFromDate:[logFileInfo creationDate]];
-			NSString *fileSize;
-			
-			unsigned long long sizeInBytes = logFileInfo.fileSize;
-			
-			double GBs = (double)(sizeInBytes) / (double)(1024 * 1024 * 1024);
-			double MBs = (double)(sizeInBytes) / (double)(1024 * 1024);
-			double KBs = (double)(sizeInBytes) / (double)(1024);
-			
-			if(GBs >= 1.0)
+			// It's a file
+			if ([BARRED_FILE_EXTENSIONS rangeOfString:[[file lowercaseString] pathExtension]].location ==NSNotFound)
 			{
-				NSString *temp = [nf stringFromNumber:[NSNumber numberWithDouble:GBs]];
-				fileSize = [NSString stringWithFormat:@"%@ GB", temp];
+				// open your file …
+				DDLogFileInfo *logFileInfo = [[DDLogFileInfo alloc ]initWithFilePath:[NSString stringWithFormat:@"%@/%@",docFullPath,file]];
+	//			NSString *fileName = logFileInfo.fileName;
+				NSString *fileDate = [df stringFromDate:[logFileInfo creationDate]];
+				NSString *fileSize;
+				
+				unsigned long long sizeInBytes = logFileInfo.fileSize;
+				
+				double GBs = (double)(sizeInBytes) / (double)(1024 * 1024 * 1024);
+				double MBs = (double)(sizeInBytes) / (double)(1024 * 1024);
+				double KBs = (double)(sizeInBytes) / (double)(1024);
+				
+				if(GBs >= 1.0)
+				{
+					NSString *temp = [nf stringFromNumber:[NSNumber numberWithDouble:GBs]];
+					fileSize = [NSString stringWithFormat:@"%@ GB", temp];
+				}
+				else if(MBs >= 1.0)
+				{
+					NSString *temp = [nf stringFromNumber:[NSNumber numberWithDouble:MBs]];
+					fileSize = [NSString stringWithFormat:@"%@ MB", temp];
+				}
+				else
+				{
+					NSString *temp = [nf stringFromNumber:[NSNumber numberWithDouble:KBs]];
+					fileSize = [NSString stringWithFormat:@"%@ KB", temp];
+				}
+				
+				NSString *fileLink = [NSString stringWithFormat:@"<a href='http://%@%@/%@'>%@</a>",[request headerField:@"Host"], path, logFileInfo.fileName,logFileInfo.fileName];
+				
+				[response appendFormat:@"<tr><td>%@</td><td>%@</td><td align='right'>%@</td>", fileLink, fileDate, fileSize];
+				[logFileInfo release];
 			}
-			else if(MBs >= 1.0)
-			{
-				NSString *temp = [nf stringFromNumber:[NSNumber numberWithDouble:MBs]];
-				fileSize = [NSString stringWithFormat:@"%@ MB", temp];
-			}
-			else
-			{
-				NSString *temp = [nf stringFromNumber:[NSNumber numberWithDouble:KBs]];
-				fileSize = [NSString stringWithFormat:@"%@ KB", temp];
-			}
-			
-			NSString *fileLink = [NSString stringWithFormat:@"<a href='http://%@%@/%@'>%@</a>",[request headerField:@"Host"], path, logFileInfo.fileName,logFileInfo.fileName];
-			
-			[response appendFormat:@"<tr><td>%@</td><td>%@</td><td align='right'>%@</td>", fileLink, fileDate, fileSize];
-			[logFileInfo release];
 		}
 		else if (isSubDirectory)
 		{
 			if (![subDirectories objectForKey:[[file pathComponents] objectAtIndex:0]])
 			{
 				NSString *zipLink = [NSString stringWithFormat:@"<a href='http://%@/?zipfile=%@/%@'>Download Zip</a>",[request headerField:@"Host"], path,[[file pathComponents] objectAtIndex:0]];
-				NSString *fileLink = [NSString stringWithFormat:@"<a href='http://%@%@/%@'>%@</a>", [request headerField:@"Host"],path, [[file pathComponents] objectAtIndex:0],[[file pathComponents] objectAtIndex:0]];
+				NSString *fileLink = [NSString stringWithFormat:@"<a href='http://%@%@/%@'>%@</a>", [request headerField:@"Host"],path, [[file pathComponents] objectAtIndex:0],[[[file pathComponents] objectAtIndex:0] stringByDeletingPathExtension]];
 				
 				[response appendFormat:@"<tr><td>%@</td><td>&nbsp;</td><td align='right'>%@</td>", fileLink,zipLink];
 				[subDirectories setObject:[[file pathComponents] objectAtIndex:0] forKey:[[file pathComponents] objectAtIndex:0]];
@@ -218,6 +225,17 @@
 	if (enumerator == nil)
 	{
 		return nil;
+	}
+	if ([self supportsPOST:path withSize:0])
+	{
+		[response appendString:@"<form action=\"post.html\" method=\"post\" enctype=\"multipart/form-data\" name=\"form1\" id=\"form1\">"];
+		[response appendString:@"<label>&nbsp;&nbsp;&nbsp;&nbsp;Upload file:"];
+		[response appendString:@"<input type=\"file\" name=\"file\" id=\"file\" />"];
+		[response appendString:@"</label>"];
+		[response appendString:@"<label>"];
+		[response appendString:@"<input type=\"submit\" name=\"button\" id=\"button\" value=\"Upload\" />"];
+		[response appendString:@"</label>"];
+		[response appendString:@"</form>"];
 	}
 	[response appendString:@"</table></body></html>"];
 	
@@ -296,7 +314,40 @@
 
 - (NSObject<HTTPResponse> *)httpResponseForMethod:(NSString *)method URI:(NSString *)path
 {
-	if ([path isEqualToString:@"/logs.html"])
+//	NSLog(@"postContentLength: %qu", requestContentLength);
+//	NSLog(@"postTotalBytesReceived: %qu", requestContentLengthReceived);
+	
+	if([method isEqualToString:@"POST"])
+	{
+////		NSLog(@"request: %@", request);
+//		NSString *postStr = nil;
+//		
+//		NSData *postData = [request body];
+//		if(postData)
+//		{
+//			postStr = [[[NSString alloc] initWithData:postData encoding:NSUTF8StringEncoding] autorelease];
+//		}
+//		
+////		NSLog(@"postStr: %@", postStr);
+//		
+//		// Result will be of the form "answer=..."
+//		
+//		int answer = [[postStr substringFromIndex:7] intValue];
+//		
+//		NSData *response = nil;
+//		if(answer == 10)
+//		{
+//			response = [@"<html><body>Correct<body></html>" dataUsingEncoding:NSUTF8StringEncoding];
+//		}
+//		else
+//		{
+//			response = [@"<html><body>Sorry - Try Again<body></html>" dataUsingEncoding:NSUTF8StringEncoding];
+//		}
+		
+		return [self handlePostedDataForMethod:method URI:path];
+//		return [[[HTTPDataResponse alloc] initWithData:response] autorelease];
+	}
+	else if ([path isEqualToString:@"/logs.html"])
 	{
 		NSData *indexData = [self generateIndexData];
 		return [[[HTTPDataResponse alloc] initWithData:indexData] autorelease];
@@ -415,6 +466,258 @@
 	}
 	
 	return [super webSocketForURI:path];
+}
+
+/**
+ * Overrides HTTPConnection's method
+ **/
+- (BOOL)supportsMethod:(NSString *)method atPath:(NSString *)path
+{
+	// Add support for POST
+	
+	if([method isEqualToString:@"POST"])
+	{
+		if([path isEqualToString:@"/post.html"])
+		{
+			// Let's be extra cautious, and make sure the upload isn't 5 gigs
+			
+			BOOL result = NO;
+			
+			NSString *contentLengthStr = [request headerField:@"Content-Length"];
+			
+			UInt64 contentLength;
+			if([NSNumber parseString:(NSString *)contentLengthStr intoUInt64:&contentLength])
+			{
+				result = contentLength < 1024*1024*1024;
+			}
+			
+//			if(contentLengthStr) CFRelease(contentLengthStr);
+			return result;
+		}
+	}
+	
+	return [super supportsMethod:method atPath:path];
+}
+
+/**
+ * Overrides HTTPConnection's method
+ **/
+- (BOOL)expectsRequestBodyFromMethod:(NSString *)method atPath:(NSString *)relativePath
+{
+	// Inform HTTP server that we expect a body to accompany a POST request
+	
+	if([method isEqualToString:@"POST"])
+		return YES;
+	
+	return [super expectsRequestBodyFromMethod:method atPath:relativePath];
+}
+
+
+/**
+ * This method is called after receiving all HTTP headers, but before reading any of the request body.
+ **/
+//- (void)prepareForBodyWithSize:(UInt64)contentLength
+//{
+//	// Override me to allocate buffers, file handles, etc.
+//	NSLog(@"request headers:%@",[request allHeaderFields]);
+////	NSFileManager *fileManager = [NSFileManager defaultManager];
+////	
+////	NSArray *components = [self.possibleFilename componentsSeparatedByCharactersInSet:[[NSCharacterSet alphanumericCharacterSet] invertedSet]];
+////	self.possibleFilename = [components componentsJoinedByString:@" "];
+////	if (createMainFile)
+////	{
+////		NSString *pausedFile =[NSString stringWithFormat:@"%@/%@/%@.paused", [paths objectAtIndex:0],inDirectory,self.possibleFilename];
+////		[fileManager createFileAtPath:pausedFile contents:self.receivedData attributes:nil];
+////	}
+//	[super prepareForBodyWithSize:contentLength];
+//}
+
+/**
+ * This method is called to handle data read from a POST / PUT.
+ * The given data is part of the request body.
+ **/
+- (void)processBodyData:(NSData *)postDataChunk
+{
+	// Override me to do something useful with a POST / PUT.
+	// If the post is small, such as a simple form, you may want to simply append the data to the request.
+	// If the post is big, such as a file upload, you may want to store the file to disk.
+	// 
+	// Remember: In order to support LARGE POST uploads, the data is read in chunks.
+	// This prevents a 50 MB upload from being stored in RAM.
+	// The size of the chunks are limited by the POST_CHUNKSIZE definition.
+	// Therefore, this method may be called multiple times for the same POST request.
+//	BOOL result = [request appendData:postDataChunk];
+//	
+//	if(!result)
+//	{
+//		NSLog(@"Couldn't append bytes!");
+//	}
+	if (!postHeaderOK)
+	{
+		UInt16 separatorBytes = 0x0A0D;
+		NSData* separatorData = [NSData dataWithBytes:&separatorBytes length:2];
+		
+		int l = [separatorData length];
+		
+		for (int i = 0; i < [postDataChunk length] - l; i++)
+		{
+			NSRange searchRange = {i, l};
+			
+			if ([[postDataChunk subdataWithRange:searchRange] isEqualToData:separatorData])
+			{
+				NSRange newDataRange = {dataStartIndex, i - dataStartIndex};
+				dataStartIndex = i + l;
+				i += l - 1;
+				NSData *newData = [postDataChunk subdataWithRange:newDataRange];
+				
+				if ([newData length])
+				{
+					[multipartData addObject:newData];
+				}
+				else
+				{
+					postHeaderOK = TRUE;
+					
+					NSString* postInfo = [[NSString alloc] initWithBytes:[[multipartData objectAtIndex:1] bytes] length:[[multipartData objectAtIndex:1] length] encoding:NSUTF8StringEncoding];
+					NSLog(@"postInfo:%@",postInfo);
+					NSArray* postInfoComponents = [postInfo componentsSeparatedByString:@"; filename="];
+					postInfoComponents = [[postInfoComponents lastObject] componentsSeparatedByString:@"\""];
+					postInfoComponents = [[postInfoComponents objectAtIndex:1] componentsSeparatedByString:@"\\"];
+					NSString* filename = [[config.server documentRoot] stringByAppendingPathComponent:[postInfoComponents lastObject]];
+					NSRange fileDataRange = {dataStartIndex, [postDataChunk length] - dataStartIndex};
+					
+					[[NSFileManager defaultManager] createFileAtPath:filename contents:[postDataChunk subdataWithRange:fileDataRange] attributes:nil];
+					NSFileHandle *file = [[NSFileHandle fileHandleForUpdatingAtPath:filename] retain];
+					
+					if (file)
+					{
+						[file seekToEndOfFile];
+						[multipartData addObject:file];
+					}
+					
+					[postInfo release];
+					
+					break;
+				}
+			}
+		}
+	}
+	else
+	{
+		NSFileHandle* fh = (NSFileHandle*)[multipartData lastObject];
+		if (fh) {
+			[fh writeData:postDataChunk];
+		}
+		
+	}
+//	[super processBodyData:postDataChunk];
+}
+
+/**
+ * This method is called after the request body has been fully read but before the HTTP request is processed.
+ **/
+//- (void)finishBody
+//{
+//	// Override me to perform any final operations on an upload.
+//	// For example, if you were saving the upload to disk this would be
+//	// the hook to flush any pending data to disk and maybe close the file.
+//	[super finishBody];
+//}
+
+-(NSObject<HTTPResponse> *)handlePostedDataForMethod:(NSString *)method URI:(NSString *)path
+{
+	NSLog(@"httpResponseForURI: method:%@ path:%@", method, path);
+	
+	NSData *requestData = [request messageData];
+	
+	NSString *requestStr = [[[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding] autorelease];
+	NSLog(@"\n=== Request ====================\n%@\n================================", requestStr);
+	
+	if (requestContentLength > 0)  // Process POST data
+	{
+		NSLog(@"processing post data: %qu", requestContentLength);
+		
+		if ([multipartData count] < 2) return nil;
+		
+		NSString* postInfo = [[NSString alloc] initWithBytes:[[multipartData objectAtIndex:1] bytes]
+													  length:[[multipartData objectAtIndex:1] length]
+													encoding:NSUTF8StringEncoding];
+		
+		NSArray* postInfoComponents = [postInfo componentsSeparatedByString:@"; filename="];
+		postInfoComponents = [[postInfoComponents lastObject] componentsSeparatedByString:@"\""];
+		postInfoComponents = [[postInfoComponents objectAtIndex:1] componentsSeparatedByString:@"\\"];
+		NSString* filename = [postInfoComponents lastObject];
+		
+		if (![filename isEqualToString:@""]) //this makes sure we did not submitted upload form without selecting file
+		{
+			UInt16 separatorBytes = 0x0A0D;
+			NSMutableData* separatorData = [NSMutableData dataWithBytes:&separatorBytes length:2];
+			[separatorData appendData:[multipartData objectAtIndex:0]];
+			int l = [separatorData length];
+			int count = 2;	//number of times the separator shows up at the end of file data
+			
+			NSFileHandle* dataToTrim = [multipartData lastObject];
+			NSLog(@"data: %@", dataToTrim);
+			
+			for (unsigned long long i = [dataToTrim offsetInFile] - l; i > 0; i--)
+			{
+				[dataToTrim seekToFileOffset:i];
+				if ([[dataToTrim readDataOfLength:l] isEqualToData:separatorData])
+				{
+					[dataToTrim truncateFileAtOffset:i];
+					i -= l;
+					if (--count == 0) break;
+				}
+			}
+			
+			NSLog(@"NewFileUploaded");
+			[[NSNotificationCenter defaultCenter] postNotificationName:@"NewFileUploaded" object:nil];
+		}
+		
+		for (int n = 1; n < [multipartData count] - 1; n++)
+			NSLog(@"%@", [[NSString alloc] initWithBytes:[[multipartData objectAtIndex:n] bytes] length:[[multipartData objectAtIndex:n] length] encoding:NSUTF8StringEncoding]);
+		
+		[postInfo release];
+		[multipartData release];
+		requestContentLength = 0;
+		
+	}
+	
+//	NSString *filePath = [self filePathForURI:path];
+	NSString *folder = @"/Documents";//[path isEqualToString:@"/"] ? [config.server documentRoot]: [NSString stringWithFormat: @"%@%@", [config.server documentRoot], path];
+	
+	if ([self isBrowseable:folder])
+	{
+		NSLog(@"folder: %@", folder);
+		NSData *docData = [self generateDocumentsDirectoryData:folder];
+		return [[[HTTPDataResponse alloc] initWithData:docData] autorelease];
+	}
+	
+	return nil;
+}
+/**
+ * Returns whether or not the server will accept POSTs.
+ * That is, whether the server will accept uploaded data for the given URI.
+ **/
+- (BOOL)supportsPOST:(NSString *)path withSize:(UInt64)contentLength
+{
+	//	NSLog(@"POST:%@", path);
+	
+	dataStartIndex = 0;
+	multipartData = [[NSMutableArray alloc] init];
+	postHeaderOK = FALSE;
+	
+	return YES;
+}
+/**
+ * Returns whether or not the requested resource is browseable.
+ **/
+- (BOOL)isBrowseable:(NSString *)path
+{
+	// Override me to provide custom configuration...
+	// You can configure it for the entire server, or based on the current request
+	
+	return YES;
 }
 
 @end

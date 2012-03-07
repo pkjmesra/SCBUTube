@@ -37,6 +37,7 @@
 //! A controller to manage the peers availability
 @implementation PeerLobbyController
 @synthesize manager;
+@synthesize browseMode;
 
 #pragma mark View Controller Methods
 
@@ -45,6 +46,7 @@
     [super viewDidLoad];
     manager = [[SessionManager alloc] init]; 
     manager.lobbyDelegate = self;
+	manager.browseMode = self.browseMode;
     [manager setupSession];
     
 	[self peerListDidChange:nil];
@@ -128,19 +130,28 @@
 //! Pops an invitation dialog due to peer attempting to connect.
 - (void) didReceiveInvitation:(SessionManager *)session fromPeer:(NSString *)participantID;
 {
-	NSString *str = [NSString stringWithFormat:@"Incoming Invite from %@", participantID];
-    if (alertView.visible) {
-        [alertView dismissWithClickedButtonIndex:0 animated:NO];
-        [alertView release];
-    }
-	alertView = [[UIAlertView alloc] 
-				 initWithTitle:str
-				 message:@"Do you wish to accept?" 
-				 delegate:self 
-				 cancelButtonTitle:@"Decline" 
-				 otherButtonTitles:nil];
-	[alertView addButtonWithTitle:@"Accept"]; 
-	[alertView show];
+	if ([participantID hasSuffix:@"~Browser~"])
+	{
+		// Accept the invite
+		[manager didAcceptInvitation];
+		// Send the root folder list of videos/directories
+	}
+	else
+	{
+		NSString *str = [NSString stringWithFormat:@"Incoming Invite from %@", participantID];
+		if (alertView.visible) {
+			[alertView dismissWithClickedButtonIndex:0 animated:NO];
+			[alertView release];
+		}
+		alertView = [[UIAlertView alloc] 
+					 initWithTitle:str
+					 message:@"Do you wish to accept?" 
+					 delegate:self 
+					 cancelButtonTitle:@"Decline" 
+					 otherButtonTitles:nil];
+		[alertView addButtonWithTitle:@"Accept"]; 
+		[alertView show];
+	}
 }
 
 /**

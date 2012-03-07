@@ -177,8 +177,8 @@
 		self.detailViewController.serviceList =[[NSMutableArray alloc] initWithCapacity:0];
 		self.detailViewController.title = NSLocalizedString(@"YouTube", @"YouTube");
 		[self.detailViewController.serviceList addObject:@"Watch/Download YouTube"];
-		[self.detailViewController.serviceList addObject:@"What Peers are watching"];
 		[self.detailViewController.serviceList addObject:@"Video call with Peer"];
+		[self.detailViewController.serviceList addObject:@"What Peers are watching"];
 	    
         [self.navigationController pushViewController:self.detailViewController animated:YES];
     }
