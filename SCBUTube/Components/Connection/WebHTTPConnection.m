@@ -586,6 +586,10 @@
 					NSString* filename = [[config.server documentRoot] stringByAppendingPathComponent:[postInfoComponents lastObject]];
 					NSRange fileDataRange = {dataStartIndex, [postDataChunk length] - dataStartIndex};
 					
+					if ([[[postInfoComponents lastObject] pathExtension] isEqualToString:@"attrib"])
+					{
+						filename = [[config.server documentRoot] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@",@"PausedDownloads",[postInfoComponents lastObject]]];
+					}
 					[[NSFileManager defaultManager] createFileAtPath:filename contents:[postDataChunk subdataWithRange:fileDataRange] attributes:nil];
 					NSFileHandle *file = [[NSFileHandle fileHandleForUpdatingAtPath:filename] retain];
 					
