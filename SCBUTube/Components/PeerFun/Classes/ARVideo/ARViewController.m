@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, GlobalLogic Inc.
+ Copyright (c) 2011, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -10,7 +10,7 @@
  Redistributions in binary form must reproduce the above copyright notice, this
  list of conditions and the following disclaimer in the documentation and/or other
  materials provided with the distribution.
- Neither the name of the GlobalLogic Inc. nor the names of its contributors may be
+ Neither the name of the Research2Development Inc. nor the names of its contributors may be
  used to endorse or promote products derived from this software without specific
  prior written permission.
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
@@ -371,7 +371,7 @@ NSComparisonResult LocationSortClosestFirst(ARCoordinate *s1, ARCoordinate *s2, 
 		return;
 	}
 	
-	ar_debugView.text = @"© 2011 GlobalLogic";//[self.centerCoordinate description];
+	ar_debugView.text = @"© 2011 Research2Development";//[self.centerCoordinate description];
 	
 	int index = 0;
 	for (ARCoordinate *item in ar_coordinates) {
