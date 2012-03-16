@@ -34,6 +34,7 @@
 	NSMutableData		*receivedData;
 	NSString			*localFilename;
 	NSURL				*downloadUrl;
+	NSString			*orgYTLink;
 	id<UIDownloadBarDelegate> delegate;
 	float				bytesReceived;
 	long long			expectedBytes;
@@ -61,6 +62,7 @@
 @property (assign) float	bytesReceived;
 //@property (nonatomic, copy) NSString *fileUrlPath;
 
+@property (nonatomic,retain) NSString			*orgYTLink;
 @property (nonatomic, readwrite,retain) NSMutableData* receivedData;
 @property (nonatomic, readonly, retain) NSURLRequest* DownloadRequest;
 @property (nonatomic, readonly, retain) NSURLConnection* DownloadConnection;

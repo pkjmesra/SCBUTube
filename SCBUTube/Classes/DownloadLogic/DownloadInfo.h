@@ -44,13 +44,14 @@
 
 	NSString *key;
 	NSString * value;
+	NSString *orgYTLink;
 	BOOL operationCompleted;
 }
 @property (nonatomic, readonly) float percentComplete;
 @property (nonatomic, retain) UIDownloadBar *bar;
 @property (nonatomic, assign) id<DownloadInfoDelegate> delegate;
 @property (nonatomic, assign) BOOL operationCompleted;
-
+@property (nonatomic,retain) NSString *orgYTLink;
 - (void)setObject:(id)anObject forKey:(id)aKey;
 - (NSUInteger)count;
 

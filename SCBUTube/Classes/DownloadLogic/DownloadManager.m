@@ -86,6 +86,7 @@
 		DownloadInfo *pausedInfo = [[DownloadInfo alloc] init];
 		NSString *title;
 		NSString *url;
+		NSString *ytLink=@"";
 		long long expectedBytes=0;
 		float bytesReceived=0;
 		
@@ -105,12 +106,17 @@
 				NSScanner *scanner1 = [NSScanner scannerWithString:[[line substringFromIndex:14] stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
 				[scanner1 scanLongLong:&expectedBytes];
 			}
+			else if ([line hasPrefix:@"OriginalYouTubeLink="])
+			{
+				ytLink =[[line substringFromIndex:20] stringByReplacingOccurrencesOfString:@"\n" withString:@""]; 
+			}
 			else if ([line hasPrefix:@"BytesReceived="])
 			{
 				NSScanner *scanner2 = [NSScanner scannerWithString:[[line substringFromIndex:14] stringByReplacingOccurrencesOfString:@"\n" withString:@""]];
 				[scanner2 scanFloat:&bytesReceived];			}
 		}
 		[pausedInfo setObject:url forKey:title];
+		if ([ytLink length] >0) pausedInfo.orgYTLink = ytLink;
 		[pausedInfo setUpWithPausedDownload:expectedBytes ReceivedBytes:bytesReceived];
 		[self addNewDownloadItem:pausedInfo];
 		[pausedInfo release];
@@ -141,6 +147,7 @@
 					!newDownload.bar.inProgress &&
 					!newDownload.bar.operationFailed)
 				{
+					// Delegate is set in addNewDownloadItem
 					//newDownload.delegate =self;
 					isIdle =NO;
 					[newDownload beginDownload];
@@ -173,13 +180,19 @@
 	// after adding them into the queue
 	
 	isIdle = NO; //reset the flag so no new download starts
+	DownloadInfo *firstInQ=nil;
 	for (DownloadInfo *dInfo in self.queue)
 	{
+		// Delegate is set in addNewDownloadItem
 //		dInfo.delegate =self;
-		[dInfo beginDownload];
-		break;
+		if (dInfo.bar ==nil)
+		{
+			[dInfo setUp:NO];
+		}
+		//[dInfo.bar forceStop];
+		if (!firstInQ) firstInQ =dInfo;
 	}
-
+	if (firstInQ)[firstInQ beginDownload];
 }
 
 -(void) forceStop
@@ -203,6 +216,7 @@
 
 - (void)downloadInfo:(DownloadInfo *)info didFailWithError:(NSError *)error 
 {
+	info.bar.operationFailed=YES;
 	[self.delegate downloadManagerInfo:info didFailWithError:error];
 	isIdle =YES;
 	[self start];

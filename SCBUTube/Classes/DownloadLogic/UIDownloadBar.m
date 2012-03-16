@@ -27,6 +27,9 @@
 
 #import "UIDownloadBar.h"
 
+//TODO: check when the download fails with error:-1004, description:Could not connect to the server.
+// try again loading the original YT link and parsing the current url and trying to download 
+// again with current url
 
 @implementation UIDownloadBar
 
@@ -44,7 +47,8 @@ downloadUrl,
 inProgress,
 operationFailed,
 //fileUrlPath,
-possibleFilename;
+possibleFilename,
+orgYTLink;
 
 -(void)saveDownloadInfo:(NSString *)inDirectory 
 		  bytesReceived:(float)rcvdBytes 
@@ -250,6 +254,7 @@ possibleFilename;
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+	NSLog(@"error:%d, description:%@",[error code],[error localizedDescription]);
 	inProgress =NO;
 	[receivedData release];
 	[self saveDownloadInfo:@"Failed" bytesReceived:0 createMainFile:NO];

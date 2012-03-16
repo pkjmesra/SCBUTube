@@ -260,6 +260,8 @@ int looper;
 	DownloadInfo *dinfo=[self trySetUpDownload];
 	if ([[dinfo FileTitle] length] >0 && [[dinfo FileUrl] length] >0)
 	{
+		NSString *url=[webView stringByEvaluatingJavaScriptFromString:@"function getUrl(){return window.location.href;} getUrl();"];
+		if ([url length] >0) dinfo.orgYTLink =url;
 		[dinfo setUp:NO];
 		[manager addNewDownloadItem:dinfo];
 		[manager start];

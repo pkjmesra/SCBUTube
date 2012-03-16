@@ -41,6 +41,7 @@
 @synthesize percentComplete;
 @synthesize delegate;
 @synthesize bar;
+@synthesize orgYTLink;
 @synthesize operationCompleted;
 
 - (DownloadInfo *)init {
@@ -84,11 +85,11 @@
 	
 	NSString *pausedFile =[NSString stringWithFormat:@"%@/PausedDownloads/%@.paused", [paths objectAtIndex:0],localFilename];
 	[fileManager createFileAtPath:pausedFile contents:[[NSString stringWithString:@""] dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
-	NSString *attributes = [NSString stringWithFormat:@"Title=%@\nURL=%@\nExpectedBytes= %lld\nBytesReceived=%.2f\n",
+	NSString *attributes = [NSString stringWithFormat:@"Title=%@\nURL=%@\nExpectedBytes= %lld\nBytesReceived=%.2f\nOriginalYouTubeLink=%@\n",
 							[localFilename stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
 							[[self FileUrl] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
 							0,
-							0];
+							0,[self.orgYTLink stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	
 	NSString *attribFile =[NSString stringWithFormat:@"%@/PausedDownloads/%@.attrib", [paths objectAtIndex:0],localFilename];
 	[fileManager createFileAtPath:attribFile contents:[attributes dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
@@ -114,6 +115,7 @@
 		
 		[bar setProgressViewStyle:UIProgressViewStyleDefault];
 	}
+	if ([self.orgYTLink length] >0)  bar.orgYTLink = self.orgYTLink;
 	return YES;
 }
 
@@ -132,6 +134,7 @@
 //		bar.receivedData = [self loadQueuedOrPausedItemContents];
 		bar.progress = ((bytesReceived/(float)expectedBytes)*100)/100;
 	}
+	bar.orgYTLink = self.orgYTLink;
 }
 
 -(NSMutableData *)loadQueuedOrPausedItemContents
