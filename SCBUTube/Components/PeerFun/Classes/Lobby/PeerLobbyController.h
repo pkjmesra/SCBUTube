@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -39,10 +39,12 @@
     UIAlertView *alertView;
 	SessionManager *manager;
 	BOOL browseMode;
+    PacketType packet;
 }
 
 //! A session manager object to send and receive messages to and from peers
 @property (nonatomic,assign) BOOL browseMode;
+@property (nonatomic, assign) PacketType packet;
 
 //! A session manager object to send and receive messages to and from peers
 @property (nonatomic, readonly) SessionManager *manager; 

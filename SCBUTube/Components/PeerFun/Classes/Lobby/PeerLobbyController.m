@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -33,19 +33,23 @@
 #import "PeerLobbyController.h"
 #import "PeerVoiceController.h"
 #import <GameKit/GameKit.h> 
+#import "ListViewController.h"
 
 //! A controller to manage the peers availability
 @implementation PeerLobbyController
 @synthesize manager;
 @synthesize browseMode;
+@synthesize packet;
 
 #pragma mark View Controller Methods
 
 - (void)viewDidLoad 
 {
     [super viewDidLoad];
-    manager = [[SessionManager alloc] init]; 
+    manager = [[SessionManager alloc] init];
+    [manager getList:packet];
     manager.lobbyDelegate = self;
+//    manager.listDelegate = self;
 	manager.browseMode = self.browseMode;
     [manager setupSession];
     
@@ -71,17 +75,29 @@
 #pragma mark -
 #pragma mark Opening Method
 //! Called when user selects a peer from the list or accepts a call invitation.
+- (void) openListWithPeerID:(NSString *)peerID
+{
+	ListViewController *listScreen = [[ListViewController alloc]
+                                        initWithNibName:@"ListViewController"
+                                        bundle:nil
+                                        manager: manager];
+	[self.navigationController pushViewController:listScreen animated:YES];
+	[listScreen release];
+}
+//! Called when user selects a peer from the list or accepts a call invitation.
 - (void) openGameScreenWithPeerID:(NSString *)peerID
 {
 	PeerVoiceController *gameScreen = [[PeerVoiceController alloc]
-                                        initWithNibName:@"PictureInPictureViewController"
-                                        bundle:nil
-                                        manager: manager];
+                                       initWithNibName:@"PictureInPictureViewController"
+                                       bundle:nil
+                                       manager: manager];
+    gameScreen.packetsEnum = packet;
 	[self.navigationController pushViewController:gameScreen animated:YES];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
 	[gameScreen release];
 }
+
 
 #pragma mark -
 #pragma mark Table Data Source Methods
@@ -113,7 +129,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	[manager connect:[peerList objectAtIndex:[indexPath row]]]; 
-	[self openGameScreenWithPeerID:[peerList objectAtIndex:[indexPath row]]]; 
+    if (packet == PacketTypeNSArray) 
+        [self openListWithPeerID:[peerList objectAtIndex:[indexPath row]]];
+    else 
+        [self openGameScreenWithPeerID:[peerList objectAtIndex:[indexPath row]]]; 
+    
 }
 
 #pragma mark -
@@ -184,8 +204,12 @@
 {
 	if (buttonIndex == 1) {
         // User accepted.  Open the game screen and accept the connection.
-        if ([manager didAcceptInvitation])
-            [self openGameScreenWithPeerID:manager.currentConfPeerID]; 
+        if ([manager didAcceptInvitation]){
+            if (packet == PacketTypeNSArray) 
+                [self openListWithPeerID:manager.currentConfPeerID];
+            else 
+                [self openGameScreenWithPeerID:manager.currentConfPeerID]; 
+        }
 	} else {
         [manager didDeclineInvitation];
 	}

@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -37,7 +37,7 @@
 
 //! Class extension for private methods.
 @interface videoFrameManager(Private)
-- (void)initWithImageFrameBuffer:(NSData *)inData Manager:(SessionManager *)mgr;
+- (id)initWithImageFrameBuffer:(NSData *)inData Manager:(SessionManager *)mgr;
 @end
 
 /**

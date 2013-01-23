@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -28,8 +28,8 @@
  File: SessionManager.m
  Abstract: Manages the GKSession and GKVoiceChatService.  While the app is
  running, it transfers game packets to and from the game and the peer.
-
-**/
+ 
+ **/
 
 #import <AudioToolbox/AudioToolbox.h>
 #import "SessionManager.h"
@@ -42,6 +42,8 @@
 @synthesize lobbyDelegate;
 @synthesize gameDelegate;
 @synthesize browseMode;
+@synthesize listDelegate;
+@synthesize isDownLoadingMovie;
 
 #pragma mark -
 #pragma mark NSObject Methods
@@ -55,21 +57,26 @@
         
         // Set up starting/stopping session on application hiding/terminating
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                              selector:@selector(willTerminate:)
-                                              name:UIApplicationWillTerminateNotification
-                                              object:nil];
+                                                 selector:@selector(willTerminate:)
+                                                     name:UIApplicationWillTerminateNotification
+                                                   object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                              selector:@selector(willTerminate:)
-                                              name:UIApplicationWillResignActiveNotification
-                                              object:nil];
+                                                 selector:@selector(willTerminate:)
+                                                     name:UIApplicationWillResignActiveNotification
+                                                   object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                              selector:@selector(willResume:)
-                                              name:UIApplicationDidBecomeActiveNotification
-                                              object:nil];
+                                                 selector:@selector(willResume:)
+                                                     name:UIApplicationDidBecomeActiveNotification
+                                                   object:nil];
         
-        [self setupVoice];
 	}
 	return self;  
+}
+-(void) getList:(PacketType)packet{
+    packetInfo = packet;
+    if (!(packetInfo == PacketTypeNSArray || packetInfo == PacketTypeMovieName || packetInfo == PacketTypeMovie)) 
+        [self setupVoice];
+    NSLog(@"packetInfo: %d", packetInfo);
 }
 
 - (void)dealloc
@@ -152,26 +159,58 @@
     [gameDelegate session:self didConnectAsInitiator:![self comparePeerID:currentConfPeerID]];
 }
 
+
+//! Called when voice or game data is received over the network from the peer
+- (void) receiveData:(NSData *)data fromPeer:(NSString *)peer inSession:(GKSession *)session context:(void *)context
+{
+    PacketType header;    
+    NSLog(@"receiveData for not movie");        
+    uint32_t swappedHeader;
+    if ([data length] >= sizeof(uint32_t)) {
+        [data getBytes:&swappedHeader length:sizeof(uint32_t)];
+        header = (PacketType)CFSwapInt32BigToHost(swappedHeader);
+        NSRange payloadRange = {sizeof(uint32_t), [data length]-sizeof(uint32_t)};
+        NSData* payload = [data subdataWithRange:payloadRange];
+        NSLog(@"loading data for %d",header);
+        // Check the header to see if this is a voice
+        if (header == PacketTypeVoice) {
+            [[GKVoiceChatService defaultVoiceChatService] receivedData:payload fromParticipantID:peer];
+        } else if (header == PacketTypeNSArray || header == PacketTypeMovieName || header == PacketTypeMovie) {
+            [listDelegate session:self didReceivePacket:payload ofType:header];
+        }
+        else {
+            [gameDelegate session:self didReceivePacket:payload ofType:header];
+        }
+    }
+}
+
+
 //! Called by VoiceController and VoiceManager to send data to the peer
 -(void) sendPacket:(NSData*)data ofType:(PacketType)type
 {
+    NSError *error;
+    NSLog(@"sendPacket data for non Movie");         
     NSMutableData * newPacket = [NSMutableData dataWithCapacity:([data length]+sizeof(uint32_t))];
     // Both game and voice data is prefixed with the PacketType so the peer knows where to send it.
     uint32_t swappedType = CFSwapInt32HostToBig((uint32_t)type);
     [newPacket appendBytes:&swappedType length:sizeof(uint32_t)];
     [newPacket appendData:data];
-    NSError *error;
+    
     if (currentConfPeerID) {
-        if (![myGKSession sendData:newPacket toPeers:[NSArray arrayWithObject:currentConfPeerID] withDataMode:GKSendDataReliable error:&error]) {
+        if (![myGKSession sendData:newPacket
+                           toPeers:[NSArray arrayWithObject:currentConfPeerID]
+                      withDataMode:GKSendDataReliable error:&error])
+        {
             NSLog(@"%@",[error localizedDescription]);
         }
         NSLog(@"IP address Packet sent to Peer");
-    }
+    }    
 }
 
 //! Called by VoiceController and VoiceManager to send data to the peer
 -(void) sendPacket:(NSData*)data ofType:(PacketType)type sendImmediate:(BOOL)unReliable
 {
+    
     NSMutableData * newPacket = [NSMutableData dataWithCapacity:([data length]+sizeof(uint32_t))];
     // Both game and voice data is prefixed with the PacketType so the peer knows where to send it.
     uint32_t swappedType = CFSwapInt32HostToBig((uint32_t)type);
@@ -186,9 +225,33 @@
     }
 }
 
+
+-(void) disconnectCurrentListViewCall
+{	
+    
+    [listDelegate willDisconnect:self];
+    if (sessionState != ConnectionStateDisconnected) {
+        if(sessionState == ConnectionStateConnected) {		
+            [[GKVoiceChatService defaultVoiceChatService] stopVoiceChatWithParticipantID:currentConfPeerID];
+        }
+        // Don't leave a peer hangin'
+        if (sessionState == ConnectionStateConnecting) {
+            [myGKSession cancelConnectToPeer:currentConfPeerID];
+        }
+        [myGKSession disconnectFromAllPeers];
+        myGKSession.available = YES;
+        sessionState = ConnectionStateDisconnected;
+		[currentConfPeerID release];
+        currentConfPeerID = nil;
+    }
+}
+
+
+
 //! Clear the connection states in the event of leaving a call or error.
 -(void) disconnectCurrentCall
 {	
+    
     [gameDelegate willDisconnect:self];
     if (sessionState != ConnectionStateDisconnected) {
         if(sessionState == ConnectionStateConnected) {		
@@ -267,8 +330,8 @@
 //! React to some activity from other peers on the network.
 - (void)session:(GKSession *)session peer:(NSString *)peerID didChangeState:(GKPeerConnectionState)state
 {
-//	NSLog(@"myGKSession.peerID :%@",myGKSession.peerID);
-//	NSLog(@"Incoming peerID :%@",peerID);
+    //	NSLog(@"myGKSession.peerID :%@",myGKSession.peerID);
+    //	NSLog(@"Incoming peerID :%@",peerID);
 	
 	if (![myGKSession.peerID isEqualToString:peerID])
 	{
@@ -291,13 +354,24 @@
 				myGKSession.available = NO;
 				[gameDelegate voiceChatWillStart:self];
 				sessionState = ConnectionStateConnected;
-				// Compare the IDs to decide which device will invite the other to a voice chat.
-				if([self comparePeerID:peerID]) {
-					NSError *error; 
-					if (![[GKVoiceChatService defaultVoiceChatService] startVoiceChatWithParticipantID:peerID error:&error]) {
-						NSLog(@"%@",[error localizedDescription]);
-					}
-				}
+                if (packetInfo == PacketTypeNSArray){
+                    [listDelegate sendArray:packetInfo];
+                }else if (packetInfo == PacketTypeMovieName) {
+                    [listDelegate sendMovieName:packetInfo];
+                }else if (packetInfo == PacketTypeMovie) {
+                    [listDelegate sendMovie:packetInfo];
+                }
+                else {
+                    // Compare the IDs to decide which device will invite the other to a voice chat.
+                    
+                    if([self comparePeerID:peerID]) {
+                        NSError *error; 
+                        if (![[GKVoiceChatService defaultVoiceChatService] startVoiceChatWithParticipantID:peerID error:&error]) {
+                            NSLog(@"%@",[error localizedDescription]);
+                        }
+                    }
+                }
+                
 				break;				
 			case GKPeerStateDisconnected:
 				// The call ended either manually or due to failure somewhere.
@@ -314,25 +388,6 @@
 	}
 }
 
-//! Called when voice or game data is received over the network from the peer
-- (void) receiveData:(NSData *)data fromPeer:(NSString *)peer inSession:(GKSession *)session context:(void *)context
-{
-    PacketType header;
-    uint32_t swappedHeader;
-    if ([data length] >= sizeof(uint32_t)) {    
-        [data getBytes:&swappedHeader length:sizeof(uint32_t)];
-        header = (PacketType)CFSwapInt32BigToHost(swappedHeader);
-        NSRange payloadRange = {sizeof(uint32_t), [data length]-sizeof(uint32_t)};
-        NSData* payload = [data subdataWithRange:payloadRange];
-        
-        // Check the header to see if this is a voice
-        if (header == PacketTypeVoice) {
-            [[GKVoiceChatService defaultVoiceChatService] receivedData:payload fromParticipantID:peer];
-        } else {
-            [gameDelegate session:self didReceivePacket:payload ofType:header];
-        }
-    }
-}
 
 - (NSString *) displayNameForPeer:(NSString *)peerID
 {
@@ -389,7 +444,7 @@ void EnableSpeakerPhone ()
  Called when audio is interrupted by a call or alert.  Since we are using
  UIApplicationWillResignActiveNotification to deal with ending the game,
  this just resumes speakerphone after an audio interruption.
-**/
+ **/
 void InterruptionListenerCallback (void *inUserData, UInt32 interruptionState)
 {
     if (interruptionState == kAudioSessionEndInterruption) {

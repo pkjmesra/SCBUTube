@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -28,7 +28,7 @@
  File: SessionManager.h
  Abstract: Manages the GKSession and GKVoiceChatService.  While the app is
  running, it transfers game packets to and from the game and the peer.
-
+ 
  **/
 
 #import <UIKit/UIKit.h>
@@ -46,7 +46,10 @@ typedef enum {
     PacketTypeMasterAccessLeft=8,
     PacketTypeImage=9,
     PacketTypeVideoURL=10,
-    PacketTypeOSInfo=11
+    PacketTypeOSInfo=11,
+    PacketTypeNSArray = 12,
+    PacketTypeMovieName = 13,
+    PacketTypeMovie = 14
 } PacketType;
 
 typedef enum {
@@ -67,8 +70,12 @@ typedef enum {
 	NSMutableArray *peerList;
 	id lobbyDelegate;
 	id gameDelegate;
+    id listDelegate;
     ConnectionState sessionState;
 	BOOL browseMode;
+    PacketType packetInfo;
+    BOOL isDownLoadingMovie;
+    
 }
 
 @property BOOL browseMode;
@@ -78,6 +85,9 @@ typedef enum {
 @property (nonatomic, readonly) NSMutableArray *peerList;
 @property (nonatomic, assign) id lobbyDelegate;
 @property (nonatomic, assign) id gameDelegate;
+@property (nonatomic, assign) id listDelegate;
+@property (nonatomic, assign) BOOL isDownLoadingMovie;
+- (void) getList:(PacketType)packet;
 
 - (void) setupSession;
 - (void) connect:(NSString *)peerID;
@@ -88,6 +98,9 @@ typedef enum {
              ofType:(PacketType)type 
       sendImmediate:(BOOL)unReliable;
 - (void) disconnectCurrentCall;
+
+-(void) disconnectCurrentListViewCall;
+
 - (NSString *) displayNameForPeer:(NSString *)peerID;
 
 @end
@@ -132,5 +145,19 @@ didConnectAsInitiator:(BOOL)shouldStart;
 didReceivePacket:(NSData*)data 
           ofType:(PacketType)packetType;
 
+@end
+
+@protocol SessionManagerlistDelegate
+
+- (void) voiceChatWillStart:(SessionManager *)session;
+- (void) session:(SessionManager *)session 
+didConnectAsInitiator:(BOOL)shouldStart;
+- (void) willDisconnect:(SessionManager *)session;
+- (void) session:(SessionManager *)session 
+didReceivePacket:(NSData*)data 
+          ofType:(PacketType)packetType;
+-(void) sendArray:(PacketType)packetType;
+-(void) sendMovieName:(PacketType)packetType;
+-(void) sendMovie:(PacketType)packetType;
 @end
 

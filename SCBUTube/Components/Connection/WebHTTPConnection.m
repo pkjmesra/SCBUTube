@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -55,7 +55,7 @@
 		// Check if the UIApplicationDelegate has a fileLogger
 		if ([[[UIApplication sharedApplication] delegate] respondsToSelector:@selector(fileLogger)])
 		{
-			return [[[[UIApplication sharedApplication] delegate] fileLogger] logFileManager];
+			return [[[[UIApplication sharedApplication] delegate] performSelector:@selector(fileLogger)] logFileManager];
 		}
 		else
 		{

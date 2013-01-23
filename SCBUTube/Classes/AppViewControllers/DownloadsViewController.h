@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -37,11 +37,13 @@
 	UITextField *activeField; 
 	BOOL keyboardShown; 
 	BOOL viewMoved;
+    NSArray *listDataArray;
 }
 
 @property (retain, readwrite) IBOutlet UITableView *table;
 @property (retain, readwrite) NSArray *contents;
 @property (retain, readwrite) NSString *path;
 @property (retain, readwrite) NSMutableArray *backPaths;
+@property (retain, nonatomic) NSArray *listDataArray;
 
 @end

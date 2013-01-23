@@ -1,40 +1,0 @@
-10
-
-dir
-2013
-http://172.17.0.22/SVN/Covidien/trunk/Source/Main/Working_timestamps/IndependentComponents/CommonLogger/GenericLogger/CommonLogTemplates
-http://172.17.0.22/SVN/Covidien
-
-
-
-2011-12-30T11:43:04.604611Z
-2005
-p.jha
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4a8abf4d-8ba0-4a15-828a-5f13f804f436
-
-CustomFormatters
-dir
-
-FineGrainedLogging
-dir
-
-CustomLogLevel
-dir
-
-Web
-dir
-

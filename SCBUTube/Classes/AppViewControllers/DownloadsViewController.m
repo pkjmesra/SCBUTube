@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -35,8 +35,23 @@
 @synthesize backPaths =_backPaths;
 @synthesize table;
 
+@synthesize listDataArray;
+
 #pragma mark -
 #pragma mark Initialization
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _backPaths = [[NSMutableArray alloc] initWithCapacity:0];
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        [self setPath:[paths objectAtIndex:0]];
+        [self loadContents];
+        self.listDataArray = self.contents;
+    }
+    return self;
+}
 
 - (void)loadContents {
 	NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -111,7 +126,9 @@
 #pragma mark View lifecyle
 
 - (void)viewDidLoad {
+    
 	[super viewDidLoad];
+//    self.tableView = self.table;
 	_backPaths = [[NSMutableArray alloc] initWithCapacity:0];
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	
@@ -160,9 +177,9 @@
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	static NSString *CellIdentifier = @"Cell";
+	static NSString *CellIdentifier = @"EditCell";
 	
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
@@ -438,6 +455,7 @@
 		[moviePlayerViewController.moviePlayer play];
 	}
 	
+//    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
 	// Navigation logic may go here. Create and push another view controller.
     /*
 	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];

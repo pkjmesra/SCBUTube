@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -63,7 +63,10 @@ typedef struct {
     BOOL _running;
 	NSOperationQueue *_operationQueue;
     NSTimeInterval frameskipTimestamp;
+    NSArray *dataArray;
+    PacketType packetsEnum;
 }
+@property (nonatomic, assign) PacketType packetsEnum;
 
 //! Sets the connection status label
 @property (nonatomic, retain) UILabel *stateLabel;

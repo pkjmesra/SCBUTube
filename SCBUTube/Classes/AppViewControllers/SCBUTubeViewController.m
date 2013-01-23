@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -66,7 +66,7 @@ int looper;
 	}
 	else
 	{
-		fileData = [[NSString stringWithString:@"http://m.youtube.com"] dataUsingEncoding:NSUTF8StringEncoding];
+		fileData = [@"http://m.youtube.com" dataUsingEncoding:NSUTF8StringEncoding];
 	}
 	return [[[NSString alloc ] initWithData:fileData encoding:NSUTF8StringEncoding] autorelease];
 }
@@ -86,13 +86,26 @@ int looper;
 						   attributes:nil];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (!webView.request.URL) {
+        if ([[self loadLastViewState] isEqualToString:@"about:blank"]) {
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.youtube.com"]]];
+            
+        }
+        else {
+            [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self loadLastViewState]]]];
+            NSLog(@"Saved URL state is:%@",[self loadLastViewState]);
+            
+        }
+    }
+}
+
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
 	
-	if (!webView.request.URL) {
-		[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self loadLastViewState]]]];
+   // [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://m.youtube.com"]]];
 	}
-}
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
 	// TODO: Remove all current downloads from download manager
@@ -133,9 +146,14 @@ int looper;
     }
     NSLog(@"geturl is %@",getURL);
 	//getURL =@"http://s.ytimg.com/yt/swfbin/watch_as3-vfl7SkMGe.swf";
-//    NSString *getTitle = [webView stringByEvaluatingJavaScriptFromString:@"function getTitle() {var qo = document.getElementsByClassName('qo')[0]; if (qo) return qo.innerHTML; else {var jm = document.getElementsByClassName('jm'); if (jm.length) {return jm[0].innerHTML;} else {var lp = document.getElementsByClassName('lp')[0]; if (lp && lp.childNodes.length > 0) {return lp.childNodes[0].innerHTML;}}}} getTitle();"];
+    NSString *getTitle = [webView stringByEvaluatingJavaScriptFromString:@"function getTitle() {var tbb = document.getElementsByClassName('tbb')[0]; if (tbb) return tbb.innerHTML;} getTitle();"];
+
+    //! To show the HTML Source Code String
+//    NSString *yourHTMLSourceCodeString = [webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.outerHTML"];
+//    NSLog(@"yourHTMLSourceCodeString is %@",yourHTMLSourceCodeString);
     
-	NSString *getTitle = [webView stringByEvaluatingJavaScriptFromString:@"function getTitle() {var expand =document.getElementById('expandedDetails'); if (expand) return expand.parentElement.children[0].textContent;}  getTitle();"];
+    
+//	NSString *getTitle = [webView stringByEvaluatingJavaScriptFromString:@"function getTitle() {var expand =document.getElementById('expandedDetails'); if (expand) return expand.parentElement.children[0].textContent;}  getTitle();"];
 	NSString *getTitleFromChannel = [webView stringByEvaluatingJavaScriptFromString:@"function getElementsByAttribute(oElm, strTagName,strAttributeName, strAttributeValue){     var arrElements = (strTagName == '*' && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);     var arrReturnElements = new Array();     var oAttributeValue = (typeof strAttributeValue != 'undefined')? new RegExp('(^|\\s)' + strAttributeValue + '(\\s|$)', 'i') : null;     var oCurrent;     var oAttribute;     for(var i=0; i<arrElements.length; i++){     oCurrent = arrElements[i];     oAttribute = oCurrent.getAttribute && oCurrent.getAttribute(strAttributeName);     if(typeof oAttribute == 'string' && oAttribute.length > 0){     if(typeof strAttributeValue == 'undefined' || (oAttributeValue && oAttributeValue.test(oAttribute))){     arrReturnElements.push(oCurrent);     }     }     }     return arrReturnElements;     }; getElementsByAttribute(document,'div','page_element_id','video_details')[0].childNodes[0].childNodes[0].innerHTML;"];
     
     NSLog(@"%@, %@", getTitle, getTitleFromChannel);
@@ -195,6 +213,8 @@ int looper;
 	DownloadInfo *dinfo=[self trySetUpDownload];
 	if ([[dinfo FileTitle] length] >0 && [[dinfo FileUrl] length] >0)
 	{
+        NSString *url=[webView stringByEvaluatingJavaScriptFromString:@"function getUrl(){return window.location.href;} getUrl();"];
+		if ([url length] >0) dinfo.orgYTLink =url;
 		[downloadButton setEnabled:NO];
 		dinfo.delegate = self;
 		[dinfo setUp:YES];

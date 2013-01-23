@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -28,7 +28,7 @@
 #import "SCBUTubeAppDelegate.h"
 #import "SCBUTubeViewController.h"
 #import "PJMasterViewController.h"
-
+#import "PJMasterYTViewController.h"
 #import "PJDetailViewController.h"
 
 #import "HTTPServer.h"
@@ -59,11 +59,28 @@ int ddLogLevel;
 //    [self.window addSubview:viewController.view];
 //    [self.window makeKeyAndVisible];
 	self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    
+    
     // Override point for customization after application launch.
-	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    PJMasterViewController *masterViewController = [[[PJMasterViewController alloc] initWithNibName:@"PJMasterViewController_iPhone" bundle:nil] autorelease];
-	    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
-	    self.window.rootViewController = self.navigationController;
+	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+    {
+//	    PJMasterViewController *masterViewController = [[[PJMasterViewController alloc] initWithNibName:@"PJMasterViewController_iPhone" bundle:nil] autorelease];
+//	    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+//	    self.window.rootViewController = self.navigationController;
+        
+        
+        PJMasterYTViewController *detailViewController = [[[PJMasterYTViewController alloc] initWithNibName:@"PJMasterViewController_iPhone" bundle:nil] autorelease];
+        detailViewController.serviceList =[[NSMutableArray alloc] initWithCapacity:0];
+        detailViewController.title = NSLocalizedString(@"Home", @"Home");
+        [detailViewController.serviceList addObject:@"YouTube"];
+        [detailViewController.serviceList addObject:@"Video call"];
+        [detailViewController.serviceList addObject:@"Sharing"];
+        self.navigationController = [[[UINavigationController alloc] initWithRootViewController:detailViewController] autorelease];
+        [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+        self.window.rootViewController = self.navigationController;
+        
+        
+        
 	} else {
 	    PJMasterViewController *masterViewController = [[[PJMasterViewController alloc] initWithNibName:@"PJMasterViewController_iPad" bundle:nil] autorelease];
 	    UINavigationController *masterNavigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];

@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -84,13 +84,28 @@
 	localFilename = [components componentsJoinedByString:@" "];
 	
 	NSString *pausedFile =[NSString stringWithFormat:@"%@/PausedDownloads/%@.paused", [paths objectAtIndex:0],localFilename];
-	[fileManager createFileAtPath:pausedFile contents:[[NSString stringWithString:@""] dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
-	NSString *attributes = [NSString stringWithFormat:@"Title=%@\nURL=%@\nExpectedBytes= %lld\nBytesReceived=%.2f\nOriginalYouTubeLink=%@\n",
+	[fileManager createFileAtPath:pausedFile contents:[@"" dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+//	NSString *attributes = [NSString stringWithFormat:@"Title=%@\nURL=%@\nExpectedBytes= %lld\nBytesReceived=%.2f\nOriginalYouTubeLink=%@\n",
+//							[localFilename stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+//							[[self FileUrl] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+//							0, 
+//							0, 
+//                            [self.orgYTLink stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSString *attributes = [NSString stringWithFormat:@"Title=%@\nURL=%@\nExpectedBytes= %d\nBytesReceived=%d\nOriginalYouTubeLink=%@\n",
 							[localFilename stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
 							[[self FileUrl] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
-							0,
-							0,[self.orgYTLink stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-	
+							0, 
+							0, 
+                            [self.orgYTLink stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+	/* Unused Variables 
+    NSString *attributes1 = [NSString stringWithFormat:@"Title=%@",
+							[localFilename stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSString *attributes2 = [NSString stringWithFormat:@"nURL=%@",
+                             [[self FileUrl] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSString *attributes3 = [NSString stringWithFormat:@"nOriginalYouTubeLink=%@",
+                             [self.orgYTLink stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    */
+    
 	NSString *attribFile =[NSString stringWithFormat:@"%@/PausedDownloads/%@.attrib", [paths objectAtIndex:0],localFilename];
 	[fileManager createFileAtPath:attribFile contents:[attributes dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
 	NSLog(@"Added into Queue the File:%@, attribFile:%@",pausedFile,attribFile);

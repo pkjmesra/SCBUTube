@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -30,6 +30,9 @@
 
 @interface PJMasterYTViewController : UITableViewController
 
+@property (retain, nonatomic) UIView             *transperentView;
+@property (retain, nonatomic) UITextView         *helpTextView;
+@property (retain, nonatomic) UIButton           *continueButton;
 @property (retain, nonatomic) UIViewController *detailViewController;
 @property (retain, nonatomic) UIViewController *detailViewController2;
 @property (retain, nonatomic) NSMutableArray *serviceList;

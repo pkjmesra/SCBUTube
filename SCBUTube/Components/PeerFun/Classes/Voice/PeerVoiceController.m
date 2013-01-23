@@ -1,5 +1,5 @@
 /**
- Copyright (c) 2011, Research2Development Inc.
+ Copyright (c) 2011, Praveen K Jha, Research2Development Inc.
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification,
@@ -36,6 +36,7 @@
 #import <GameKit/GKVoiceChatService.h>
 #import <UIKit/UIImage.h>
 #import "videoFrameManager.h"
+#import "DownloadsViewController.h"
 
 #include <ifaddrs.h>
 #include <arpa/inet.h>
@@ -52,6 +53,7 @@ CGImageRef UIGetScreenImage();
 @implementation PeerVoiceController
 @synthesize stateLabel;
 @synthesize arViewController;
+@synthesize packetsEnum;
 
 #pragma mark View Controller Methods
 
@@ -122,6 +124,7 @@ CGImageRef UIGetScreenImage();
     [super frontView].hidden =NO;
     [self grantMasterAccess:NO];
     _running = NO;
+    [self sendArray:PacketTypeNSArray];
 }
 
 - (void)viewDidUnload
@@ -301,6 +304,8 @@ CGImageRef UIGetScreenImage();
         // If the user is starting the voice chat, let the other party be the one
         // who starts the game.  That way both partys are starting at the same time.
         if (shouldStart) {
+            if (packetsEnum == PacketTypeNSArray) {
+            }
             [self sendPacket:PacketTypeStart];
             [self sendOSInfo];
 
@@ -460,6 +465,13 @@ didReceivePacket:(NSData*)data ofType:(PacketType)packetType
         [data getBytes: &ostype length: sizeof(ostype)];
         [super setIsSimulator:(ostype == Simulator)];
     }
+    else if (packetType == PacketTypeNSArray){
+        NSArray *datasArray = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        NSLog(@"dataArray: %@",datasArray);
+        
+        NSLog(@"data %@", data);
+
+    }
 }
 
 //! Gets the IP address of the first available Wi-Fi network
@@ -521,6 +533,13 @@ didReceivePacket:(NSData*)data ofType:(PacketType)packetType
     [packet release];
 }
 
+-(void) sendArray:(PacketType)packetType{    
+    DownloadsViewController *downloadsVC = [[[DownloadsViewController alloc] init] autorelease];
+    dataArray = downloadsVC.listDataArray;
+    NSLog(@"dataArray: %@", downloadsVC.listDataArray);
+    NSData *packet = [NSKeyedArchiver archivedDataWithRootObject:dataArray];
+    [manager sendPacket:packet ofType:packetType];    
+}
 
 
 #pragma mark Game Control and Graphics Logic
